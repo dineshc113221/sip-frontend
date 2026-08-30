@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "sip-micro-frontend"
+  title: "sip micro frontend "
+  description: "sip micro frontend "
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    sonarqube.org/project-key: "rdx-sip-ui-mf"
+    nexus-repository-manager/docker.image-name: asx-jfux-docker/rdx-sip-ui-mf

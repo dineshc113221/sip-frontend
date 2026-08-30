@@ -1,0 +1,13 @@
+site_name: sip-micro-frontend
+site_description: sip micro frontend 
+
+# Test with: npx @techdocs/cli serve
+plugins:
+ - techdocs-core
+
+markdown_extensions:
+  - attr_list
+
+nav:
+  - Introduction: 'index.md'
+  - Changelog: 'CHANGELOG.md'

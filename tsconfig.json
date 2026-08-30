@@ -1,0 +1,43 @@
+{
+  "extends": "ts-config-single-spa",
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "allowJs": true,
+    /* Bundler mode */
+    "moduleResolution": "node",
+    "declarationDir": "dist",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "paths": {
+      "@strings/*": ["./strings/*"]
+    },
+    // "noEmit": true,
+    "jsx": "react-jsx",
+    /* Linting */
+    "strict": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "files": [
+    "src/consumer-sip-ui-mf.tsx",
+    "./src/components/dashboard/SidebarAction.component.tsx"
+  ]
+  // "references": [
+  //   {
+  //     "path": "./tsconfig.node.json"
+  //   }
+  // ]
+}
