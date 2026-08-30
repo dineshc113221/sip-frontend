@@ -1,0 +1,24 @@
+{"SaveProductMock" : {
+    "status": 201,
+    "data": {
+        "productSipId": "SIP_AMB_0000010",
+        "productName": "test 123",
+        "brandName": "AMB - Ambi",
+        "projectId": "",
+        "projectName": "",
+        "description": "my_product_test_123",
+        "shortBrandCode": "AMB",
+        "isDeleted": false,
+        "users": [
+            {
+                "name": "Anamika",
+                "role": "Owner",
+                "mail": "AShar018@kenvue.com"
+            }
+        ],
+        "_id": "669e6a283c58c51ce1cff8d9",
+        "createdAt": "2024-07-22T14:18:16.877Z",
+        "updatedAt": "2024-07-22T14:18:16.877Z",
+        "__v": 0
+    }
+}}

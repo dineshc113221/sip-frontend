@@ -1,0 +1,131 @@
+$primary-color: #000000;
+$secondary-color: #F8F8F8;
+$border-color: #E4E7EC;
+$hover-color: #90a4ae;
+$text-dark: #333;
+$text-light: #151515;
+$header-bg: #F8F8F8;
+
+.result_section3_div1{
+    min-height:auto;
+}
+
+.table-wrapper-resultspacking{
+    width:100%;
+
+    .table-container-results{
+        max-height: 600px!important;
+        padding-right: 0px!important;
+
+        .table-body-results{
+          .consumer-component-table-cell{
+            .consumer-component-table-cell-typography{
+              font-family: "kenvue-sans",  sans-serif;
+              font-weight: 700;
+              font-size: 14px;
+            }
+          }
+        }
+        .info-icon{
+          padding: 0px !important;
+        }
+          @media (min-width: 1440px) {
+            width: 1340px
+          }
+          @media (min-width: 1151px) and (max-width: 1439px) {
+            width: 100%
+          }
+          @media (min-width: 880px) and (max-width: 1150px) {
+            width: 100%
+          }
+
+        th,.table-header-font.MuiTypography-root{
+            text-align: left;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 150%;
+            letter-spacing: normal;
+            font-family: "kenvue-sans",  sans-serif;
+        }
+
+        td,th{
+            border:1px solid #E4E7EC;
+            font-family: "kenvue-sans",  sans-serif;
+        }
+
+        td{
+          height:72px;
+          min-height: 72px;
+          font-family: "kenvue-sans-regular",  sans-serif;
+        }
+
+        .table-second-heading-row th{
+            height: 46px!important;
+            padding: 12px !important;
+            border:1px solid #E4E7EC!important;
+            color: #000000;
+        }
+
+.table-first-heading-row th{
+            height: 36px!important;
+            min-height: 36px;
+            max-height: 36px;
+            box-sizing: border-box;
+            color: #000000;
+            background: #F8F8F8;
+        }
+.table-first-heading-row th.table-cell6,
+        .table-first-heading-row th.table-cell7 {
+            padding: 8px 12px !important;
+        }
+        &::-webkit-scrollbar {
+            width: 12px;
+            height: 12px;
+        }
+        
+        &::-webkit-scrollbar-track {
+            background: #d2d1d2;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background-color: $primary-color;
+            border-radius: 10px;
+            border: 3px solid $border-color;
+        
+            &:hover {
+                background: $hover-color;
+            }
+        }
+        
+        &::-webkit-scrollbar-button {
+            display: none;
+            visibility: collapse !important;
+        }
+    }
+
+    $table-cell-widths: (
+    "table-cell0": 125px,
+    "table-cell1": 154px,
+    "table-cell2": 140px,
+    "table-cell3": 105px,
+    "table-cell4": 99px,
+    "table-cell5": 145px,
+    "table-cell6": 282px,
+    "table-cell7": 282px,
+
+    );
+
+@each $cell-class, $cell-width in $table-cell-widths {
+    .#{$cell-class} {
+      width: $cell-width;
+      max-width: $cell-width;
+      min-width: $cell-width;
+      text-align: center;
+      overflow: hidden;
+    }
+    .#{$cell-class} > div{
+        max-width: calc(#{$cell-width} - 24px);
+    }
+  }
+
+}

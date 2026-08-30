@@ -1,0 +1,1995 @@
+{
+    "GlobalDataMock" : [
+    {
+        "_id": "6658813bf360e483138d02b7",
+        "formulation": {
+            "netContent": [
+                "gm",
+                "ml"
+            ],
+            "productionZone": [
+                "EMEA",
+                "NA",
+                "LATAM",
+                "ASPAC",
+                "GLOBAL"
+            ],
+            "salesZone": [
+                "EMEA",
+                "NA",
+                "LATAM",
+                "ASPAC",
+                "GLOBAL"
+            ],
+            "segment": [
+                {
+                    "productSegment": "1.1 Hair - Wash",
+                    "productSubSegment": [
+                        "1.1.1 Solid (bars, powder, flakes) NO DRY SHAMPOO",
+                        "1.1.2 Mousse / Foam (formula with propellant)",
+                        "1.1.3 Monodose (liquid/gel/solid/etc)",
+                        "1.1.4 Liquid/Gel",
+                        "1.1.5 Foam (foamer mechanism)",
+                        "1.1.6 Dilutable (not ready to use)",
+                        "1.1.7 Concentrate (ready-to-use)",
+                        "1.1.8 Dry Shampoo"
+                    ]
+                },
+                {
+                    "productSegment": "1.2 Hair - Treat Hair",
+                    "productSubSegment": [
+                        "1.2.1 Aerosol emulsion/Foam - Leave on",
+                        "1.2.2 Conditioner concentrated - Leave on (viscoelastic)",
+                        "1.2.3 Conditioner - Leave on (viscoelastic)",
+                        "1.2.4 Conditioner/Mask - Rinse off (viscoelactic)",
+                        "1.2.5 Conditioner/Mask concentrated - Rinse off (viscoelastic)",
+                        "1.2.6 Conditioner/Mask monodose - Leave on/Rinse off",
+                        "1.2.7 Conditioner/Mask - Rinse off (solid)",
+                        "1.2.8 Oil/Serum/lotion/hybrid - Leave on (viscoelastic - anhydrous or <5% water)",
+                        "1.2.9 Aerosol Emulsion/Foam - Rinse off"
+                    ]
+                },
+                {
+                    "productSegment": "1.4 Hair - Shape & Refresh",
+                    "productSubSegment": [
+                        "1.4.1 Leave-on pumped product",
+                        "1.4.2 Leave-on aerosols product",
+                        "1.4.3 Leave-on products neither pump or spray, containing water",
+                        "1.4.4 Leave-on products neither pump or spray, no water"
+                    ]
+                },
+                {
+                    "productSegment": "2.1 Face Care - Clean & Remove",
+                    "productSubSegment": [
+                        "2.1.1 Face rinse-off products, neither pump or spray, containing water",
+                        "2.1.2 Face rinse-off products, no water",
+                        "2.1.3 Face rinse-off products, pump or spray",
+                        "2.1.4 Solid face soap"
+                    ]
+                },
+                {
+                    "productSegment": "2.2 Face Care - Moisturize & Treat",
+                    "productSubSegment": [
+                        "2.2.1 All spot treatment (which don't belong to L2 Boost)",
+                        "2.2.2 Waxes/Butters (thick textures)",
+                        "2.2.3 Serum/ Oils",
+                        "2.2.4 Mono-dose",
+                        "2.2.5 Essence / Cosmetic water / Sprays",
+                        "2.2.6 Cream/Lotion/Masks"
+                    ]
+                },
+                {
+                    "productSegment": "2.3 Face Care - UV Protect",
+                    "productSubSegment": [
+                        "2.3.1 Sunscreen"
+                    ]
+                },
+                {
+                    "productSegment": "2.4 Face Care - Boost",
+                    "productSubSegment": [
+                        "2.4.1 Cleansing boosters/treatment",
+                        "2.4.2 Moisturizing  boosters/treatment"
+                    ]
+                },
+                {
+                    "productSegment": "2.5 Face Care - Eye",
+                    "productSubSegment": [
+                        "2.5.1 Eye treatement"
+                    ]
+                },
+                {
+                    "productSegment": "2.6 Face Care - Lip",
+                    "productSubSegment": [
+                        "2.6.1 Lip care"
+                    ]
+                },
+                {
+                    "productSegment": "3.1 Body Care - Wash",
+                    "productSubSegment": [
+                        "3.1.1 Liquid/Gel wash | Body",
+                        "3.1.2 Solid wash (ex: bars, powder, flakes) | Body",
+                        "3.1.3 Foam wash - formula with propellant | Body",
+                        "3.1.4 Foam wash - foamer mechanism | Body",
+                        "3.1.5 Shower crème / non-foaming cleanser | Body",
+                        "3.1.6 Oil wash | Body",
+                        "3.1.7 Exfoliators/Scrubs | Body",
+                        "3.1.8 Liquid/Gel wash | Hand",
+                        "3.1.9 Bar soap | Hand",
+                        "3.1.10 Foam wash - formula with propellant | Hand",
+                        "3.1.11 Foam wash - foamer mechanism | Hand",
+                        "3.1.12 Liquid/Gel wash | Intimate",
+                        "3.1.13 Foam wash - foamer mechanism | Intimate",
+                        "3.1.14 Bath soak",
+                        "3.1.15 Bath oil",
+                        "3.1.16 Bath salt / Powder",
+                        "3.1.17 Bath bomb",
+                        "3.1.18 Bath beads/Pearls",
+                        "3.1.19 Monodose | Body",
+                        "3.1.20 Concentrate wash (all galenic) | Body",
+                        "3.1.21 Dilutable wash (all galenic) | Body",
+                        "3.1.22 Monodose | Hand",
+                        "3.1.23 Concentrate wash (all galenic) | Hand",
+                        "3.1.24 Dilutable wash (all galenic) | Hand",
+                        "3.1.25 Monodose | Intimate",
+                        "3.1.26 Concentrate wash (all galenic) | Intimate",
+                        "3.1.27 Dilutable wash (all galenic) | Intimate"
+                    ]
+                },
+                {
+                    "productSegment": "3.2 Body Care - Correct Odours",
+                    "productSubSegment": [
+                        "3.2.1 Aerosol deodorant",
+                        "3.2.2 Roll on"
+                    ]
+                },
+                {
+                    "productSegment": "3.3 Body Care - Moisturise & Treat",
+                    "productSubSegment": [
+                        "3.3.1 Body powder, adult",
+                        "3.3.2 Body moisturizing products, containing water",
+                        "3.3.3 Body moisturizing products, no water"
+                    ]
+                },
+                {
+                    "productSegment": "3.4 Body Care - Treat Hand & Foot",
+                    "productSubSegment": [
+                        "3.4.1 Foot care",
+                        "3.4.2 Hand sanitizer",
+                        "3.4.3 Hand care"
+                    ]
+                },
+                {
+                    "productSegment": "3.5 Body Care - UV Protect",
+                    "productSubSegment": [
+                        "3.5.1 Sunscreen",
+                        "3.5.2 Sunscreen stick"
+                    ]
+                },
+                {
+                    "productSegment": "4.1 Decorative Cosmetics - Eyes",
+                    "productSubSegment": [
+                        "4.1.1 Eyes make-up"
+                    ]
+                },
+                {
+                    "productSegment": "4.2 Decorative Cosmetics - Lashes & Brows",
+                    "productSubSegment": [
+                        "4.2.1 Lashes & brows make-up"
+                    ]
+                },
+                {
+                    "productSegment": "4.3 Decorative Cosmetics - Face",
+                    "productSubSegment": [
+                        "4.3.1 Face make-up"
+                    ]
+                },
+                {
+                    "productSegment": "4.4 Decorative Cosmetics - Lips",
+                    "productSubSegment": [
+                        "4.4.1 Lips"
+                    ]
+                },
+                {
+                    "productSegment": "5.1 Oral Care - Clean & Protect",
+                    "productSubSegment": [
+                        "5.1.1 Toothpaste"
+                    ]
+                },
+                {
+                    "productSegment": "5.2 Oral Care - Freshen & Prevent",
+                    "productSubSegment": [
+                        "5.2.1 Mouthwash",
+                        "5.2.2 Spray"
+                    ]
+                },
+                {
+                    "productSegment": "7.1 Grooming - Hair Removal",
+                    "productSubSegment": [
+                        "7.1.1 Hair removal cosmetic products"
+                    ]
+                },
+                {
+                    "productSegment": "8.1 Baby Care - Hair Wash & Treat",
+                    "productSubSegment": [
+                        "8.1.1 Baby shampoo",
+                        "8.1.2 Baby conditioner"
+                    ]
+                },
+                {
+                    "productSegment": "8.2 Baby Care - Body Moisturise & Treat",
+                    "productSubSegment": [
+                        "8.2.1 Baby powder",
+                        "8.2.2 Baby body moisturizer",
+                        "8.2.3 Baby skin cream, diaper/nappy area"
+                    ]
+                },
+                {
+                    "productSegment": "8.3 Baby Care - Perfume",
+                    "productSubSegment": [
+                        "8.3.1 Baby perfume"
+                    ]
+                },
+                {
+                    "productSegment": "8.4 Baby Care - UV Protect",
+                    "productSubSegment": [
+                        "8.4.1 Baby sunscreen",
+                        "8.4.2 Baby sunscreen stick"
+                    ]
+                },
+                {
+                    "productSegment": "8.5 Baby Care - Wash",
+                    "productSubSegment": [
+                        "8.5.1 Baby soap bar",
+                        "8.5.2 Baby body cleansing products"
+                    ]
+                }
+            ],
+            "useDose": [
+                "gm",
+                "ml"
+            ],
+            "rawMaterials": [
+                {
+                    "rawMaterialId": "string",
+                    "tradeName": "string",
+                    "percentage": "number",
+                    "status": "string",
+                    "rmcStatus": "string",
+                    "EUINCIName": "string",
+                    "USINCIName": "string",
+                    "specNumber": "string",
+                    "cas": "string",
+                    "envFootprint": 12,
+                    "carbonFootprint": 12,
+                    "greenChemistry": 12
+                }
+            ]
+        },
+        "brand": [
+            {
+                "brandName": "ACV - Acuvue",
+                "shortBrandCode": "ACV",
+                "longBrandName": "Acuvue"
+            },
+            {
+                "brandName": "ALO - Aloplastine",
+                "shortBrandCode": "ALO",
+                "longBrandName": "Aloplastine"
+            },
+            {
+                "brandName": "AMB - Ambi",
+                "shortBrandCode": "AMB",
+                "longBrandName": "Ambi"
+            },
+            {
+                "brandName": "ASL - Anusol",
+                "shortBrandCode": "ASL",
+                "longBrandName": "Anusol"
+            },
+            {
+                "brandName": "ATS - Antuss",
+                "shortBrandCode": "ATS",
+                "longBrandName": "Antuss"
+            },
+            {
+                "brandName": "AVN - Aveeno",
+                "shortBrandCode": "AVN",
+                "longBrandName": "Aveeno"
+            },
+            {
+                "brandName": "ACT - Actidue",
+                "shortBrandCode": "ACT",
+                "longBrandName": "Actidue"
+            },
+            {
+                "brandName": "BAC - Bactidol",
+                "shortBrandCode": "BAC",
+                "longBrandName": "Bactidol"
+            },
+            {
+                "brandName": "BAB - Band-Aid",
+                "shortBrandCode": "BAB",
+                "longBrandName": "Band-Aid"
+            },
+            {
+                "brandName": "BBE - Bebe",
+                "shortBrandCode": "BBE",
+                "longBrandName": "Bebe"
+            },
+            {
+                "brandName": "BBB - BebeBiafine",
+                "shortBrandCode": "BBB",
+                "longBrandName": "BebeBiafine"
+            },
+            {
+                "brandName": "BBD - Bebe-derm",
+                "shortBrandCode": "BBD",
+                "longBrandName": "Bebe-derm"
+            },
+            {
+                "brandName": "BBN - Beben",
+                "shortBrandCode": "BBN",
+                "longBrandName": "Beben"
+            },
+            {
+                "brandName": "BNL - Benadryl",
+                "shortBrandCode": "BNL",
+                "longBrandName": "Benadryl"
+            },
+            {
+                "brandName": "BGY - Bengay",
+                "shortBrandCode": "BGY",
+                "longBrandName": "Bengay"
+            },
+            {
+                "brandName": "BIA - Biafine",
+                "shortBrandCode": "BIA",
+                "longBrandName": "Biafine"
+            },
+            {
+                "brandName": "CDL - Caladryl",
+                "shortBrandCode": "CDL",
+                "longBrandName": "Caladryl"
+            },
+            {
+                "brandName": "CFR - Carefree",
+                "shortBrandCode": "CFR",
+                "longBrandName": "Carefree"
+            },
+            {
+                "brandName": "CML - Caremelt",
+                "shortBrandCode": "CML",
+                "longBrandName": "Caremelt"
+            },
+            {
+                "brandName": "CCB - CicaBiafine",
+                "shortBrandCode": "CCB",
+                "longBrandName": "CicaBiafine"
+            },
+            {
+                "brandName": "CNC - Clean&Clear",
+                "shortBrandCode": "CNC",
+                "longBrandName": "Clean&Clear"
+            },
+            {
+                "brandName": "CPD - Compeed",
+                "shortBrandCode": "CPD",
+                "longBrandName": "Compeed"
+            },
+            {
+                "brandName": "CPN - Calprofen",
+                "shortBrandCode": "CPN",
+                "longBrandName": "Calprofen"
+            },
+            {
+                "brandName": "CSK - Corn Huskers",
+                "shortBrandCode": "CSK",
+                "longBrandName": "Corn Huskers"
+            },
+            {
+                "brandName": "COR - Cortaid",
+                "shortBrandCode": "COR",
+                "longBrandName": "Cortaid"
+            },
+            {
+                "brandName": "CTF - Cortef",
+                "shortBrandCode": "CTF",
+                "longBrandName": "Cortef"
+            },
+            {
+                "brandName": "DBO - Dabao",
+                "shortBrandCode": "DBO",
+                "longBrandName": "Dabao"
+            },
+            {
+                "brandName": "DMU - De-makeUp",
+                "shortBrandCode": "DMU",
+                "longBrandName": "De-makeUp"
+            },
+            {
+                "brandName": "DNT - Dentosan",
+                "shortBrandCode": "DNT",
+                "longBrandName": "Dentosan"
+            },
+            {
+                "brandName": "DES - Desitin",
+                "shortBrandCode": "DES",
+                "longBrandName": "Desitin"
+            },
+            {
+                "brandName": "DOD - Dodie",
+                "shortBrandCode": "DOD",
+                "longBrandName": "Dodie"
+            },
+            {
+                "brandName": "EPT - E.P.T.",
+                "shortBrandCode": "EPT",
+                "longBrandName": "E.P.T."
+            },
+            {
+                "brandName": "EFT - Efferdent",
+                "shortBrandCode": "EFT",
+                "longBrandName": "Efferdent"
+            },
+            {
+                "brandName": "EFG - Effergrip",
+                "shortBrandCode": "EFG",
+                "longBrandName": "Effergrip"
+            },
+            {
+                "brandName": "EFF - Effidia",
+                "shortBrandCode": "EFF",
+                "longBrandName": "Effidia"
+            },
+            {
+                "brandName": "ELK - Elsker",
+                "shortBrandCode": "ELK",
+                "longBrandName": "Elsker"
+            },
+            {
+                "brandName": "EVN - Evian Affinity",
+                "shortBrandCode": "EVN",
+                "longBrandName": "Evian Affinity"
+            },
+            {
+                "brandName": "FEN - Fenjal",
+                "shortBrandCode": "FEN",
+                "longBrandName": "Fenjal"
+            },
+            {
+                "brandName": "FNB - Fresh n Brite",
+                "shortBrandCode": "FNB",
+                "longBrandName": "Fresh n Brite"
+            },
+            {
+                "brandName": "GEN - General Exploration",
+                "shortBrandCode": "GEN",
+                "longBrandName": "General Exploration"
+            },
+            {
+                "brandName": "HXD - Hexaldent",
+                "shortBrandCode": "HXD",
+                "longBrandName": "Hexaldent"
+            },
+            {
+                "brandName": "HXT - Hextril",
+                "shortBrandCode": "HXT",
+                "longBrandName": "Hextril"
+            },
+            {
+                "brandName": "JJR - Johnson & Johnson Red Cross",
+                "shortBrandCode": "JJR",
+                "longBrandName": "Johnson & Johnson Red Cross"
+            },
+            {
+                "brandName": "JNJ - Johnsons",
+                "shortBrandCode": "JNJ",
+                "longBrandName": "Johnsons"
+            },
+            {
+                "brandName": "JJB - Johnsons Baby",
+                "shortBrandCode": "JJB",
+                "longBrandName": "Johnsons Baby"
+            },
+            {
+                "brandName": "JJC - Johnsons Crescidinhos",
+                "shortBrandCode": "JJC",
+                "longBrandName": "Johnsons Crescidinhos"
+            },
+            {
+                "brandName": "JJF - Johnsons Family Care",
+                "shortBrandCode": "JJF",
+                "longBrandName": "Johnsons Family Care"
+            },
+            {
+                "brandName": "JJJ - Johnsons Junior",
+                "shortBrandCode": "JJJ",
+                "longBrandName": "Johnsons Junior"
+            },
+            {
+                "brandName": "JJK - Johnsons Kids",
+                "shortBrandCode": "JJK",
+                "longBrandName": "Johnsons Kids"
+            },
+            {
+                "brandName": "JJP - Johnsons Pediatric",
+                "shortBrandCode": "JJP",
+                "longBrandName": "Johnsons Pediatric"
+            },
+            {
+                "brandName": "JJS - Johnsons Suncare",
+                "shortBrandCode": "JJS",
+                "longBrandName": "Johnsons Suncare"
+            },
+            {
+                "brandName": "KOR - Korres",
+                "shortBrandCode": "KOR",
+                "longBrandName": "Korres"
+            },
+            {
+                "brandName": "KYJ - K-Y",
+                "shortBrandCode": "KYJ",
+                "longBrandName": "K-Y"
+            },
+            {
+                "brandName": "LPX - La Perdrix",
+                "shortBrandCode": "LPX",
+                "longBrandName": "La Perdrix"
+            },
+            {
+                "brandName": "LVE - Laboratoires Vendôme",
+                "shortBrandCode": "LVE",
+                "longBrandName": "Laboratoires Vendôme"
+            },
+            {
+                "brandName": "LPM - Le Petit Marseillais",
+                "shortBrandCode": "LPM",
+                "longBrandName": "Le Petit Marseillais"
+            },
+            {
+                "brandName": "LST - Listerine",
+                "shortBrandCode": "LST",
+                "longBrandName": "Listerine"
+            },
+            {
+                "brandName": "LMT - Listermint",
+                "shortBrandCode": "LMT",
+                "longBrandName": "Listermint"
+            },
+            {
+                "brandName": "LBD - Lubriderm",
+                "shortBrandCode": "LBD",
+                "longBrandName": "Lubriderm"
+            },
+            {
+                "brandName": "MAS - Masse",
+                "shortBrandCode": "MAS",
+                "longBrandName": "Masse"
+            },
+            {
+                "brandName": "MON - Monistat",
+                "shortBrandCode": "MON",
+                "longBrandName": "Monistat"
+            },
+            {
+                "brandName": "MMO - Maui Moisture",
+                "shortBrandCode": "MMO",
+                "longBrandName": "Maui Moisture"
+            },
+            {
+                "brandName": "NAT - Natusan",
+                "shortBrandCode": "NAT",
+                "longBrandName": "Natusan"
+            },
+            {
+                "brandName": "NAB - Natusan Baby",
+                "shortBrandCode": "NAB",
+                "longBrandName": "Natusan Baby"
+            },
+            {
+                "brandName": "NAI - Natusan Institution",
+                "shortBrandCode": "NAI",
+                "longBrandName": "Natusan Institution"
+            },
+            {
+                "brandName": "NAJ - Natusan Junior",
+                "shortBrandCode": "NAJ",
+                "longBrandName": "Natusan Junior"
+            },
+            {
+                "brandName": "NAS - Natusan Suncare",
+                "shortBrandCode": "NAS",
+                "longBrandName": "Natusan Suncare"
+            },
+            {
+                "brandName": "NEK - Neko",
+                "shortBrandCode": "NEK",
+                "longBrandName": "Neko"
+            },
+            {
+                "brandName": "NSP - Neosporin/Polysporin",
+                "shortBrandCode": "NSP",
+                "longBrandName": "Neosporin/Polysporin"
+            },
+            {
+                "brandName": "NTG - Neutrogena",
+                "shortBrandCode": "NTG",
+                "longBrandName": "Neutrogena"
+            },
+            {
+                "brandName": "NZL - Nizoral",
+                "shortBrandCode": "NZL",
+                "longBrandName": "Nizoral"
+            },
+            {
+                "brandName": "OBX - O.B.",
+                "shortBrandCode": "OBX",
+                "longBrandName": "O.B."
+            },
+            {
+                "brandName": "ORD - Oraldine",
+                "shortBrandCode": "ORD",
+                "longBrandName": "Oraldine"
+            },
+            {
+                "brandName": "OGX - OGX",
+                "shortBrandCode": "OGX",
+                "longBrandName": "OGX"
+            },
+            {
+                "brandName": "PEN - Penaten",
+                "shortBrandCode": "PEN",
+                "longBrandName": "Penaten"
+            },
+            {
+                "brandName": "PNB - Penaten Baby",
+                "shortBrandCode": "PNB",
+                "longBrandName": "Penaten Baby"
+            },
+            {
+                "brandName": "PNJ - Penaten Junior",
+                "shortBrandCode": "PNJ",
+                "longBrandName": "Penaten Junior"
+            },
+            {
+                "brandName": "PNS - Penaten Suncare",
+                "shortBrandCode": "PNS",
+                "longBrandName": "Penaten Suncare"
+            },
+            {
+                "brandName": "PSV - Persavon",
+                "shortBrandCode": "PSV",
+                "longBrandName": "Persavon"
+            },
+            {
+                "brandName": "PIZ - Piz Buin",
+                "shortBrandCode": "PIZ",
+                "longBrandName": "Piz Buin"
+            },
+            {
+                "brandName": "PLX - Plax",
+                "shortBrandCode": "PLX",
+                "longBrandName": "Plax"
+            },
+            {
+                "brandName": "PSP - POLYSPORIN",
+                "shortBrandCode": "PSP",
+                "longBrandName": "POLYSPORIN"
+            },
+            {
+                "brandName": "PRG - Pregaine",
+                "shortBrandCode": "PRG",
+                "longBrandName": "Pregaine"
+            },
+            {
+                "brandName": "PRI - Prim Age",
+                "shortBrandCode": "PRI",
+                "longBrandName": "Prim Age"
+            },
+            {
+                "brandName": "PRO - Progaine",
+                "shortBrandCode": "PRO",
+                "longBrandName": "Progaine"
+            },
+            {
+                "brandName": "PRL - Purell",
+                "shortBrandCode": "PRL",
+                "longBrandName": "Purell"
+            },
+            {
+                "brandName": "PUR - Purpose",
+                "shortBrandCode": "PUR",
+                "longBrandName": "Purpose"
+            },
+            {
+                "brandName": "RCH - Reach",
+                "shortBrandCode": "RCH",
+                "longBrandName": "Reach"
+            },
+            {
+                "brandName": "REG - Regaine",
+                "shortBrandCode": "REG",
+                "longBrandName": "Regaine"
+            },
+            {
+                "brandName": "RBT - Rembrandt",
+                "shortBrandCode": "RBT",
+                "longBrandName": "Rembrandt"
+            },
+            {
+                "brandName": "ROC - RoC",
+                "shortBrandCode": "ROC",
+                "longBrandName": "RoC"
+            },
+            {
+                "brandName": "ROG - Rogaine",
+                "shortBrandCode": "ROG",
+                "longBrandName": "Rogaine"
+            },
+            {
+                "brandName": "RPT - Rhinipront",
+                "shortBrandCode": "RPT",
+                "longBrandName": "Rhinipront"
+            },
+            {
+                "brandName": "SBA - Sabia",
+                "shortBrandCode": "SBA",
+                "longBrandName": "Sabia"
+            },
+            {
+                "brandName": "SVN - Savlon",
+                "shortBrandCode": "SVN",
+                "longBrandName": "Savlon"
+            },
+            {
+                "brandName": "STS - Shower to Shower",
+                "shortBrandCode": "STS",
+                "longBrandName": "Shower to Shower"
+            },
+            {
+                "brandName": "SLB - SoleilBiafine",
+                "shortBrandCode": "SLB",
+                "longBrandName": "SoleilBiafine"
+            },
+            {
+                "brandName": "SCR - Soothing Care",
+                "shortBrandCode": "SCR",
+                "longBrandName": "Soothing Care"
+            },
+            {
+                "brandName": "STF - Stayfree",
+                "shortBrandCode": "STF",
+                "longBrandName": "Stayfree"
+            },
+            {
+                "brandName": "STL - Sterisol",
+                "shortBrandCode": "STL",
+                "longBrandName": "Sterisol"
+            },
+            {
+                "brandName": "SFD - Sudafed",
+                "shortBrandCode": "SFD",
+                "longBrandName": "Sudafed"
+            },
+            {
+                "brandName": "SND - Sundown",
+                "shortBrandCode": "SND",
+                "longBrandName": "Sundown"
+            },
+            {
+                "brandName": "SLM - Sibelium",
+                "shortBrandCode": "SLM",
+                "longBrandName": "Sibelium"
+            },
+            {
+                "brandName": "TRI - Trinitrine",
+                "shortBrandCode": "TRI",
+                "longBrandName": "Trinitrine"
+            },
+            {
+                "brandName": "TCK - Tucks",
+                "shortBrandCode": "TCK",
+                "longBrandName": "Tucks"
+            },
+            {
+                "brandName": "VAN - Vania",
+                "shortBrandCode": "VAN",
+                "longBrandName": "Vania"
+            },
+            {
+                "brandName": "VIS - Visine",
+                "shortBrandCode": "VIS",
+                "longBrandName": "Visine"
+            },
+            {
+                "brandName": "YJA - Yourunjia",
+                "shortBrandCode": "YJA",
+                "longBrandName": "Yourunjia"
+            },
+            {
+                "brandName": "ZAR - Zarbee’s",
+                "shortBrandCode": "ZAR",
+                "longBrandName": "Zarbee’s"
+            },
+            {
+                "brandName": "DTM - DOKTOR MOM",
+                "shortBrandCode": "DTM",
+                "longBrandName": "DOKTOR MOM"
+            },
+            {
+                "brandName": "EVE - Every and All",
+                "shortBrandCode": "EVE",
+                "longBrandName": "Every and All"
+            },
+            {
+                "brandName": "AFD - Actifed",
+                "shortBrandCode": "AFD",
+                "longBrandName": "Actifed"
+            },
+            {
+                "brandName": "AAL - Actifed Allergie",
+                "shortBrandCode": "AAL",
+                "longBrandName": "Actifed Allergie"
+            },
+            {
+                "brandName": "AGP - Actigrip",
+                "shortBrandCode": "AGP",
+                "longBrandName": "Actigrip"
+            },
+            {
+                "brandName": "AGA - Agarol",
+                "shortBrandCode": "AGA",
+                "longBrandName": "Agarol"
+            },
+            {
+                "brandName": "ANE - Aneton",
+                "shortBrandCode": "ANE",
+                "longBrandName": "Aneton"
+            },
+            {
+                "brandName": "ANT - Antuss",
+                "shortBrandCode": "ANT",
+                "longBrandName": "Antuss"
+            },
+            {
+                "brandName": "ANU - Anugesic",
+                "shortBrandCode": "ANU",
+                "longBrandName": "Anugesic"
+            },
+            {
+                "brandName": "ARR - Arret",
+                "shortBrandCode": "ARR",
+                "longBrandName": "Arret"
+            },
+            {
+                "brandName": "BAF - Bafucin",
+                "shortBrandCode": "BAF",
+                "longBrandName": "Bafucin"
+            },
+            {
+                "brandName": "BAN - Banlice",
+                "shortBrandCode": "BAN",
+                "longBrandName": "Banlice"
+            },
+            {
+                "brandName": "BGY - Ben Gay",
+                "shortBrandCode": "BGY",
+                "longBrandName": "Ben Gay"
+            },
+            {
+                "brandName": "BDY - Benaday",
+                "shortBrandCode": "BDY",
+                "longBrandName": "Benaday"
+            },
+            {
+                "brandName": "BLT - Benalet",
+                "shortBrandCode": "BLT",
+                "longBrandName": "Benalet"
+            },
+            {
+                "brandName": "BLV - Benaliv",
+                "shortBrandCode": "BLV",
+                "longBrandName": "Benaliv"
+            },
+            {
+                "brandName": "BLN - Benylin",
+                "shortBrandCode": "BLN",
+                "longBrandName": "Benylin"
+            },
+            {
+                "brandName": "BTS - Boots",
+                "shortBrandCode": "BTS",
+                "longBrandName": "Boots"
+            },
+            {
+                "brandName": "BRE - Brentan",
+                "shortBrandCode": "BRE",
+                "longBrandName": "Brentan"
+            },
+            {
+                "brandName": "BRO - Bronchosedal",
+                "shortBrandCode": "BRO",
+                "longBrandName": "Bronchosedal"
+            },
+            {
+                "brandName": "CAL - Calpol",
+                "shortBrandCode": "CAL",
+                "longBrandName": "Calpol"
+            },
+            {
+                "brandName": "CAR - Carlo Erba",
+                "shortBrandCode": "CAR",
+                "longBrandName": "Carlo Erba"
+            },
+            {
+                "brandName": "CEC - Cecrisina",
+                "shortBrandCode": "CEC",
+                "longBrandName": "Cecrisina"
+            },
+            {
+                "brandName": "CEG - Cegripe",
+                "shortBrandCode": "CEG",
+                "longBrandName": "Cegripe"
+            },
+            {
+                "brandName": "CIL - Cilroton",
+                "shortBrandCode": "CIL",
+                "longBrandName": "Cilroton"
+            },
+            {
+                "brandName": "COD - Codral",
+                "shortBrandCode": "COD",
+                "longBrandName": "Codral"
+            },
+            {
+                "brandName": "CLD - Colluduo",
+                "shortBrandCode": "CLD",
+                "longBrandName": "Colluduo"
+            },
+            {
+                "brandName": "COL - Colpermin",
+                "shortBrandCode": "COL",
+                "longBrandName": "Colpermin"
+            },
+            {
+                "brandName": "COM - Combantrin",
+                "shortBrandCode": "COM",
+                "longBrandName": "Combantrin"
+            },
+            {
+                "brandName": "DRC - Dactarin",
+                "shortBrandCode": "DRC",
+                "longBrandName": "Dactarin"
+            },
+            {
+                "brandName": "DCT - Daktacort",
+                "shortBrandCode": "DCT",
+                "longBrandName": "Daktacort"
+            },
+            {
+                "brandName": "DGD - Daktagold",
+                "shortBrandCode": "DGD",
+                "longBrandName": "Daktagold"
+            },
+            {
+                "brandName": "DRN - Daktarin",
+                "shortBrandCode": "DRN",
+                "longBrandName": "Daktarin"
+            },
+            {
+                "brandName": "DZN - Daktozin",
+                "shortBrandCode": "DZN",
+                "longBrandName": "Daktozin"
+            },
+            {
+                "brandName": "DIC - Dicloran",
+                "shortBrandCode": "DIC",
+                "longBrandName": "Dicloran"
+            },
+            {
+                "brandName": "DIF - Diflucan",
+                "shortBrandCode": "DIF",
+                "longBrandName": "Diflucan"
+            },
+            {
+                "brandName": "DFM - Doloflam",
+                "shortBrandCode": "DFM",
+                "longBrandName": "Doloflam"
+            },
+            {
+                "brandName": "DRN - Dolormin",
+                "shortBrandCode": "DRN",
+                "longBrandName": "Dolormin"
+            },
+            {
+                "brandName": "DRA - Dramamine",
+                "shortBrandCode": "DRA",
+                "longBrandName": "Dramamine"
+            },
+            {
+                "brandName": "ECO - Ecodax",
+                "shortBrandCode": "ECO",
+                "longBrandName": "Ecodax"
+            },
+            {
+                "brandName": "EXP - Expectalin",
+                "shortBrandCode": "EXP",
+                "longBrandName": "Expectalin"
+            },
+            {
+                "brandName": "FLU - Fluvermal",
+                "shortBrandCode": "FLU",
+                "longBrandName": "Fluvermal"
+            },
+            {
+                "brandName": "FOR - Fortasec",
+                "shortBrandCode": "FOR",
+                "longBrandName": "Fortasec"
+            },
+            {
+                "brandName": "FDL - Frenadol",
+                "shortBrandCode": "FDL",
+                "longBrandName": "Frenadol"
+            },
+            {
+                "brandName": "FGR - Frenagar",
+                "shortBrandCode": "FGR",
+                "longBrandName": "Frenagar"
+            },
+            {
+                "brandName": "FSL - Frenasal",
+                "shortBrandCode": "FSL",
+                "longBrandName": "Frenasal"
+            },
+            {
+                "brandName": "GLY - Glycerin",
+                "shortBrandCode": "GLY",
+                "longBrandName": "Glycerin"
+            },
+            {
+                "brandName": "GDN - Gyno-Daktarin",
+                "shortBrandCode": "GDN",
+                "longBrandName": "Gyno-Daktarin"
+            },
+            {
+                "brandName": "HLN - Hexalen",
+                "shortBrandCode": "HLN",
+                "longBrandName": "Hexalen"
+            },
+            {
+                "brandName": "HDN - Hexetidene",
+                "shortBrandCode": "HDN",
+                "longBrandName": "Hexetidene"
+            },
+            {
+                "brandName": "HRL - Hexoral",
+                "shortBrandCode": "HRL",
+                "longBrandName": "Hexoral"
+            },
+            {
+                "brandName": "IDM - Imodium",
+                "shortBrandCode": "IDM",
+                "longBrandName": "Imodium"
+            },
+            {
+                "brandName": "IGS - Imogas",
+                "shortBrandCode": "IGS",
+                "longBrandName": "Imogas"
+            },
+            {
+                "brandName": "ING - Imonogas",
+                "shortBrandCode": "ING",
+                "longBrandName": "Imonogas"
+            },
+            {
+                "brandName": "ISN - Iniston",
+                "shortBrandCode": "ISN",
+                "longBrandName": "Iniston"
+            },
+            {
+                "brandName": "IPR - Ipren",
+                "shortBrandCode": "IPR",
+                "longBrandName": "Ipren"
+            },
+            {
+                "brandName": "KPN - Kompensan",
+                "shortBrandCode": "KPN",
+                "longBrandName": "Kompensan"
+            },
+            {
+                "brandName": "LTD - Lactaid",
+                "shortBrandCode": "LTD",
+                "longBrandName": "Lactaid"
+            },
+            {
+                "brandName": "LSL - Lansoyl",
+                "shortBrandCode": "LSL",
+                "longBrandName": "Lansoyl"
+            },
+            {
+                "brandName": "LRT - Levoreact",
+                "shortBrandCode": "LRT",
+                "longBrandName": "Levoreact"
+            },
+            {
+                "brandName": "LCB - Livocab",
+                "shortBrandCode": "LCB",
+                "longBrandName": "Livocab"
+            },
+            {
+                "brandName": "LSN - Livostin",
+                "shortBrandCode": "LSN",
+                "longBrandName": "Livostin"
+            },
+            {
+                "brandName": "LTL - Lomotil",
+                "shortBrandCode": "LTL",
+                "longBrandName": "Lomotil"
+            },
+            {
+                "brandName": "LYC - Lyclear",
+                "shortBrandCode": "LYC",
+                "longBrandName": "Lyclear"
+            },
+            {
+                "brandName": "MGL - MetroGyl",
+                "shortBrandCode": "MGL",
+                "longBrandName": "MetroGyl"
+            },
+            {
+                "brandName": "MLX - Microlax",
+                "shortBrandCode": "MLX",
+                "longBrandName": "Microlax"
+            },
+            {
+                "brandName": "MIC - Microlax/Micralax",
+                "shortBrandCode": "MIC",
+                "longBrandName": "Microlax/Micralax"
+            },
+            {
+                "brandName": "MLE - Migraleve",
+                "shortBrandCode": "MLE",
+                "longBrandName": "Migraleve"
+            },
+            {
+                "brandName": "MLM - Motilium",
+                "shortBrandCode": "MLM",
+                "longBrandName": "Motilium"
+            },
+            {
+                "brandName": "MRN - Motrin",
+                "shortBrandCode": "MRN",
+                "longBrandName": "Motrin"
+            },
+            {
+                "brandName": "MSC - Multi-Brand Self Care",
+                "shortBrandCode": "MSC",
+                "longBrandName": "Multi-Brand Self Care"
+            },
+            {
+                "brandName": "MYL - Mylanta",
+                "shortBrandCode": "MYL",
+                "longBrandName": "Mylanta"
+            },
+            {
+                "brandName": "MCN - Mylicon",
+                "shortBrandCode": "MCN",
+                "longBrandName": "Mylicon"
+            },
+            {
+                "brandName": "NSX - Nasex",
+                "shortBrandCode": "NSX",
+                "longBrandName": "Nasex"
+            },
+            {
+                "brandName": "NAT - NicAssist",
+                "shortBrandCode": "NAT",
+                "longBrandName": "NicAssist"
+            },
+            {
+                "brandName": "NDM - Nicoderm",
+                "shortBrandCode": "NDM",
+                "longBrandName": "Nicoderm"
+            },
+            {
+                "brandName": "NRT - Nicorette",
+                "shortBrandCode": "NRT",
+                "longBrandName": "Nicorette"
+            },
+            {
+                "brandName": "NTL - Nicotrol",
+                "shortBrandCode": "NTL",
+                "longBrandName": "Nicotrol"
+            },
+            {
+                "brandName": "NPX - Nipaxon",
+                "shortBrandCode": "NPX",
+                "longBrandName": "Nipaxon"
+            },
+            {
+                "brandName": "OLY - Olynth",
+                "shortBrandCode": "OLY",
+                "longBrandName": "Olynth"
+            },
+            {
+                "brandName": "ORA - Oraldene",
+                "shortBrandCode": "ORA",
+                "longBrandName": "Oraldene"
+            },
+            {
+                "brandName": "ORL - ORSL / ORAC-L",
+                "shortBrandCode": "ORL",
+                "longBrandName": "ORSL / ORAC-L"
+            },
+            {
+                "brandName": "OVX - Ovex",
+                "shortBrandCode": "OVX",
+                "longBrandName": "Ovex"
+            },
+            {
+                "brandName": "PLN - Pantelmin",
+                "shortBrandCode": "PLN",
+                "longBrandName": "Pantelmin"
+            },
+            {
+                "brandName": "PPD - Pepcid",
+                "shortBrandCode": "PPD",
+                "longBrandName": "Pepcid"
+            },
+            {
+                "brandName": "PDN - Perdolan",
+                "shortBrandCode": "PDN",
+                "longBrandName": "Perdolan"
+            },
+            {
+                "brandName": "PYL - Pevaryl",
+                "shortBrandCode": "PYL",
+                "longBrandName": "Pevaryl"
+            },
+            {
+                "brandName": "RFN - Reactifargan",
+                "shortBrandCode": "RFN",
+                "longBrandName": "Reactifargan"
+            },
+            {
+                "brandName": "RTE - Reactine",
+                "shortBrandCode": "RTE",
+                "longBrandName": "Reactine"
+            },
+            {
+                "brandName": "RDT - Rehidrat",
+                "shortBrandCode": "RDT",
+                "longBrandName": "Rehidrat"
+            },
+            {
+                "brandName": "RHT - Rhinocort",
+                "shortBrandCode": "RHT",
+                "longBrandName": "Rhinocort"
+            },
+            {
+                "brandName": "RHI - Rhinocort/ Pulmicort",
+                "shortBrandCode": "RHI",
+                "longBrandName": "Rhinocort/ Pulmicort"
+            },
+            {
+                "brandName": "RZA - Rinza",
+                "shortBrandCode": "RZA",
+                "longBrandName": "Rinza"
+            },
+            {
+                "brandName": "SSP - Simply Sleep",
+                "shortBrandCode": "SSP",
+                "longBrandName": "Simply Sleep"
+            },
+            {
+                "brandName": "STB - Sinutab",
+                "shortBrandCode": "STB",
+                "longBrandName": "Sinutab"
+            },
+            {
+                "brandName": "SGN - Stugeron",
+                "shortBrandCode": "SGN",
+                "longBrandName": "Stugeron"
+            },
+            {
+                "brandName": "TCL - Terra-Cortril",
+                "shortBrandCode": "TCL",
+                "longBrandName": "Terra-Cortril"
+            },
+            {
+                "brandName": "TYN - Terramycin",
+                "shortBrandCode": "TYN",
+                "longBrandName": "Terramycin"
+            },
+            {
+                "brandName": "TRS - Terres",
+                "shortBrandCode": "TRS",
+                "longBrandName": "Terres"
+            },
+            {
+                "brandName": "TZN - Terzolin",
+                "shortBrandCode": "TZN",
+                "longBrandName": "Terzolin"
+            },
+            {
+                "brandName": "TPL - Tispol",
+                "shortBrandCode": "TPL",
+                "longBrandName": "Tispol"
+            },
+            {
+                "brandName": "TRE - Titanoreine",
+                "shortBrandCode": "TRE",
+                "longBrandName": "Titanoreine"
+            },
+            {
+                "brandName": "TSD - Trosyd",
+                "shortBrandCode": "TSD",
+                "longBrandName": "Trosyd"
+            },
+            {
+                "brandName": "TNL - Tylenol",
+                "shortBrandCode": "TNL",
+                "longBrandName": "Tylenol"
+            },
+            {
+                "brandName": "TYR - Tyrozet",
+                "shortBrandCode": "TYR",
+                "longBrandName": "Tyrozet"
+            },
+            {
+                "brandName": "TYZ - Tyzine",
+                "shortBrandCode": "TYZ",
+                "longBrandName": "Tyzine"
+            },
+            {
+                "brandName": "UNI - Unisom",
+                "shortBrandCode": "UNI",
+                "longBrandName": "Unisom"
+            },
+            {
+                "brandName": "VMX - Vermox",
+                "shortBrandCode": "VMX",
+                "longBrandName": "Vermox"
+            },
+            {
+                "brandName": "VLR - Visine / Vispring / Visclear",
+                "shortBrandCode": "VLR",
+                "longBrandName": "Visine / Vispring / Visclear"
+            },
+            {
+                "brandName": "VVY - Vivity",
+                "shortBrandCode": "VVY",
+                "longBrandName": "Vivity"
+            },
+            {
+                "brandName": "VBM - Vivvi & Bloom",
+                "shortBrandCode": "VBM",
+                "longBrandName": "Vivvi & Bloom"
+            },
+            {
+                "brandName": "ZBS - Zarbees",
+                "shortBrandCode": "ZBS",
+                "longBrandName": "Zarbees"
+            },
+            {
+                "brandName": "ZYC - Zyrtec",
+                "shortBrandCode": "ZYC",
+                "longBrandName": "Zyrtec"
+            },
+            {
+                "brandName": "EXU - Exuviance",
+                "shortBrandCode": "EXU",
+                "longBrandName": "Exuviance"
+            },
+            {
+                "brandName": "EXP - Exuviance Professional",
+                "shortBrandCode": "EXP",
+                "longBrandName": "Exuviance Professional"
+            },
+            {
+                "brandName": "NEO - NeoStrata",
+                "shortBrandCode": "NEO",
+                "longBrandName": "NeoStrata"
+            },
+            {
+                "brandName": "NEP - NeoStrata Professional",
+                "shortBrandCode": "NEP",
+                "longBrandName": "NeoStrata Professional"
+            },
+            {
+                "brandName": "OGP - Olygrip",
+                "shortBrandCode": "OGP",
+                "longBrandName": "Olygrip"
+            },
+            {
+                "brandName": "HFU - Hexaflu",
+                "shortBrandCode": "HFU",
+                "longBrandName": "Hexaflu"
+            },
+            {
+                "brandName": "OPL - Olygrippal",
+                "shortBrandCode": "OPL",
+                "longBrandName": "Olygrippal"
+            },
+            {
+                "brandName": "CDN - Coldarin",
+                "shortBrandCode": "CDN",
+                "longBrandName": "Coldarin"
+            },
+            {
+                "brandName": "BLA - Bilina",
+                "shortBrandCode": "BLA",
+                "longBrandName": "Bilina"
+            },
+            {
+                "brandName": "TNE - Tyzine",
+                "shortBrandCode": "TNE",
+                "longBrandName": "Tyzine"
+            },
+            {
+                "brandName": "DTN - Daktarin",
+                "shortBrandCode": "DTN",
+                "longBrandName": "Daktarin"
+            },
+            {
+                "brandName": "IFX - Ipaflex",
+                "shortBrandCode": "IFX",
+                "longBrandName": "Ipaflex"
+            },
+            {
+                "brandName": "ATU - Actibu",
+                "shortBrandCode": "ATU",
+                "longBrandName": "Actibu"
+            },
+            {
+                "brandName": "SPE - Sinuphene",
+                "shortBrandCode": "SPE",
+                "longBrandName": "Sinuphene"
+            },
+            {
+                "brandName": "MCS - MYLICONGAS",
+                "shortBrandCode": "MCS",
+                "longBrandName": "MYLICONGAS"
+            },
+            {
+                "brandName": "DTR - Daktodor",
+                "shortBrandCode": "DTR",
+                "longBrandName": "Daktodor"
+            },
+            {
+                "brandName": "CGL - CALGEL",
+                "shortBrandCode": "CGL",
+                "longBrandName": "CALGEL"
+            },
+            {
+                "brandName": "HAL - Hexarhinal",
+                "shortBrandCode": "HAL",
+                "longBrandName": "Hexarhinal"
+            },
+            {
+                "brandName": "ODX - Olydex",
+                "shortBrandCode": "ODX",
+                "longBrandName": "Olydex"
+            },
+            {
+                "brandName": "LDE - Loratadine",
+                "shortBrandCode": "LDE",
+                "longBrandName": "Loratadine"
+            },
+            {
+                "brandName": "ISC - Imosec",
+                "shortBrandCode": "ISC",
+                "longBrandName": "Imosec"
+            },
+            {
+                "brandName": "ORS - ORSL",
+                "shortBrandCode": "ORS",
+                "longBrandName": "ORSL"
+            },
+            {
+                "brandName": "TLX - Tylex",
+                "shortBrandCode": "TLX",
+                "longBrandName": "Tylex"
+            },
+            {
+                "brandName": "BDX - Benadrex",
+                "shortBrandCode": "BDX",
+                "longBrandName": "Benadrex"
+            },
+            {
+                "brandName": "MTG - Motiligas",
+                "shortBrandCode": "MTG",
+                "longBrandName": "Motiligas"
+            },
+            {
+                "brandName": "IIX - Ibusinex",
+                "shortBrandCode": "IIX",
+                "longBrandName": "Ibusinex"
+            },
+            {
+                "brandName": "SDP - Sudapro",
+                "shortBrandCode": "SDP",
+                "longBrandName": "Sudapro"
+            },
+            {
+                "brandName": "BYN - Benylan",
+                "shortBrandCode": "BYN",
+                "longBrandName": "Benylan"
+            },
+            {
+                "brandName": "IRS - Iprensa",
+                "shortBrandCode": "IRS",
+                "longBrandName": "Iprensa"
+            },
+            {
+                "brandName": "RFL - Rhinofebral",
+                "shortBrandCode": "RFL",
+                "longBrandName": "Rhinofebral"
+            },
+            {
+                "brandName": "IGZ - Imogaze",
+                "shortBrandCode": "IGZ",
+                "longBrandName": "Imogaze"
+            },
+            {
+                "brandName": "FGN - Fargan",
+                "shortBrandCode": "FGN",
+                "longBrandName": "Fargan"
+            },
+            {
+                "brandName": "PFA - Perdofemina",
+                "shortBrandCode": "PFA",
+                "longBrandName": "Perdofemina"
+            },
+            {
+                "brandName": "HRN - Hexoraletten",
+                "shortBrandCode": "HRN",
+                "longBrandName": "Hexoraletten"
+            },
+            {
+                "brandName": "ATL - Alostil",
+                "shortBrandCode": "ATL",
+                "longBrandName": "Alostil"
+            },
+            {
+                "brandName": "PPN - Perdophen",
+                "shortBrandCode": "PPN",
+                "longBrandName": "Perdophen"
+            },
+            {
+                "brandName": "DTL - Doctril",
+                "shortBrandCode": "DTL",
+                "longBrandName": "Doctril"
+            },
+            {
+                "brandName": "XSM - Xisimin",
+                "shortBrandCode": "XSM",
+                "longBrandName": "Xisimin"
+            },
+            {
+                "brandName": "DKR - Daktar",
+                "shortBrandCode": "DKR",
+                "longBrandName": "Daktar"
+            },
+            {
+                "brandName": "NSB - Nasasinutab",
+                "shortBrandCode": "NSB",
+                "longBrandName": "Nasasinutab"
+            },
+            {
+                "brandName": "NSN - Nasben",
+                "shortBrandCode": "NSN",
+                "longBrandName": "Nasben"
+            }
+        ],
+        "packaging": {
+            "componentType": [
+                "Accessories",
+                "Applicator",
+                "Backcard",
+                "Bag",
+                "Booklet",
+                "Bottle",
+                "Brush",
+                "Can",
+                "Carton",
+                "Closure",
+                "Compact",
+                "Corner Post",
+                "Corrugated, non-shipper",
+                "Cotton",
+                "Cutter",
+                "Dispenser",
+                "Display",
+                "Dosage Cup",
+                "Drum",
+                "Film",
+                "Flow Wrap",
+                "Foil",
+                "Injection Molded Parts/Cases",
+                "Insert",
+                "Jar",
+                "Label",
+                "Laminate Film",
+                "Leaflet",
+                "Lid",
+                "N/A",
+                "Orifice Reducer",
+                "Other - See General Description Comments",
+                "Overcap",
+                "Packer",
+                "Pad",
+                "Partition",
+                "Plug",
+                "Pouch",
+                "Propel-Repel Stick",
+                "Pump",
+                "Rayon",
+                "Shipper",
+                "Shrink Band",
+                "Shrink Sleeve",
+                "Shrinkwrap",
+                "Sleeve",
+                "Syringe",
+                "Thermoformed Part (blisters, trays…)",
+                "Tin",
+                "Tub",
+                "Tube",
+                "Vial",
+                "Wiper",
+                "Wrapper"
+            ],
+            "opacity": [
+                "Transluscent",
+                "Opaque",
+                "Clear"
+            ],
+            "color": [
+                "Beige",
+                "Black",
+                "Blue",
+                "Blue (PET non-recyclable)",
+                "Blue (PET recyclable)",
+                "Brown",
+                "Cyan",
+                "Gold",
+                "Green",
+                "Green (PET non-recyclable)",
+                "Green (PET recyclable)",
+                "Grey",
+                "Magenta",
+                "Natural (no color added)",
+                "Orange",
+                "Pink",
+                "Purple",
+                "Red",
+                "Silver",
+                "Teal",
+                "White",
+                "Yellow"
+            ],
+            "pcr/pir/virgin": [
+                "PCR",
+                "PIR",
+                "Virgin"
+            ],
+            "convertingProcess": [
+                "Deep drawing, steel",
+                "Blow moulding",
+                "Injection moulding",
+                "Stretch blow moulding",
+                "Calendering, rigid sheets",
+                "Extrusion, co-extrusion",
+                "Stretch Blow moulding",
+                "Deep drawing, steel",
+                "Impact extrusion of aluminium",
+                "Extrusion of plastic sheets and thermoforming, inline",
+                "Glass processing",
+                "NoProcess"
+            ],
+            "packagingMaterial": [
+                "Glass",
+                "Stainless steel",
+                "Steel",
+                "Aluminium",
+                "Tin",
+                "Wood",
+                "Corrugated Board Box",
+                "Solid Bleached Board",
+                "Folding Box Board",
+                "Epoxy resin",
+                "HDPE (Polyethylene, high density)",
+                "PP (Polypropylene)",
+                "Synthetic rubber",
+                "LLDPE (Polyethylene, linear low density)",
+                "LDPE (Polyethylene, low density)",
+                "PET (Polyethylene terephtalate)",
+                "PS (Polystyrene)",
+                "PMMA (Polymethyl methacrylate)",
+                "PVDC (Polyvinyldenchloride)",
+                "Nylon 6",
+                "PBT (Polybutylene)",
+                "POM (Polyoxymethylene)",
+                "PU (Polyurethane)",
+                "PVC (Polyvinyl chloride)",
+                "SAN (Styrene Acrylonitrile)",
+                "ABS (Acrylonitrile-butadiene-styrene)",
+                "Surlyn",
+                "PETG (Gycol-Modified Polyethylene terephtalate)",
+                "PCTG (Glycol-Modified Polycyclohexylenedimethylene Terephthalate)",
+                "Latex",
+                "Magnet",
+                "Paper",
+                "Woodfree",
+                "Coated",
+                "PA1010 (Polyamide), from castor oil",
+                "Kraft paper",
+                "EVOH (Ethylene vinyl alcohol)"
+            ],
+            "finishing_process": [
+      {
+        "tru_name": "Acid Etching",
+        "spice_name": "Acid etching, glass substrate"
+      },
+      {
+        "tru_name": "Annealing",
+        "spice_name": "NoProcess"
+      },
+      {
+        "tru_name": "Anodizing",
+        "spice_name": "Anodising, aluminium sheet"
+      },
+      {
+        "tru_name": "Corona Treating",
+        "spice_name": "Metallization"
+      },
+      {
+        "tru_name": "Electroplating",
+        "spice_name": "Electroplating, 2 deposited layers, metal substrate"
+      },
+      {
+        "tru_name": "Flame Treating",
+        "spice_name": "Metallization"
+      },
+      {
+        "tru_name": "Flood Coating",
+        "spice_name": "Solvent-based plastic coating"
+      },
+      {
+        "tru_name": "Fluorination",
+        "spice_name": "Acid etching, glass substrate"
+      },
+      {
+        "tru_name": "Heat Sealing",
+        "spice_name": "NoProcess"
+      },
+      {
+        "tru_name": "Lacquer - Aqua",
+        "spice_name": "Lacquering"
+      },
+      {
+        "tru_name": "Lacquer - Glossy",
+        "spice_name": "Lacquering"
+      },
+      {
+        "tru_name": "Lacquer - Matte",
+        "spice_name": "Lacquering"
+      },
+      {
+        "tru_name": "Lacquer - Semi-Matte",
+        "spice_name": "Lacquering"
+      },
+      {
+        "tru_name": "Lacquer - UV",
+        "spice_name": "Lacquering"
+      },
+      {
+        "tru_name": "Metalization",
+        "spice_name": "Physical Vapour Deposition - Sputtering, aluminium, pieces"
+      },
+      {
+        "tru_name": "Molded - Frost",
+        "spice_name": "NoProcess"
+      },
+      {
+        "tru_name": "Molded - Gloss",
+        "spice_name": "NoProcess"
+      },
+      {
+        "tru_name": "Molded - Matte",
+        "spice_name": "NoProcess"
+      },
+      {
+        "tru_name": "Molded - Semi Matte",
+        "spice_name": "NoProcess"
+      },
+      {
+        "tru_name": "Perforating",
+        "spice_name": "NoProcess"
+      },
+      {
+        "tru_name": "Sealing",
+        "spice_name": "NoProcess"
+      },
+      {
+        "tru_name": "Spraying",
+        "spice_name": "Physical Vapour Deposition - Sputtering, aluminium, linear packaging"
+      },
+      {
+        "tru_name": "Sputtering",
+        "spice_name": "Physical Vapour Deposition - Sputtering, aluminium, linear packaging"
+      },
+      {
+        "tru_name": "Vapor Deposition",
+        "spice_name": "Physical Vapour Deposition - Evaporation, aluminium, pieces"
+      },
+      {
+        "tru_name": "Varnish - Aqua",
+        "spice_name": "Offset printing"
+      },
+      {
+        "tru_name": "Varnish - Glossy",
+        "spice_name": "Offset printing"
+      },
+      {
+        "tru_name": "Varnish - Matte",
+        "spice_name": "Offset printing"
+      },
+      {
+        "tru_name": "Varnish - Semi-Matte",
+        "spice_name": "Offset printing"
+      },
+      {
+        "tru_name": "Varnish - UV",
+        "spice_name": "Offset printing"
+      }
+    ],
+            "materials": [
+      {
+        "name": {
+          "tru_name": "Ceramic",
+          "spice_name": "Ceramics"
+        },
+        "type": [
+          {
+            "tru_name": "No Process",
+            "spice_name": "NoProcess"
+          }
+        ]
+      },
+      {
+        "name": {
+          "tru_name": "Glass",
+          "spice_name": "Glass"
+        },
+        "type": [
+          {
+            "tru_name": "Blown Glass",
+            "spice_name": "Glass processing"
+          }
+        ]
+      },
+      {
+        "name": {
+          "tru_name": "Glass - Mirror",
+          "spice_name": "Mirror"
+        },
+        "type": []
+      },
+      {
+        "name": {
+          "tru_name": "Metal - Aluminum",
+          "spice_name": "Aluminium"
+        },
+        "type": [
+          {
+            "tru_name": "Calendered Extrusion Film",
+            "spice_name": "Sheet rolling, aluminium"
+          }
+        ]
+      },
+      {
+        "name": {
+          "tru_name": "Metal - Brass",
+          "spice_name": "Brass"
+        },
+        "type": [
+          {
+            "tru_name": "Stamping",
+            "spice_name": "Metal stamping"
+          }
+        ]
+      },
+      {
+        "name": {
+          "tru_name": "Metal - Copper",
+          "spice_name": "Copper"
+        },
+        "type": [
+          {
+            "tru_name": "Sheet Rolling",
+            "spice_name": "Sheet rolling, copper"
+          }
+        ]
+      },
+      {
+        "name": {
+          "tru_name": "Metal - Magnet",
+          "spice_name": "Magnet"
+        },
+        "type": [
+          {
+            "tru_name": "Sintering",
+            "spice_name": "Sintering"
+          }
+        ]
+      },
+      {
+        "name": {
+          "tru_name": "Metal - Stainless Steel",
+          "spice_name": "Stainless steel"
+        },
+        "type": [
+          {
+            "tru_name": "Stamping",
+            "spice_name": "Metal stamping"
+          }
+        ]
+      },
+      {
+        "name": {
+          "tru_name": "Metal - Steel",
+          "spice_name": "Steel"
+        },
+        "type": [
+          {
+            "tru_name": "Impact Extrusion",
+            "spice_name": "Impact extrusion of steel"
+          }
+        ]
+      }
+    ],
+           
+            "opacifier": [
+                "Calcium Carbonate",
+                "Carbon Black",
+                "Metallization",
+                "None",
+                "Pearlization",
+                "Titanium Oxide"
+            ],
+             "subComponents": [
+      "Accessory",
+      "Aerosol - Actuator",
+      "Aerosol - Actuator - Cap",
+      "Aerosol - Actuator - Cover",
+      "Aerosol - Actuator - Insert",
+      "Aerosol - Can",
+      "Aerosol - Can - Bag",
+      "Aerosol - Can - Body",
+      "Aerosol - Can - Bottom"
+             ]
+        },
+        "loggedInUserDetails": {
+            "businessPhones": [
+                "test"
+            ],
+            "displayName": "string",
+            "givenName": "string",
+            "jobTitle": null,
+            "mail": "KChand02@kenvue.com",
+            "mobilePhone": null,
+            "officeLocation": null,
+            "preferredLanguage": null,
+            "surname": "string",
+            "userPrincipalName": "string",
+            "id": "string",
+            "roles": [
+                "test"
+            ],
+            "userName": "string",
+            "accessToken": "string"
+        }
+    }
+]
+}

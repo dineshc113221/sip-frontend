@@ -1,0 +1,23 @@
+#full-width-tabpanel-0{
+    width: 1440px;
+}
+.formula-main-div {
+    max-width: 1392px;
+    display: flex;
+    align-items: start;
+    flex-direction:column;
+    gap:36px;
+}
+.formula-1div{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+}  
+@media only screen and (max-width: 1439px) and (min-width: 987px)  {
+    .formula-main-div{
+        max-width:1319px;
+    
+    }
+
+}

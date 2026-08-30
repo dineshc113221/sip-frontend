@@ -1,0 +1,55 @@
+.controller-top-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  padding-right: 24px;
+
+
+.results-heading {
+  color: #000;
+  font-family: "kenvue-sans", sans-serif;
+  font-size: 39.81px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin-right: 12px;
+}
+
+.controller-second-div {
+  display: flex;
+  width: 755px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}
+
+.export-button {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 9999px;
+  border: 0px solid #f8f8f8;
+  opacity: 0.6;
+  cursor:not-allowed;
+  background: black;
+  color: #fff;
+  font-family: "kenvue-sans-regular", sans-serif;
+}
+  
+  @media (min-width: 1440px) {
+   
+    width: 100%;
+  }
+  @media (min-width: 1151px) and (max-width: 1439px) {
+
+    width: 100%;
+  }
+  @media (min-width: 880px) and (max-width: 1150px) {
+ 
+    width: 100%;
+  }
+}
+

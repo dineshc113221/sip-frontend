@@ -1,0 +1,64 @@
+{
+    "count": 1,
+    "data": [
+        {
+            "_id": "67190fcc1fffa42101ab4a6d",
+            "productSipId": "SIP_ASL_0000218",
+            "productName": "test 123",
+            "brandName": "Anusol",
+            "projectId": "",
+            "projectName": "",
+            "description": "",
+            "shortBrandCode": "ASL",
+            "isDeleted": false,
+            "users": [
+                {
+                    "name": "Anamika",
+                    "role": "Owner",
+                    "mail": "AShar018@kenvue.com"
+                },
+                {
+                    "name": "Jadhav, PriyankaY [Non-Kenvue]",
+                    "role": "Member",
+                    "mail": "PJadha04@kenvue.com"
+                }
+            ],
+            "createdAt": "2024-10-23T15:01:32.959Z",
+            "updatedAt": "2024-10-29T08:56:37.244Z",
+            "__v": 0,
+            "assessments": {
+                "experimental": [
+                    {
+                        "assessmentId": "SIP_ASL_0000218_001_EXP",
+                        "name": "test1",
+                        "isFormulationDataCompleted": false,
+                        "isPackagingDataCompleted": false,
+                        "isFormulationCalculated": false,
+                        "isFormulationEOLCalculated": false,
+                        "isPackagingCalculated": false,
+                        "fg_spec": "",
+                        "formula_number": "",
+                        "lab_notebook_code": "",
+                        "pc_spec": "",
+                        "sku_erp_code": "",
+                        "zone": "",
+                        "net_content": "",
+                        "formulation": {
+                            "isEdited": false,
+                            "isCalculating": false,
+                            "_id": "67191a1a1fffa42101ab4d49",
+                            "rawMaterials": []
+                        },
+                        "packaging_level": [],
+                        "createdBy": "Anamika",
+                        "modifiedBy": "",
+                        "_id": "67191a1a1fffa42101ab4d4a",
+                        "createdAt": "2024-10-23T15:45:30.369Z",
+                        "updatedAt": "2024-10-23T15:45:30.369Z"
+                    }
+                ]
+            },
+            "type": "Experimental"
+        }
+    ]
+}

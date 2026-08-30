@@ -1,0 +1,258 @@
+{"GridViewMock" :[
+    {
+        "_id": "669109b168c2e4986c95d550",
+        "productSipId": "SIP_ACV_0000010",
+        "productName": "TEST PRODUCT BHA",
+        "brandName": "ACV - Acuvue",
+        "projectId": "",
+        "projectName": "",
+        "description": "TEST PRODUCT DESCRIPTION",
+        "shortBrandCode": "ACV",
+        "isDeleted": false,
+        "users": [
+            {
+                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                "role": "Owner",
+                "mail": "KChand02@kenvue.com"
+            }
+        ],
+        "createdAt": "2024-07-12T10:47:13.258Z",
+        "updatedAt": "2024-07-12T10:47:13.258Z",
+        "__v": 0
+    },
+    {
+        "_id": "6685795df9d7d63c9cc51152",
+        "productSipId": "SIP_JNJ_0000005",
+        "productName": "Baby Powder",
+        "brandName": "JNJ - Johnsons",
+        "projectId": "",
+        "projectName": "",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "shortBrandCode": "JNJ",
+        "isDeleted": false,
+        "users": [
+            {
+                "name": "Bharat",
+                "role": "Member",
+                "mail": "bharat@kenvue.com"
+            },
+            {
+                "name": "Prashant",
+                "role": "Owner",
+                "mail": "prashant@kenvue.com"
+            },
+            {
+                "name": "Uttam",
+                "role": "Member",
+                "mail": "uttam@kenvue.com"
+            }
+        ],
+        "createdAt": "2024-07-03T16:16:29.897Z",
+        "updatedAt": "2024-07-12T08:51:39.274Z",
+        "__v": 0,
+        "assessments": {
+            "experimental": [
+                {
+                    "assessmentId": "SIP_JNJ_0000005_002_EXP",
+                    "name": "test",
+                    "isFormulaCompleted": false,
+                    "isPackagingCompleted": false,
+                    "fg_spec": "",
+                    "formula_number": "",
+                    "lab_notebook_code": "",
+                    "pc_spec": "",
+                    "sku_erp_code": "",
+                    "zone": "",
+                    "net_content": "",
+                    "createdBy": "",
+                    "modifiedBy": "",
+                    "_id": "668fa1fb68c2e4986c95cf6d",
+                    "createdAt": "2024-07-11T09:12:27.299Z",
+                    "updatedAt": "2024-07-11T09:12:27.299Z"
+                }
+            ],
+            "baseline": {
+                "assessmentId": "SIP_JNJ_0000005_003_BSL",
+                "name": "Baseline Ass 5",
+                "isFormulaCompleted": false,
+                "isPackagingCompleted": false,
+                "fg_spec": "",
+                "formula_number": "FML2057767A-001",
+                "lab_notebook_code": "1-97601-GCL034-01",
+                "pc_spec": "",
+                "sku_erp_code": "",
+                "zone": "null",
+                "net_content": "",
+                "createdBy": "Rupali",
+                "modifiedBy": "",
+                "_id": "668e4e4068c2e4986c95ca19",
+                "createdAt": "2024-07-10T09:02:56.923Z",
+                "updatedAt": "2024-07-10T09:02:56.923Z"
+            }
+        }
+    },
+    {
+        "_id": "668fe09a68c2e4986c95d258",
+        "productSipId": "SIP_OGX_0000010",
+        "productName": "PRN124",
+        "brandName": "OGX - OGX",
+        "projectId": "",
+        "projectName": "",
+        "description": "PD Test",
+        "shortBrandCode": "OGX",
+        "isDeleted": false,
+        "users": [
+            {
+                "name": "Praveen",
+                "role": "Owner",
+                "mail": "PRepakul@kenvue.com"
+            }
+        ],
+        "createdAt": "2024-07-11T13:39:38.496Z",
+        "updatedAt": "2024-07-12T07:26:47.659Z",
+        "__v": 0,
+        "assessments": {
+            "experimental": [
+                {
+                    "assessmentId": "SIP_OGX_0000010_002_EXP",
+                    "name": "Tesq2",
+                    "isFormulaCompleted": false,
+                    "isPackagingCompleted": false,
+                    "fg_spec": "8895203         B.LOT.C 250 V-RI SMOOTH",
+                    "formula_number": "",
+                    "lab_notebook_code": "",
+                    "pc_spec": "PC-054921, PC-056716, PC-056797, PC-059516",
+                    "sku_erp_code": "",
+                    "zone": "",
+                    "net_content": "",
+                    "createdBy": "",
+                    "modifiedBy": "",
+                    "_id": "6690dab768c2e4986c95d480",
+                    "createdAt": "2024-07-12T07:26:47.659Z",
+                    "updatedAt": "2024-07-12T07:26:47.659Z"
+                }
+            ],
+            "baseline": {
+                "assessmentId": "SIP_OGX_0000010_001_BSL",
+                "name": "Test123",
+                "isFormulaCompleted": false,
+                "isPackagingCompleted": false,
+                "fg_spec": "0305402         LPM D.SCH.250 ORNG/SAFFRON",
+                "formula_number": "",
+                "lab_notebook_code": "",
+                "pc_spec": "PC-035562, PC-050616, PC-054554, PC-054624, PC-054918",
+                "sku_erp_code": "",
+                "zone": "",
+                "net_content": "",
+                "createdBy": "",
+                "modifiedBy": "",
+                "_id": "6690da9a68c2e4986c95d473",
+                "createdAt": "2024-07-12T07:26:18.701Z",
+                "updatedAt": "2024-07-12T07:26:18.701Z"
+            }
+        }
+    },
+    {
+        "_id": "668e58e568c2e4986c95ca4f",
+        "productSipId": "SIP_BAB_0000010",
+        "productName": "Baby Product 22",
+        "brandName": "JJR - Johnson & Johnson Red Cross",
+        "projectId": "",
+        "projectName": "",
+        "description": "Baby Product 2 Baby Product 22",
+        "shortBrandCode": "JJR",
+        "isDeleted": false,
+        "users": [
+            {
+                "name": "Rupali",
+                "role": "Owner",
+                "mail": "RBabar01@kenvue.com"
+            }
+        ],
+        "createdAt": "2024-07-10T09:48:21.940Z",
+        "updatedAt": "2024-07-12T05:30:09.514Z",
+        "__v": 0
+    },
+    {
+        "_id": "668bb29968c2e4986c95c37e",
+        "productSipId": "SIP_JJR_0000009",
+        "productName": " Baby soap 11 Baby soap 11 Baby soap 11 Baby soap ",
+        "brandName": "VLR - Visine / Vispring / Visclear",
+        "projectId": "",
+        "projectName": "",
+        "description": "Baby soap 1 Baby soap 11",
+        "shortBrandCode": "VLR",
+        "isDeleted": false,
+        "users": [
+            {
+                "name": "Rupali",
+                "role": "Owner",
+                "mail": "RBabar01@kenvue.com"
+            }
+        ],
+        "createdAt": "2024-07-08T09:34:17.517Z",
+        "updatedAt": "2024-07-12T04:45:58.676Z",
+        "__v": 0,
+        "assessments": {
+            "experimental": [
+                {
+                    "assessmentId": "SIP_JJR_0000009_003_EXP",
+                    "name": "Experimental Assessment1",
+                    "isFormulaCompleted": false,
+                    "isPackagingCompleted": false,
+                    "fg_spec": "",
+                    "formula_number": "FML2057223A-001",
+                    "lab_notebook_code": "1-61071-GCK044-02",
+                    "pc_spec": "",
+                    "sku_erp_code": "",
+                    "zone": "null",
+                    "net_content": "",
+                    "createdBy": "Rupali",
+                    "modifiedBy": "",
+                    "_id": "668bb3c468c2e4986c95c3a8",
+                    "createdAt": "2024-07-08T09:39:16.724Z",
+                    "updatedAt": "2024-07-08T09:39:16.724Z"
+                }
+            ],
+            "baseline": {
+                "assessmentId": "SIP_JJR_0000009_002_BSL",
+                "name": "Baseline Assessment1",
+                "isFormulaCompleted": false,
+                "isPackagingCompleted": false,
+                "fg_spec": "",
+                "formula_number": "FML2057767A-001",
+                "lab_notebook_code": "1-97601-GCL034-01",
+                "pc_spec": "",
+                "sku_erp_code": "",
+                "zone": "null",
+                "net_content": "",
+                "createdBy": "Rupali",
+                "modifiedBy": "",
+                "_id": "668e59f768c2e4986c95ca72",
+                "createdAt": "2024-07-10T09:52:55.821Z",
+                "updatedAt": "2024-07-10T09:52:55.821Z"
+            }
+        }
+    },
+    {
+        "_id": "668e2b4b68c2e4986c95c8d3",
+        "productSipId": "SIP_TCK_0000009",
+        "productName": "Pink Baby Care Soap",
+        "brandName": "TCK - Tucks",
+        "projectId": "",
+        "projectName": "",
+        "description": "",
+        "shortBrandCode": "TCK",
+        "isDeleted": false,
+        "users": [
+            {
+                "name": "Rupali",
+                "role": "Owner",
+                "mail": "RBabar01@kenvue.com"
+            }
+        ],
+        "createdAt": "2024-07-10T06:33:47.801Z",
+        "updatedAt": "2024-07-10T06:33:47.801Z",
+        "__v": 0
+    }
+]}

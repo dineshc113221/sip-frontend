@@ -1,0 +1,118 @@
+/* App.css */
+
+.table-wrapper {
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Hide horizontal scrolling */
+}
+
+/* Table styles */
+.table-container {
+  max-height: 350px !important; /* Set a max-height for the table */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Hide horizontal scrolling */
+  padding-right: 6px !important; /* Add padding to Pcreate space between the scrollbar and the table */
+}
+
+/* Custom scrollbar for Webkit browsers */
+.table-container::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: #d2d1d2 !important;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background-color: #000000 !important;
+  border-radius: 10px !important;
+}
+.table-container::-webkit-scrollbar-button {
+  display: none; /* Hide the up and down arrows */
+  visibility: collapse !important;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  background: #90a4ae !important;
+}
+
+
+
+.progress-value {
+  margin-left: 5px !important; /* Adjust the margin as needed */
+  font-family: "kenvue-sans-regular", sans-serif;
+  font-size: 13.33px;
+  font-weight: 400px;
+  line-height: 19.99px;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.linear-progress-bar {
+  height: 12px !important;
+  border-radius: 100px;
+  margin-left: 0;
+}
+
+.dividerSplit {
+  position: relative;
+  border: none; /* Remove border from the table cell */
+  padding: 0px !important;
+  width: 1px;
+  background: none;
+}
+
+ .dividerSplit::after {
+  content: "";
+  position: absolute;
+   top: 0;
+  left: 0; 
+  height: 100%;
+  width: 2px;
+  z-index: 1px;
+  border-top: none; 
+  border-bottom: none; 
+  background: #BFBFBF;
+  border-left: 6px solid rgb(255, 255, 255);
+  border-right: 6px solid rgb(255, 255, 255);
+} 
+
+
+.table-container th{
+  border: none;
+}
+
+
+/* Alternate row colors */
+.table-container tr:nth-child(even) {
+  background-color: #fbfafa; /* Light grey color for even rows */
+}
+
+.table-container tr:nth-child(odd) {
+  background-color: white; /* White color for odd rows */
+}
+
+.cell-content {
+  display: flex;
+}
+
+.cell-text {
+  flex: 1; /* This makes the text div grow to fill available space */
+
+  line-height: 18px;
+}
+
+.cell-icon {
+  margin-left: 1px !important; /* Adjust the margin between the text and the icon as needed */
+}

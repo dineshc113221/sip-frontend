@@ -1,0 +1,355 @@
+.version-history-wrapper {
+  border: 1px solid #B4B4B4;
+  align-items: center;
+  display: flex;
+  border-radius: 20px;
+  min-width: 448.76px;
+  height: 846px;
+  flex-direction: column;
+  margin: 6px;
+  padding: 20px;
+}
+
+.version-container {
+  display: flex;
+  width: 100%;
+  overflow: auto;
+}
+
+.note-version {
+  margin-top: auto;
+  font-size: 12px;
+  width: 326px;
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 12px !important;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.version-history-header {
+  margin: 20px 10px;
+}
+
+.version-history-lookout {
+  display: flex;
+  align-items: center;
+}
+
+.MuiAlert-message {
+  overflow: hidden !important;
+}
+
+.version-history-brand-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.pie-chart-control {
+  width: 100%;
+}
+
+.versionpiefontTitle {
+  font-size: 32.33px;
+}
+
+.versionpiechart {
+  position: relative;
+  width: 211.22px;
+  height: 180px;
+  min-height: 180px;
+  display: block;
+}
+
+.versionpiechart>div {
+  position: absolute;
+  inset: 0;
+}
+
+.version-history-content {
+  width: 326px;
+}
+
+.version-pie-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.version-alert-lookout-warning {
+  overflow: hidden;
+  margin-left: 8px !important;
+  border-left: 4px solid #EDB600;
+  background-color: #FDF8E5 !important;
+}
+
+.version-alert-lookout-success {
+  overflow: hidden;
+  margin-left: 8px !important;
+  border-left: 4px solid #6CC24A;
+  background-color: #F0F9ED !important;
+}
+
+.version-content-header .version-content-header-spaced .version-history-title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.version-content-header-spaced {
+  padding-top: 16px
+}
+
+.team-members-breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== PRINT / PDF ===== */
+@media print and (orientation: portrait) {
+  .version-history-wrapper {
+    border: 1px solid #B4B4B4;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    height: auto;
+    min-height: auto;
+    width: 99%;
+    margin-bottom: 20px;
+    padding: 20px 20px 0px 20px;
+  }
+
+  .version-container {
+    display: block;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .version-history-content {
+    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+    width: 464.78px;
+    padding-top: 24px;
+  }
+
+  .alert-text-version {
+    background-color: #fff4e5;
+    overflow: hidden !important;
+  }
+
+  .version-history-brand-details {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .user-data-version {
+    margin-top: 10px;
+  }
+
+  .version-history-header {
+    margin: 0px;
+  }
+
+  .note-version {
+    margin-top: 0px;
+    width: 90%;
+    padding-left: 10px;
+    font-size: 10px !important;
+    padding-top: 22.5px !important;
+  }
+
+  .versionpiechart {
+    position: relative;
+    width: 121.22px !important;
+    height: 114.61 !important;
+    min-height: 114.61px !important;
+    display: block;
+  }
+
+  .version-pie-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .version-alert-lookout-warning {
+    border-left: 4px solid #EDB600;
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+    background: #FDF8E5 !important;
+    margin-left: 0px !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .version-alert-lookout-success {
+    border-left: 4px solid #6CC24A;
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+    background: #F0F9ED !important;
+    margin-left: 0px !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .user-avatar {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .version-content-header-spaced .version-content-header {
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .version-content-header-spaced {
+    padding-top: 5px
+  }
+
+  .version-content-content {
+    font-size: 12px !important;
+  }
+}
+
+@media print and (orientation: landscape) {
+  @page {
+    margin: 5mm;
+  }
+
+  .version-history-brand-details {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .user-data-version {
+    margin-top: 10px;
+  }
+
+  body,
+  html,
+  #root,
+  .history-version-page {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .version-container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    gap: 5px !important;
+    overflow: visible !important;
+    padding-bottom: 0 !important;
+  }
+
+  .version-history-wrapper {
+    min-width: 0 !important;
+    flex: 0 0 24.5% !important;
+    width: 24.5% !important;
+    max-width: 24.5% !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    zoom: 0.55 !important;
+    border: 1px solid #B4B4B4 !important;
+    border-radius: 12px !important;
+    height: 820px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    font-size: 18.3px !important;
+  }
+
+  .version-content-content {
+    font-size: 16.3px !important;
+  }
+
+  .version-pie-container {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-bottom: 10px !important;
+  }
+
+  .versionpiechart {
+    width: auto !important;
+    min-width: 212px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+    height: 150px !important;
+    min-height: 150px !important;
+  }
+
+  .version-history-content {
+    width: 100% !important;
+    margin-top: 40px !important;
+  }
+
+  .note-version {
+    text-align: left !important;
+    align-self: flex-start !important;
+    width: 100% !important;
+    margin-top: auto !important;
+    margin-bottom: 0px !important;
+    padding-bottom: 5px !important;
+    padding-left: 2px !important;
+    line-height: 1.1 !important;
+  }
+
+  .note-version p,
+  .note-version span,
+  .note-version div {
+    text-align: left !important;
+    font-size: 12px !important;
+  }
+
+  .version-alert-lookout-warning {
+    border-left: 4px solid #EDB600;
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+    background: #FDF8E5 !important;
+    margin-left: 0px !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .version-alert-lookout-success {
+    border-left: 4px solid #6CC24A;
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+    background: #F0F9ED !important;
+    margin-left: 0px !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .user-avatar {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}

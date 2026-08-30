@@ -1,0 +1,16 @@
+<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon">
+<mask id="mask0_52471_36228" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="21">
+<g id="Group">
+<g id="X">
+<path id="Line 272" d="M10.6172 6.86475V15.35" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Line 273" d="M14.8598 11.1074H6.37455" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path id="Ellipse 1849" d="M10.5 19.9893C15.4706 19.9893 19.5 15.9598 19.5 10.9893C19.5 6.01869 15.4706 1.98926 10.5 1.98926C5.52944 1.98926 1.5 6.01869 1.5 10.9893C1.5 15.9598 5.52944 19.9893 10.5 19.9893Z" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</mask>
+<g mask="url(#mask0_52471_36228)">
+<rect id="&#240;&#159;&#142;&#168; Color" x="-1.5" y="-1.01074" width="24" height="24" fill="black"/>
+</g>
+</g>
+</svg>

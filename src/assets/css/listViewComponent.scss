@@ -1,0 +1,18 @@
+.custom-avatar-group-listview {
+    justify-content: flex-start;
+    // gap: 1px; // Aligns all avatars to the left
+  
+    // Style for each user avatar (with initials)
+  
+    // Style specifically for the +N overflow avatar
+    .MuiAvatarGroup-avatar {
+      font-family: "kenvue-sans", sans-serif;
+      font-size: 13.33px;
+      font-weight: 700;
+      line-height: 19.99px;
+      text-align: center; // Center text for +N display
+      width: 36px; // Ensuring fixed width for overflow avatar if needed
+      height: 36px;
+      gap: 1px;// Ensuring fixed height for overflow avatar if needed
+    }
+  }

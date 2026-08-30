@@ -1,0 +1,1128 @@
+.packaging-main-div {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+}
+
+.packaging-main-title {
+  font-weight: 700;
+  font-size: 23.04px;
+  font-family: "kenvue-sans", sans-serif;
+}
+
+.packagin-icon-button {
+  width: 35px;
+  height: 35px;
+  border: "none";
+  background: none;
+  cursor: "pointer";
+}
+
+.BootstrapTooltip {
+  font-family: "kenvue-sans-regular", sans-serif;
+  font-weight: 400px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.BootstrapTooltip-h3 {
+  font-weight: 700px;
+  font-size: 19.2px;
+  line-height: 27px;
+  margin-top: 1px;
+}
+
+.BootstrapTooltip-p {
+  font-family: "kenvue-sans-regular", sans-serif;
+  font-weight: 400px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.packaging-InfoIcon {
+  cursor: pointer;
+  margin-left: 10px;
+  width: 18px;
+  height: 18px;
+  margin-top: 6px;
+}
+
+.packing-section-main {
+  @media (max-width: 881px) {
+    max-width: 795px;
+  }
+}
+
+.packaging-component-div1 {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.packaging-component-div2 {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.packaging-component-span {
+  font-size: 23.04px;
+  font-weight: 700;
+  font-family: "kenvue-sans", sans-serif;
+}
+.packaging-LightTooltip-h3 {
+  font-weight: 700px;
+  font-size: 19.2px;
+  line-height: 27px;
+  margin-top: 1px;
+}
+.packaging-LightTooltip-p {
+  font-family: "kenvue-sans-regular", sans-serif;
+  font-weight: 400px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.packaging-InfoIcon1 {
+  cursor: pointer;
+  margin-left: 10px;
+  width: 18px;
+  height: 18px;
+  margin-top: 10px;
+}
+
+.packaging-add-new {
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-style: dashed;
+  height: 144px;
+  letter-spacing: 4px;
+  border-radius: 32px 32px 32px 32px;
+  font-size: 16px;
+}
+
+.packaging-button {
+  text-decoration: none;
+  font-family: "kenvue-sans-regular", sans-serif;
+  font-weight: kenvue-sans-bold;
+  text-transform: none;
+  color: black;
+}
+
+.packaging-div-rcorners1 {
+  border-radius: 25px;
+  background: #fbfafa;
+  padding: 16px;
+  width: 420px;
+  height: 100px;
+  display: flex;
+}
+
+.packaging-RecyclableIcon {
+  width: 68px !important;
+  height: 68px !important;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.packaging-RecyclableIcon-lable1 {
+  margin-top: 0px;
+  margin-left: 15px;
+  font-family: "kenvue-sans", sans-serif;
+  font-weight: 700;
+  font-size: 19.2px;
+  margin-bottom: 14px;
+}
+
+.packaging-RecyclableIcon-lable2 {
+  margin-top: 0px;
+  margin-left: 15px;
+  font-family: "kenvue-sans-regular", sans-serif;
+  font-size: 16px;
+}
+
+.packaging-component-expanded {
+  width: 100%;
+  height: 435px;
+  border-radius: 32px;
+  border: 1px solid black;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.packaging-accordionSummary-image {
+  width: 68px !important;
+  height: 68px !important;
+  margin-top: 20px;
+  margin-left: -5px;
+}
+
+.packaging-accordionSummary-lable1 {
+  margin-top: -60px;
+  margin-left: 65px;
+  font-family: "kenvue-sans-regular", sans-serif;
+  font-weight: bold;
+}
+
+.packaging-accordionSummary-lable2 {
+  margin-top: -15px;
+  margin-left: 65px;
+  font-family: "kenvue-sans-regular", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.packaging-recyclable-ready-not {
+  width: 68px !important;
+  height: 68px !important;
+}
+
+.packaging-recyclable-ready-not-div-rcorners1 {
+  border-radius: 32px;
+  background: #fbfafa;
+  padding: 16px;
+  width: auto;
+  height: 100px;
+  display: flex;
+}
+
+.packaging-recyclable-ready-not-lable1 {
+  margin-top: 2px;
+  margin-left: 15px;
+  font-family: "kenvue-sans", sans-serif;
+  font-weight: 700;
+  font-size: 19.2px;
+}
+
+.packaging-recyclable-ready-not-lable2 {
+  margin-top: -8px;
+  margin-left: 15px;
+  font-family: "kenvue-sans-regular", sans-serif;
+  font-size: 16px;
+}
+
+.packaging-popup-recyclable-ready-not-div-rcorners1 {
+  border-radius: 32px;
+  background: #fbfafa;
+  padding: 16px;
+  width: 660px;
+  height: 120px;
+}
+
+.packaging-popup-recyclable-ready-not-lable1 {
+  font-family: "kenvue-sans-regular", sans-serif;
+  font-weight: bold;
+}
+
+.packaging-popup-recyclable-ready-not-lable2 {
+  font-family: "kenvue-sans-regular", sans-serif;
+  font-size: 13.33px;
+}
+
+.packaging-popup-recyclable-ready-not {
+  width: 68px !important;
+  height: 68px !important;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+.packaging-popup-recyclable-ready-not-lable4 {
+  font-family: "kenvue-sans-regular", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.product-detail-label1 {
+  float: left;
+  font-size: 23.04px;
+  font-weight: 700;
+  font-family: "kenvue-sans", sans-serif;
+}
+
+.product-detail-label2 {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "kenvue-sans-regular", sans-serif;
+  word-break: break-all;
+}
+
+.product-detail-manage-team {
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 15px;
+  display: flex;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "kenvue-sans-regular", sans-serif;
+}
+
+.all_my_product_sort_grid_list_label1 {
+  font-family: "kenvue-sans-regular", sans-serif;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: '150%';
+}
+
+.all_my_product_sort_selected_Label {
+  font-family: "kenvue-sans", sans-serif !important;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.menu_edit_delete_label {
+  font-family: "kenvue-sans-regular", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+/* styles.css */
+.Toastify__toast {
+  font-family: "kenvue-sans-regular", sans-serif !important;
+  font-size: 14px !important;
+  color: #00b097 !important;
+}
+
+.toastProgress {
+  background: #00b097 !important;
+}
+.toastProgressError {
+  background: #a10909 !important;
+}
+#toast-container > .toast-success {
+  background-image: none;
+  background-color: #e9e9e9;
+  color: black;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 267px;
+  height: 275px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+/**   START CODE - FLIP CARD ROTATE */
+
+label:checked .flip-card .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+input#flipcardCheckbox {
+  display: none;
+}
+
+:checked + .flip-card .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+label:checked + .flip-card .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/**   END CODE - FLIP CARD ROTATE */
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  border: 2px solid #b2abab;
+  border-radius: 32px;
+  height: 275px;
+  padding: 5px;
+  transform: rotateY(180deg);
+}
+
+.flipcard_description {
+  overflow-y: auto;
+  width: 250px;
+  height: 245px;
+  scrollbar-width: thin;
+  border-radius: 32px;
+  margin-top: 10px;
+}
+
+.flip-card-label1 {
+  font-size: 12px !important;
+  font-family: "kenvue-sans-regular", sans-serif !important;
+  padding: 5px;
+  padding-bottom: 10px;
+}
+
+.flip-card-label2 {
+  font-size: 12px;
+  font-family: "kenvue-sans-regular", sans-serif !important;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.flip-card-label3 {
+  font-size: 12px;
+  font-family: "kenvue-sans-regular", sans-serif !important;
+  display: flex;
+  flex-direction: row;
+}
+
+.flip-card-label3_div1 {
+  width: 54%;
+  padding: 4px;
+  text-align: left;
+}
+
+.flip-card-label3_div2 {
+  width: 48%;
+  text-align: right;
+  padding: 4px;
+}
+
+.dot_Excellent {
+  height: 10px;
+  width: 10px;
+  background-color: #00b097;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dot_good {
+  height: 10px;
+  width: 10px;
+  background-color: #bcd530;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dot_no_improvement {
+  height: 10px;
+  width: 10px;
+  background-color: #b4b4b4;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dot_poor {
+  height: 10px;
+  width: 10px;
+  background-color: #ffb000;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dot_very_poor {
+  height: 10px;
+  width: 10px;
+  background-color: #ff6b6b;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dials_without_data_div1 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  height: 270px;
+}
+
+.dials_without_baseline_data_div1{
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  height: 270px;
+  width:100%;
+  justify-content:center;
+}
+
+.dials_without_baseline_innovation_div1{
+  padding-top: 1px !important;
+}
+
+.dials_without_data_div2 {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.dials_without_data_div2_1 {
+  text-align: center;
+  width: 100%;
+}
+
+.img_dials_without_data {
+  height: 45px;
+  width: 45px;
+}
+
+.dials_without_data_label1 {
+  font-size: 19.2px;
+  font-family: "kenvue-sans", sans-serif !important;
+  font-weight: 700;
+  text-align: center;
+  color: #444444cc;
+}
+/* Outer wrapper - Full width */
+.dials_without_data_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Full width */
+  height: 48px; /* Height of the div */
+  background-color: transparent; /* Optional - can add a background if needed */
+  padding: 32px;
+}
+
+.dials_without_data_baseline_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Full width */
+  height: 48px; /* Height of the div */
+  background-color: transparent; /* Optional - can add a background if needed */
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+
+.dials_without_data_baseline_innovation_wrapper{
+padding-top: 25px; 
+}
+/* Inner message container */
+.dials_without_data_message {
+  font-size: 16px;
+  font-family: 'kenvue-sans-regular', sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* or 24px */
+  text-align: center;
+  color: rgba(68, 68, 68, 0.8);
+  max-width: 790px; /* Ensures the message doesn't exceed a readable width */
+  box-sizing: border-box; /* Includes padding in the width */
+}
+
+/* Inner message container */
+.dials_without_data_baseline_message {
+  font-size: 16px;
+  font-family: 'kenvue-sans-regular', sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* or 24px */
+  text-align: center;
+  color: rgba(68, 68, 68, 0.8);
+  max-width: 790px; /* Ensures the message doesn't exceed a readable width */
+  box-sizing: border-box; /* Includes padding in the width */
+  
+}
+
+.dials_without_data_baseline_label {
+    font-size: 16px;
+    font-family: "kenvue-sans-regular" !important;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+    padding-top: 15px;
+    cursor: pointer;
+    background: transparent;
+  border: 0;
+  position: relative;
+  display: inline-block;
+
+}
+
+.result_tabs_label1 {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "kenvue-sans-regular", sans-serif !important;
+}
+
+.dot_grey_small_baseline_result_page {
+  height: 10px;
+  width: 10px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 7px;
+}
+.dot_grey_small_myproduct_result_page {
+  height: 10px;
+  width: 10px;
+  background-color: #d5c0f3;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 7px;
+}
+.result_section1_div1 {
+  display: flex;
+}
+
+.result_section1_card {
+  width: 432px;
+  height: 208px;
+  display: flex;
+  padding: 16px, 20px, 16px, 20px;
+  border-radius: 32px !important;
+  cursor: pointer;
+}
+
+.result_section2_div1 {
+  font-size: 33.18px !important;
+  font-weight: 700 !important;
+  font-family: "kenvue-sans", sans-serif !important;
+  margin-top: 36px;
+}
+
+.result_section2_div2 {
+  border-radius: 32px;
+  background: #fbfafa;
+  padding: 16px 36px;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.result_section2_label {
+  font-size: 13.33px !important;
+  font-weight: 700 !important;
+  font-family: "kenvue-sans-regular", sans-serif !important;
+  display: flex;
+  text-align: left;
+  color: #444444;
+  margin: 0px;
+  padding: 0px;
+}
+
+.result_section2_label_blur {
+  font-size: 13.33px !important;
+  font-weight: 400 !important;
+  font-family: "kenvue-sans-regular", sans-serif !important;
+  display: flex;
+  text-align: left;
+  color: rgb(195, 192, 192);
+  margin: 0px;
+  padding: 0px;
+}
+.result_section2_div4 {
+  display: flex;
+  flex-direction: column;
+  height: 88px;
+}
+
+.result_section2_div5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.result_section2_icons {
+  height: 48px;
+  width: 48px;
+}
+
+.result_section1_main_div {
+  border-radius: 32px;
+  background: #fbfafa;
+  padding: 16px;
+  width: 100%;
+  height: 367px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.result_section1_sub_div1 {
+  display: flex;
+  width: 50px;
+}
+
+.result_section1_sub_div2 {
+  display: flex;
+}
+
+.result_section1_sub_div3 {
+  width: 370px;
+  height: 225px;
+  display: flex;
+  border-radius: 32px !important;
+  padding: 20px 20px 8px 0px;
+}
+
+.result_section1_sub_label1 {
+  font-size: 23.04px !important;
+  font-weight: 700 !important;
+  font-family: "kenvue-sans", sans-serif !important;
+  display: flex;
+}
+
+.result_section1_sub_label2 {
+  font-size: 13.33px !important;
+  font-weight: 400 !important;
+  font-family: "kenvue-sans-regular", sans-serif !important;
+  display: flex;
+  margin-top: 8px !important;
+}
+
+#clusterbarchartdiv {
+  width: 100%;
+  height: 500px;
+}
+
+.result_section3_div1 {
+  border-radius: 32px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 36px 0 20px 0;
+}
+
+.cluster_bar_chart_label1 {
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  font-family: "kenvue-sans-regular", sans-serif !important;
+  text-align: center;
+  width: 100%;
+}
+
+.result_pie_chart_main_div {
+  border-radius: 32px;
+  background: #fbfafa;
+  padding: 16px;
+  width: 100%;
+  height: 325px;
+}
+
+.selected_result_section1_card {
+  border: 2px solid #000 !important;
+}
+
+.MuiBox-root .css-19kzrtu {
+  padding-top: 36px;
+  padding-left: 0px;
+  padding-right: 24px;
+  padding-bottom: 0px;
+}
+.standard-basic .MuiInput-underline:before {
+  border-bottom: 2px solid black;
+}
+
+.standard-basic .MuiInput-underline:after {
+  border-bottom: 2px solid #00b097;
+}
+.sidebar-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+.sidebar-icon.selected {
+  border-left: 4px solid #00b097; /* green border */
+  background-color: transparent;   /* keep background clean */
+}
+.standard-basic .MuiInput-underline:hover:not(.Mui-disabled):before {
+  border-bottom: 2px solid black;
+}
+/* Assuming you are using a class or selector specific to your TextField */
+.disabledfield .MuiInputBase-root.Mui-disabled {
+  opacity: 1;
+  -webkit-text-fill-color: rgba(0, 0, 0, 1); /* Adjust the text color */
+  color: rgb(0, 0, 0); /* Text color for disabled state */
+  cursor: not-allowed; /* Indicate that it’s not interactable */
+  border: none;
+}
+
+.disabledfield .MuiInputBase-input {
+  font-family: "kenvue-sans-regular", sans-serif !important;
+  
+}
+.disabledfieldd .MuiInputBase-input {
+  font-family: "kenvue-sans-regular", sans-serif !important;
+  font-size: 13.33px !important;
+  color: #444444;
+
+}
+
+
+/* Optional: Add styles for the disabled state of the input */
+.disabledfield .MuiInputBase-input.Mui-disabled {
+  opacity: 1;
+  font-size: 16px !important;
+  /* -webkit-text-fill-color: rgba(0, 0, 0, 1); Adjust the text color */
+  color: rgb(0, 0, 0); /* Text color for disabled state */
+  cursor: not-allowed; /* Indicate that it’s not interactable */
+  font-family: "kenvue-sans-regular", serif;
+}
+/* Assuming you are using a class or selector specific to your TextField */
+.standard-basic .MuiInputBase-root.Mui-disabled {
+  opacity: 1;
+  -webkit-text-fill-color: rgba(0, 0, 0, 1); /* Adjust the text color */
+  color: rgb(0, 0, 0); /* Text color for disabled state */
+  cursor: not-allowed; /* Indicate that it’s not interactable */
+  font-family: "kenvue-sans-regular", serif;
+}
+.standard-basic{
+  font-family: "kenvue-sans-regular", sans-serif;
+  font-weight: 400;
+  
+}
+.MuiInputBase-input-MuiInput-input{
+  font-family: "kenvue-sans-regular !important", sans-serif;
+    font-weight: 400 !important;
+}
+.MuiInputBase-root-MuiInput-root{
+  font-family: "kenvue-sans-regular", sans-serif;
+    font-weight: 400;
+}
+.MuiInput-input{
+  font-family: "kenvue-sans-regular" ,sans-serif !important;
+    font-weight: 400 !important;
+}
+/* Optional: Add styles for the disabled state of the input */
+.standard-basic .MuiInputBase-input.Mui-disabled {
+  opacity: 1;
+  -webkit-text-fill-color: rgba(0, 0, 0, 1); /* Adjust the text color */
+  color: rgb(0, 0, 0); /* Text color for disabled state */
+  cursor: not-allowed; /* Indicate that it’s not interactable */
+  font-family: "kenvue-sans-regular", serif;
+}
+
+.disabledfield .MuiInput-underline:before {
+  border-bottom: 2px solid black;
+}
+
+.disabledfield .MuiInput-underline:after {
+  border-bottom: 2px solid #00b097;
+}
+
+.disabledfield .MuiInput-underline.Mui-disabled:before,
+.disabledfield .MuiInput-underline.Mui-disabled:after {
+  border-bottom: none;
+}
+
+.disabledfield .MuiInput-underline:hover:not(.Mui-disabled):before {
+  border-bottom: 2px solid black;
+}
+
+.BootstrapTooltipSidebar {
+  font-family: "kenvue-sans-regular", sans-serif;
+  font-weight: 400px;
+  font-size: 12px;
+  line-height: 0px;
+}
+
+.BootstrapTooltipSidebar-p {
+  font-family: "kenvue-sans-regular", sans-serif;
+  font-weight: 400px;
+  font-size: 12px;
+  line-height: 0px;
+}
+
+.result_back_to_assessment {
+  width: 100%;
+  text-align: left;
+  font-family: "kenvue-sans-regular", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  display: flex;
+  flex-direction: row;
+}
+
+.product_no_result_label {
+  font-family: "kenvue-sans-regular", sans-serif;
+  font-weight: 400;
+  font-size: 19.2px;
+  text-align: center;
+}
+.netContent{
+  width:165px;
+  height: 74px;
+  padding: 10px 16px;
+}
+.netcontent_error {
+  width: 165px;
+  background: rgba(251, 210, 210, 0.5);
+  height: 84px;
+  border-radius: 20px;
+  padding: 16px;
+}
+.netcontent_error2 {
+  width: 137px;
+  background: rgba(251, 210, 210, 0.5);
+  height: 84px;
+  border-radius: 20px;
+  padding: 16px;
+}
+.select_error {
+  border-radius: 20px;
+  background: rgba(251, 210, 210, 0.5);
+}
+.select_errorProduct {
+  height: 84px;
+  border-radius: 20px;
+  padding: 16px;
+  background: rgba(251, 210, 210, 0.5);
+}
+.productSegment{
+  width: 213px;
+  height: "86px";
+  padding: 16px;
+
+}
+.productSubSegment{
+  width: 227px;
+  height: 86px;
+  padding: 16px;
+}
+.netContentArea{
+  width: 137px;
+  height: 86px;
+  padding: 16px;
+}
+#mui-component-select-productSubSegment {
+  padding: 14px 25px 14px 0px;
+}
+#mui-component-select-productSegment {
+  padding: 14px 25px 14px 0px;
+}
+
+.searchText {
+  border: 1px solid white !important;
+}
+
+.searchText:focus {
+  border: 2px solid #000 !important;
+  outline: none !important;
+}
+
+.productEditIcon {
+  order: 1;
+}
+
+.productEditIcon:hover ~ .productEditTitle {
+  text-decoration: underline;
+  text-underline-offset: 12px;
+}
+
+.button_common_black {
+  display: inline-flex;
+  padding: 16px 24px 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: var(--Spacing-8, 8px);
+  font-family: "kenvue-sans-regular", sans-serif;
+  cursor: pointer;
+  border-radius: 9999px;
+  border: 0px solid #f8f8f8;
+  background: #000;
+  color: #fff;
+}
+
+.button_common_grey {
+  display: inline-flex;
+  padding: 16px 24px 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: var(--Spacing-8, 8px);
+  font-family: "kenvue-sans-regular", sans-serif;
+  cursor: pointer;
+  border-radius: 9999px;
+  border: 0px solid #f8f8f8;
+  background: #999;
+  color: #fff;
+}
+
+.pieChartdiv {
+  width: 267px;
+  height: 280px;
+  border-radius: 32px;
+}
+.divTitle{
+  display: flex;
+  position: relative;
+  z-index: 100;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 16px 16px 0px 16px;
+    height: 68.01px;
+    margin-bottom: -65px;
+}
+.fontTitle {
+  font-family: "kenvue-sans", sans-serif;
+  flex: 1;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #000000;
+  word-wrap: break-word;
+}
+.image{
+  height: 24px;
+  width: 24px;
+  margin-left: auto;
+  cursor: pointer;
+}
+.tooltip-container {
+
+    z-index: 1000 !important;
+    /* Ensure high z-index */
+  display: inline-block;
+}
+
+.SustainableTooltip {
+  visibility: hidden;
+  z-index: 9999 !important;
+  width: 192px;
+  height: 44px;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 12px 14px;
+  background: #000000;
+  color: #F8F8F8;
+  font-family: "kenvue-sans-regular", sans-serif;
+  font-weight: 400;
+  font-size: 13.33px;
+  line-height: 19.99px;
+  letter-spacing: 0%;
+  position: absolute;
+  bottom: 82%;
+  left: 70%;
+  transform: translateX(-50%);
+  transition: visibility 0s, opacity 0.2s ease;
+  opacity: 0;
+  text-align: center;
+}
+
+.SustainableTooltip::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 77%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #000000;
+}
+.tooltip-container:hover .SustainableTooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+
+.result_section1_typography1 {
+  font-size: 13.33px !important;
+  font-weight: 700 !important;
+  font-family: "kenvue-sans", sans-serif !important;
+  color: #000000;
+}
+
+.result_section1_typography2 {
+  font-size: 39.81px !important;
+  font-weight: 700 !important;
+  font-family: "kenvue-sans", sans-serif !important;
+  color:#000000;
+}
+.result-product{
+   font-weight: 400 !important;
+  font-family: "kenvue-sans-regular", sans-serif !important;
+  font-size: 12px !important;
+  color: #000000;
+}
+.result_section1_typography3 {
+  font-weight: 700 !important;
+  font-family: "kenvue-sans", sans-serif !important;
+  font-size: 12px !important;
+  vertical-align: middle;
+  width: 170px;
+  color: #000000;
+}
+
+.result_detailed_table_div1 {
+  width: 100%;
+  border: none;
+  display: flex;
+  margin-bottom: 36px;
+
+  .result_detailed_table_total{text-align: center;}
+
+  td{
+    text-align: center;
+  }
+
+  .result_detailed_table_total_value{
+    color: #000;
+  }
+}
+
+.result_detailed_table_total {
+  text-align: center;
+  font-weight: 400 !important;
+  font-family: "kenvue-sans-regular", sans-serif !important;
+  font-size: 14px !important;
+  color: #2b2b2b !important;
+}
+
+.result_detailed_table_total_value {
+  text-align: center;
+  font-weight: 700 !important;
+  font-family: "kenvue-sans", sans-serif !important;
+  font-size: 14px !important;
+  color: #000;
+}
+
+.manage_team_member_typography1 {
+  color: #000;
+  font-family: "kenvue-sans", sans-serif !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.textFormat{
+  font-family: "kenvue-sans-regular", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+}

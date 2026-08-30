@@ -1,0 +1,14 @@
+#Vector {
+    animation: Vector 1s linear 0s infinite normal forwards;
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+}
+
+@keyframes Vector {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg); 
+    }
+}

@@ -1,0 +1,773 @@
+// Variables for consistent styling
+$table-widths: (
+  "1150px": 100%,
+  "1439px": 100%,
+  "1440px": 100%,
+);
+$table-heights: (
+  "1150px": 635px,
+  // For screens between 880px and 1150px
+  "1439px": 635px,
+  // For screens between 1151px and 1439px
+  "1440px": 655px,
+);
+    .Cell-text-bold {
+      font-family: "kenvue-sans", sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: '18px';
+      letter-spacing: 0%;
+    }
+
+$table-cell-widths: (
+  "table-cell0": 237px,
+  "table-cell-row": 237px,
+  "table-cell1": 155px,
+  "table-cell5": 155px,
+  "table-cell2": 155px,
+  "table-cell9": 155px,
+  "table-cell3": 250px,
+  "table-cell6": 250px,
+  "table-cell4": 238px,
+  "table-cell7": 238px,
+  "green-chemistry": 226.62px,
+  "table-cell8": 107.62px,
+);
+$table-cell-heights: (
+  "table-cell0": 80px,
+  "table-cell-row": 72px,
+  "table-cell1": 80px,
+  "table-cell5": 72px,
+  "table-cell2": 80px,
+  "table-cell9": 72px,
+  "table-cell3": 80px,
+  "table-cell6": 72px,
+  "table-cell4": 80px,
+  "table-cell7": 72px,
+  "green-chemistry": 36px,
+  "table-cell8": 72px,
+);
+
+$primary-color: #000000;
+$secondary-color: #f8f8f8;
+$border-color: #e4e7ec;
+$hover-color: #90a4ae;
+$text-dark: #333;
+$text-light: #151515;
+$header-bg: #f5f5f5;
+
+// General table wrapper
+.table-wrapper1 {
+  overflow: hidden;
+  height: auto;
+  width: 100%;
+
+  .table-containers {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0 !important;
+    overflow-x: auto; // Prevent X-scrollbar
+    overflow-y: auto; // Ensure Y-scrollbar when needed
+    // Default height for vertical scroll
+    max-height: 635px !important;
+
+    th {
+      background-color: #f8f8f8;
+      text-align: left;
+      padding-top: 5px;
+      padding-bottom: 0px;
+    }
+
+    .table-header-secondrow th{
+      text-align: center;
+    }
+
+    &::-webkit-scrollbar {
+      
+      width: 8px;
+      height: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $primary-color;
+      border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #ccc;
+    }
+
+    @each $breakpoint, $height in $table-heights {
+      @if $breakpoint == "1150px" {
+        @media (min-width: 880px) and (max-width: 1150px) {
+          max-height: $height;
+        }
+      } @else if $breakpoint == "1439px" {
+        @media (min-width: 1151px) and (max-width: 1439px) {
+          max-height: $height;
+        }
+      } @else if $breakpoint == "1440px" {
+        @media (min-width: 1440px) {
+          max-height: $height;
+        }
+      }
+    }
+    .table-head {
+      background-color: #f8f8f8;
+      position: sticky;
+      top:0;
+      z-index: 10;
+    }
+    table {
+      border-collapse: separate;
+      width: 100%;
+      padding-right: 1px;
+      max-height: 635px;
+    }
+    th.first-header {
+      background-color: $secondary-color;
+      height: 80px !important; // Ensure correct header height
+      line-height: 80px; // Center-align text vertically
+      text-align: left;
+      padding-top: 5px;
+      padding-bottom: 0px;
+    }
+    td {
+      height: 72px !important;
+      text-align: left;
+    }
+    .divider{ border: none;}
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+
+    &::-webkit-scrollbar-button {
+      display: none;
+      visibility: collapse !important;
+    }
+
+    .score-title {
+      font-family: "kenvue-sans", sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 21px;
+      text-align: left;
+    }
+
+    .env-weight,
+    .carbon-weight,
+    .greenChem-weight {
+      display: flex;
+      align-items: right;
+    }
+    .table-body-formulation {
+      font-family: "kenvue-sans-regular", sans-serif;
+      font-size: 13.33px;
+      font-weight: 400;
+      line-height: 19.99px;
+    }
+    .sticky-footer1 {
+      position: sticky;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #fff;
+      padding: 10px 0px 12px 15px;
+      z-index: 2;
+      min-width: max-content;
+      border-bottom: 1px solid #e0e0e0;
+
+      div {
+        display: flex;
+        align-items: center;
+      }
+      .setWidthforwrapper {
+        width: 203px; // Preserve the width for layout
+        height: 24px;
+        padding-left: 200px; // Optional: If height consistency is needed
+      }
+
+      .disabledfield-wrapper {
+        display: flex;
+        align-items: center;
+        width: 203px; // Always occupies space
+        gap: 8px;
+        padding-left: 100px;
+
+        // Invisible but still takes up space
+        &[style*="opacity: 0"] {
+          visibility: hidden;
+        }
+
+        .disabledfield {
+          input {
+            width: 280px;
+            padding: 8px 14px;
+          }
+        }
+       
+
+        .search-results {
+          margin-top: 8px;
+          overflow-y: auto;
+          background-color: white;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          max-height: 250px;
+
+          table {
+            width: 100%;
+            border-collapse: collapse;
+
+            tbody {
+              tr:hover {
+                background-color: #f0f0f0;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+      .notify{
+          align-items: center;
+            width: 400px;
+      }
+      .notifyFont{
+        font-family: "Kenvue-sans-regular", sans-serif;
+          font-weight: 400;
+          font-size: 13.33px;
+          line-height: 19.99px;
+          letter-spacing: 0%;
+      }
+      .notifyFontt{
+        font-family: "Kenvue-sans", sans-serif;
+          font-weight: 700;
+          text-decoration: underline;
+      }
+      .total-mass {
+        display: flex;
+        align-items: center;
+        width: 374px;
+        height: 24px;
+
+        .success-icon {
+          color: green;
+          width: 18px;
+          height: 18px;
+          font-size: 20px;
+          margin-left: 10px;
+        }
+
+        .error-icon {
+          color: red;
+          width: 18px;
+          height: 18px;
+          font-size: 20px;
+          margin-left: 10px;
+        }
+      }
+      .env-weight{
+        width: 218px;
+      }
+      .env-weight,
+      .carbon-weight,
+      .greenChem-weight {
+        margin-right: 10px;
+        text-align: center;
+      }
+    }
+  }
+
+  // Responsive breakpoints for widths
+  @each $breakpoint, $width in $table-widths {
+    @if $breakpoint == "1150px" {
+      @media (min-width: 880px) and (max-width: 1150px) {
+        .table-containers {
+          width: $width;
+          max-width: $width;
+        }
+      }
+    } @else if $breakpoint == "1439px" {
+      @media (min-width: 1151px) and (max-width: 1439px) {
+        .table-containers {
+          width: $width;
+          max-width: $width;
+        }
+      }
+    } @else if $breakpoint == "1440px" {
+      @media (min-width: 1440px) {
+        .table-containers {
+          width: $width;
+          max-width: $width;
+        }
+      }
+    }
+  }
+
+ 
+
+  @media (min-width: 1440px) {
+    .sticky-footer1 {
+      min-width: max-content;
+      width: auto;
+    }
+    
+  }
+  @media (min-width: 1151px) and (max-width: 1439px) {
+    .sticky-footer1 {
+      width: 1318px;
+     
+    }
+  }
+  @media (min-width: 880px) and (max-width: 1150px) {
+    .sticky-footer1 {
+      width: 1318px;
+     
+    }
+  }
+  .result1-divider{
+    width: 100%;
+  }
+  // Responsive breakpoints for table container width
+  // Responsive breakpoints for widths
+  @each $breakpoint, $width in $table-widths {
+    @if $breakpoint == "1150px" {
+      @media (min-width: 880px) and (max-width: 1150px) {
+        .table-containers {
+          width: $width;
+          max-width: $width;
+        }
+      }
+    } @else if $breakpoint == "1439px" {
+      @media (min-width: 1151px) and (max-width: 1439px) {
+        .table-containers {
+          width: $width;
+          max-width: $width;
+        }
+      }
+    } @else if $breakpoint == "1440px" {
+      @media (min-width: 1440px) {
+        .table-containers {
+          width: $width;
+          max-width: $width;
+        }
+      }
+    }
+  }
+  // Fixed widths for all table cells
+  @each $cell-class, $cell-width in $table-cell-widths {
+    .#{$cell-class} {
+      width: $cell-width;
+      max-width: $cell-width;
+      min-width: $cell-width;
+
+      overflow: hidden; // Ensure cells do not expand or shrink
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .table-row {
+    &.td {
+      font-family: "kenvue-sans-regular", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      text-align: left;
+      border-bottom: 1px solid #e4e7ec;
+      border-top: 1px solid #e4e7ec;
+    }
+
+    .table-cell-row {
+      width: 296px;
+      white-space: normal; // Allow text to wrap to the next line
+      word-wrap: break-word !important; // Break words if necessary
+      overflow-wrap: break-word; // Ensure text wraps to fit container width
+      text-align: left;
+      padding: 1px;
+    }
+    .table-box {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      padding: 16px 24px;
+    }
+  }
+  .green-chemistry {
+    width: 226.62px !important;
+    white-space: normal;
+    padding: 12px 0px 12px 0px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .custom-table-containers {
+    max-height: 500px;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #ccc;
+    }
+  }
+}
+
+// Table header styles
+.header-row {
+  background-color: $header-bg;
+
+  .header-cell {
+    font-size: 12px !important;
+    padding: 5px 20px 5px 10px !important;
+    font-weight: bold !important;
+    border: 1px solid $border-color;
+    font-family: "kenvue-sans", sans-serif !important;
+    color: $text-light !important;
+    border-bottom: none !important;
+    background-color: $header-bg !important;
+  }
+
+  .sub-header-cell {
+    font-family: "kenvue-sans", sans-serif !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    text-align: left !important;
+    color: #0b0b0b !important;
+    padding: 0 !important;
+    background-color: $header-bg !important;
+    border-bottom: none !important;
+  }
+
+  .header-divider {
+    height: 1.5px !important;
+    background-color: $border-color !important;
+    margin: 8px 0 !important;
+  }
+}
+
+// Table body styles
+.body-cell {
+  font-size: 12px;
+  padding: 20px 20px 20px 10px !important;
+  text-align: left !important;
+  color: $text-dark;
+}
+
+.odd-row {
+  background-color: white !important;
+
+  .css-iul604-MuiTableCell-root {
+    background-color: white !important;
+    border: 1px solid $border-color;
+  }
+}
+
+.even-row {
+  background-color: #f9f9f9 !important;
+
+  .css-iul604-MuiTableCell-root {
+    border: 1px solid $border-color;
+    background-color: $secondary-color !important;
+  }
+}
+
+// Icon styles
+.info-icon {
+  color: $primary-color !important; // Medium grey color for the info icon
+}
+
+.cell-content {
+  display: flex;
+  align-items: center;
+
+  .cell-text {
+    flex: 1; // This makes the text div grow to fill available space
+    white-space: pre-wrap; // Ensure text wraps properly
+    word-wrap: break-word; // For older browsers
+    overflow-wrap: break-word; // For modern browsers
+    line-height: '18px';
+  }
+
+  .Cell-text2{
+    font-family: "kenvue-sans", sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 18px !important;
+      letter-spacing: 0% !important;
+      color: #444444;
+  }
+
+  .cell-icon {
+    margin-left: 10px; // Adjust the margin between the text and the icon as needed
+  }
+}
+
+// Icon button styles
+.icon-button {
+  color: defaultColor;
+  height: 24px;
+  width: 24px;
+  padding: 2px !important;
+  background-color: none;
+
+  &:hover {
+    color: red;
+    background: none !important;
+  }
+}
+/* Grid container styles */
+.grid-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .text-field-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 5px 0 10px;
+
+    input {
+      padding: 8px 14px;
+    }
+
+    fieldset {
+      border: none; /* Remove the border around the TextField */
+    }
+
+    .MuiOutlinedInput-root {
+      &:hover fieldset {
+        border: none; /* Ensure no border on hover */
+      }
+
+      &.Mui-focused {
+        fieldset {
+          border: 2px solid #00b097;
+        }
+      }
+    }
+  }
+
+  .table-results {
+    height: 0px;
+    overflow-y: auto;
+
+    &.has-results {
+      height: 250px;
+    }
+  }
+}
+
+/* TableCell styles */
+.table-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 12px;
+  width: 10%;
+  border: none;
+
+  .table-cell-content {
+    display: flex;
+    align-items: center;
+    border: none;
+
+    .total-text {
+      margin-right: 5px;
+      font-family: "kenvue-sans-regular", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      text-align: left;
+    }
+
+    .total-weight {
+      font-family: "kenvue-sans", sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 21px;
+      text-align: left;
+    }
+
+    .icon {
+      margin-left: 10px;
+      font-size: 20px;
+
+      &.success {
+        color: green;
+      }
+
+      &.error {
+        color: red;
+      }
+    }
+  }
+}
+
+.additional-metrics {
+  display: flex;
+  flex-direction: column;
+
+  .metric-cell {
+    width: 30%;
+    white-space: normal;
+    padding-left: 115px;
+    border: none;
+
+    &.wide {
+      width: 40%;
+      padding-left: 150px;
+    }
+
+    .metric-content {
+      display: flex;
+      align-items: flex-end;
+
+      .metric-text {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+// Progress bar styles
+.linear-progress-bar {
+  height: 12px !important;
+  border-radius: 100px;
+  margin-left: 0;
+}
+
+.progress-bar {
+  height: 8px;
+  border-radius: 4px; // Rounded corners for the progress bar
+}
+
+.progress-value {
+  margin-left: 5px !important; // Adjust the margin as needed
+  font-family: "kenvue-sans-regular", sans-serif;
+  font-size: 13.33px;
+  font-weight: 400;
+  line-height: 19.99px;
+  text-align: center;
+}
+
+// Footer styles
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+
+  .MuiTableCell-root {
+    padding: 8px; // Adjust padding as needed
+    margin: 0; // Remove margin
+  }
+}
+
+// Divider styles
+.divider {
+  position: relative;
+  border: none; // Remove border from the table cell
+  width: 0;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #bfbfbf;
+    width: 20px;
+    height: 100%;
+    border-top: none; // Hide the top border
+    border-bottom: none; // Hide the bottom border
+    border-left: 9px solid white;
+    border-right: 9px solid white;
+  }
+}
+
+.formulation-table-searchresults {
+  z-index: 100;
+  max-width: 620px;
+  max-height: 300px !important;
+  overflow: auto;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #d2d1d2;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $primary-color;
+    border-radius: 10px;
+    border: 3px solid $border-color;
+
+    &:hover {
+      background: $hover-color;
+    }
+  }
+
+  &::-webkit-scrollbar-button {
+    display: none;
+    visibility: collapse !important;
+  }
+}
+.noDataMain{
+  display: contents;
+}
+ .noData {
+  display: flex;
+  margin-bottom: 5px;
+  width: 244px;
+  padding: 10px 16px;
+  font-family: "kenvue-sans-regular", sans-serif;
+  font-weight: 400;
+  font-size: 13.99px;
+  text-align: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+
+  .cancelIcon{
+    position: relative;
+    bottom: 3px;
+    width: 16px;
+    height: 16px;
+  }
+  .NoDataTitle{
+    margin-left: 10px;
+    margin-bottom: 3px !important;
+
+}
+ }
+ .buttonLeft{
+  margin-left: -5px;
+ }
+ .totalFont{
+  font-family: "Kenvue-sans-regular", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0%;
+ }

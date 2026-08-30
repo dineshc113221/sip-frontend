@@ -1,0 +1,305 @@
+.formula-main-div {
+  padding-right: 20px;
+
+  .product{
+    gap: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 30px;
+    @media (max-width:1152px){gap:29px}
+}
+}
+.formula-1div {
+    display: grid;
+    grid-template-columns: 290px 175px auto; // Defines widths for FML Number, Import, and empty space
+    grid-template-rows: auto auto;
+    column-gap: 36px; // Gap between FML Number and Import
+    row-gap: 20px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 16px;
+  
+    .button-container {
+      position: absolute;
+      top: 0px;
+      right: 10px;
+      display: flex;
+      gap: 10px;
+  
+      .whiteButtonFomula,
+      .whiteButtonFomulaSave {
+        font-size: 14px;
+      }
+
+    .css-11kisio {
+        grid-template-columns: none;
+      }
+    }   
+      
+  }
+
+  @media (min-width: 1440px) {
+    .formula-1div {
+      display: grid;
+      width: 100%;
+      padding: 16px;
+      max-height: 80px; // Adjust to fit content height
+      grid-template-columns: 227px 175px 532px auto; // Define specific widths for each column
+      grid-template-rows: auto; // Single row
+      column-gap: 36px; // Consistent spacing between columns
+  
+      .fml-number {
+        width: 290px;
+       
+        height: 54px;
+        grid-column: 1 / 2; // First column
+      }
+  
+      .import {
+        width: 175px;
+        height: 56px;
+        grid-column: 2 / 3; // Second column
+      }
+  
+      .description {
+        width: 532px;
+        height: auto;
+        margin-left: 50px;
+        grid-column: 3 / 4; // Third column
+      }
+  
+      .button-container {
+        grid-column: 4 / 5; // Last column
+        display: flex;
+        justify-content: flex-end;
+        position: static; // Ensure it aligns within the grid
+      }
+    }
+  
+    .top-Net {
+      margin-top: 20px;
+    }
+  }
+  @media (min-width: 1151px) and (max-width: 1439px) {
+    .formula-1div {
+      width: 100%;
+      height: 218px;
+      grid-template-columns: 290px 175px auto; // Same layout structure
+      grid-template-rows: auto auto;
+      column-gap: 36px; // Ensures consistent spacing between columns
+      row-gap: 20px;
+  
+      
+      .fml-number {
+        width: 290px;
+        height: 54px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+      }
+      .import {
+        width: 175px;
+        height: 56px;
+        margin-right:380px ;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+      }
+  
+      .description {
+        width: 532px;
+        grid-column: 1 / 4; // Spans across all columns in the second row
+        grid-row: 2 / 3;
+      }
+  
+      .button-container {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+      }
+     
+    }
+    .top-Net{
+      margin-top: 20px;
+    }
+    
+  }
+  @media (min-width: 880px) and (max-width: 1150px) {
+    .formula-1div {
+      width: 100%;
+      height: 160px;
+      grid-template-columns: 290px 175px auto; // Same layout structure
+      grid-template-rows: auto auto;
+      column-gap: 36px;
+  
+      
+      .fml-number {
+        width: 290px;
+        height: 54px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+      }
+      .import {
+        width: 175px;
+        height: 56px;
+        margin-right:380px ;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+      }
+  
+      .description {
+        width: 532px;
+        grid-column: 1 / 4; // Spans across all columns in the second row
+        grid-row: 2 / 3;
+      }
+  
+      .button-container {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+      }
+      
+     
+    }
+    .product{
+      width: 697px !important;
+  }
+    .top-Net{
+      margin-top: 20px;
+    }
+    
+  }
+ 
+  .table-bottom-color-band-formulation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .color-band-left-empty {
+        width: 60%;
+    }
+
+    .icon-key-section{
+      .Icon-key{
+        font-family: "kenvue-sans",   sans-serif;
+          font-weight: 700;
+          font-size: 13.33px;
+          line-height: 150%;
+          letter-spacing: 0%;
+        margin-bottom: 10px;
+      }
+      .icon-content{
+        display: flex;
+        align-items: center;
+        font-family: "kenvue-sans-regular", sans-serif;
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 10px;
+        gap:5px;
+        img{
+          height:32px;
+          width:32px
+        }
+      }
+    }
+
+    .color-band-div {
+        background-color: #F8F8F8;
+        border-radius: 32px;
+        padding: 24px;
+        width: 376px;
+
+        .MuiDivider-fullWidth{
+          margin: 13.5px 0px;
+        }
+
+        .color-key {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .color-band {
+            display: flex;
+            height: 12px;
+            width: 328px;
+            margin-bottom: 14px;
+
+            .color-band-1 {
+                border-radius: 5px 0px 0px 5px;
+                width: 33%;
+                border-right: 0;
+                background-color: #CFDDEC;
+            }
+
+            .color-band-2 {
+                width: 33%;
+                border-left: 0;
+                border-right: 0;
+                background-color: #3F7AB4;
+            }
+
+            .color-band-3 {
+                border-radius: 0px 5px 5px 0px;
+                width: 33%;
+                border-left: 0;
+                background-color: #0A316B;
+            }
+
+        }
+
+        .color-band-text {
+            display: flex;
+            width: 328px;
+            text-align: center;
+
+            .div-first-child {
+                color: #2B2B2B;
+                font-weight: 700;
+                font-size: 12px;
+            }
+
+            .div-second-child {
+                color: #2B2B2B;
+                font-size: 12px;
+            }
+
+            .color-band-text-1 {
+                width: 33%;
+            }
+
+            .color-band-text-2 {
+                width: 33%;
+            }
+
+            .color-band-text-3 {
+                width: 33%;
+            }
+        }
+    }
+}
+ 
+  .partial-data-warning {
+    height: 76px;
+    width: 100%;
+    border-left: 4px solid #EDB600;
+    background-color: #FDF8E5;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 20px;
+  padding-left: 16px;
+    @media (min-width: 1440px){
+      width: 100%;
+    }
+    @media(min-width: 1151px) and (max-width: 1439px){
+      width: 100%;
+    }
+    @media (min-width: 880px) and (max-width: 1150px) {
+      width: 100%
+    }
+  }
+
+.Consumable-used-filed {
+  padding:16px;
+}

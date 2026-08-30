@@ -1,0 +1,35 @@
+#panel1-header {
+    display: flex !important;
+    padding: 24px !important;
+}
+.packaging-save-btn {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family:"kenvue-sans-regular",sans-serif;
+    top: 20px;
+    height: 56px;
+        width: 127px;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+.calculating-text{
+    font-family: "kenvue-sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #000000;
+}
+.MuiAccordionSummary-content{
+    margin: 0px !important;
+}
+.MuiAccordionDetails-root{
+    padding: 8px 24px 24px !important;
+}
+
+
+

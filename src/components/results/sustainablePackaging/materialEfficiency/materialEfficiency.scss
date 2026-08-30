@@ -1,0 +1,184 @@
+$main-height: 829px;
+$top-container-height: 490px;
+$gap-large: 36px;
+$gap-medium: 24px;
+$gap-small: 16px;
+$heading-font: "kenvue-sans-regular", sans-serif;
+$heading-font-bold: "kenvue-sans", sans-serif;
+$heading-color: #000;
+$holding-containers-width: 100%;
+
+.main-section {
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  gap: $gap-large;
+  width: $holding-containers-width;
+
+  .top-section {
+    display: flex;
+    flex-direction: column;
+    width: $holding-containers-width;
+gap: 8px;
+height: 100%;
+
+    .top-heading {
+      color: $heading-color;
+      font-family:  $heading-font-bold;
+      font-size: 33.18px;
+      font-weight: 700;
+      line-height: 120%;      
+    }
+  }
+
+  .top-main-section {
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+    align-items: center;
+    border-radius: 26px;
+    gap: 24px;
+    align-self: stretch;
+    width: $holding-containers-width;
+height: 446px;
+    border: 1px solid #edf2f6;
+    background: #fff;
+    box-shadow: 0px 4px 20px rgba(238, 238, 238, 0.5);
+   
+
+    .top-content-section {
+      display: flex;
+      width: 100%;
+      height: auto;
+      padding: 0px 24px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: var(--Spacing-10, 10px);
+
+      .inner-content {
+        color: $heading-color;
+        font-family: $heading-font;
+        font-size: 19.2px;
+        font-weight: 400;
+        line-height: 150%;
+        /* 28.8px */
+        align-self: stretch;
+
+        .inner-span {
+          font-family:  "kenvue-sans", sans-serif;
+          font-weight: 700;
+        }
+
+      
+      }
+
+      .heading {
+        font-family:  "kenvue-sans", sans-serif;
+        font-weight: 700;
+      }
+    }
+
+    .top-graph-section {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      flex-grow: 1;
+
+      height: auto;
+
+      .top-graph-headline {
+        width: 100%;
+        gap: 8px;
+        font-family:  "kenvue-sans", sans-serif;
+        text-align: center;
+
+        .headline-text {
+          height: 28px;
+          font-size: 23.04px;
+          font-weight: 700;
+          line-height: 27.65px;
+          font-family:  "kenvue-sans", sans-serif;
+
+        }
+
+        .subtext {
+          height: 28px;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 18px;
+          color: #444444;
+          font-family:  "kenvue-sans-regular", sans-serif;
+
+        }
+      }
+
+      .graph-bottom-section {
+        width: 100%;
+        gap: 36px;
+        margin-top: -15px;
+
+        .graph-text {
+          font-family: $heading-font-bold;
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 18px;
+          text-align: center;
+          color: #444444;
+          margin-bottom: 24px;
+        }
+
+        .graph-tag {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 12px;
+          }
+        }
+      }
+    }
+      /* Media Query for specified breakpoint */
+  @media (min-width: 880px) and (max-width: 1150px) {
+    .top-main-section {
+      flex-direction: column; /* Stack content vertically */
+      height: auto; /* Adjust height dynamically */
+  
+      .top-content-section {
+        width: 100%; /* Occupy full width */
+        margin-bottom: 16px; /* Add spacing below */
+      }
+  
+      .top-graph-section {
+        width: 100%; /* Graph takes full width */
+        align-items: center; /* Center content */
+      }
+    }
+  }
+  
+
+  .bottom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: $holding-containers-width;
+    margin: 24px 0 0 0;
+
+    .table-heading {
+      font-family: $heading-font-bold;
+      font-size: 23.04px;
+      font-weight: 700;
+      line-height: 27.65px;
+      color: #2b2b2b;
+    }
+
+    .bottom-table-section {
+      flex-grow: 1;
+      width: $holding-containers-width;
+    }
+  }
+}

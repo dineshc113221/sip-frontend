@@ -1,0 +1,285 @@
+{
+  "Status": {
+    "statusCode": "0",
+    "message": "Response Ok"
+  },
+  "UIResponse": {
+    "RawMaterialObj": {
+      "RawMaterialDetails": {
+        "rawMaterialID": "RAW93524451",
+        "revision": "2",
+        "supplier": null,
+        "ownercode": "ITEST236",
+        "createdBy": "ITEST236",
+        "dateCreated": "2020-07-28T08:28:15.035Z",
+        "modifiedBy": "ITEST236",
+        "dateModified": "2020-07-28T08:28:15.035Z",
+        "specNumber": "",
+        "reviewStatus": "Full",
+        "status": "400",
+        "RMCStatus": "RaMPS Restricted",
+        "rmcStatusComments": "",
+        "favorite": "1",
+        "objClass": "RAW",
+        "statusDescription": "Commercial",
+        "tradeName": "testing",
+        "TaskID": "",
+        "sreenLock": "",
+        "resubmitted": "true",
+        "isDraft": "true",
+        "isDraftComposition": "true",
+        "isDraftCompWFLaunched": "",
+        "edited": "true",
+        "toStage": "Commercial",
+        "regulatoryApprovedRegions": ["LATAM", "APAC"],
+        "approvalDate": "22-Feb-2023",
+        "rawusage": "Vogue",
+        "workflowtype": "custom",
+        "approvedRegion": [
+          {
+            "status": "APPROVED",
+            "region": "APAC",
+            "approvalDate": "01-Mar-2021"
+          },
+          {
+            "status": "APPROVED",
+            "approvalDate": "26-Jun-2021",
+            "region": "LATAM"
+          },
+          {
+            "region": "EMEA",
+            "approvalDate": "",
+            "status": ""
+          },
+          {
+            "region": "NA",
+            "approvalDate": "",
+            "status": ""
+          }
+        ],
+        "rmqFlag": null
+      },
+      "Attributes": {
+        "General": {
+          "tradeName": "aa",
+          "supplier": {
+            "name": "AarhusKarlshamn Sweden AB",
+            "type": "Manufacturer"
+          },
+          "description": "aa",
+          "developmentRegion": [
+            {
+              "id": "APAC",
+              "value": "Asia Pacific"
+            },
+            {
+              "id": "LA",
+              "value": "Latin America"
+            }
+          ],
+          "microriskCategory": [],
+          "chinaReachCompliant": "true",
+          "kosher": "true",
+          "halal": "false",
+          "comment": "testing comment",
+          "rawUsageValues": [
+            {
+              "id": "NeoStrata",
+              "value": "NeoStrata"
+            }
+          ]
+        },
+        "ExternalSystemData": {
+          "Spec": {
+            "mepstage": {
+              "id": "DEVELOPMENT",
+              "value": "Development"
+            },
+            "mepstatus": {
+              "id": "INAPPROVAL",
+              "value": "In Approval"
+            },
+            "SpecList": [
+              {
+                "specNumber": "123",
+                "region": [
+                  {
+                    "id": "NA",
+                    "value": "North America"
+                  }
+                ],
+                "stage": {
+                  "id": "COMMERCIAL",
+                  "value": "Commercial"
+                },
+                "status": {
+                  "id": "IN APPROVAL",
+                  "value": "In Approval"
+                },
+                "RMOrigin": [
+                  {
+                    "id": "",
+                    "value": ""
+                  }
+                ],
+                "RMGrade": [
+                  {
+                    "id": "",
+                    "value": ""
+                  }
+                ]
+              }
+            ],
+            "mepnumber": "mep testing"
+          },
+          "SAP": [
+            {
+              "SAPNumber": "sap testing",
+              "region": "Asia Pacific",
+              "site": ""
+            }
+          ],
+          "RMQ": [
+            {
+              "id": null,
+              "status": {
+                "id": null,
+                "value": ""
+              },
+              "lastSyncDate": null,
+              "rmqDescription": "",
+              "rmqFlag": "Yes"
+            }
+          ]
+        },
+        "Contains": {
+          "EUCMRMaterials": ["CON017423"],
+          "EUNanoMaterials": ["CON017423"],
+          "soy": "false",
+          "gluten": "false",
+          "egg": "false",
+          "celery": "false",
+          "mustard": "false",
+          "dairy": "false",
+          "sesame": "false",
+          "fish": "false",
+          "shellFish": "false",
+          "peanut": "false",
+          "treeNut": "false",
+          "alcohol": "false",
+          "animalExtracts": "false",
+          "BSE": "false",
+          "GMO": "false",
+          "oil": "false",
+          "latex": "false",
+          "sulfites": "false",
+          "pork": "false",
+          "silicone": "false",
+          "palmOil": "false",
+          "avocado": "false",
+          "crustaceans": "false",
+          "molluscs": "false",
+          "corn": "false",
+          "rye": "false",
+          "oat": "false",
+          "spelt": "false",
+          "barley": "false",
+          "kamut": "false",
+          "almond": "false",
+          "hazelnut": "false",
+          "lupine": "false",
+          "yeast": "false",
+          "wheat": "false",
+          "palmOilContained": "false"
+        },
+        "GHS": {
+          "isSensitizer": "YES",
+          "isCarcinogen": "NO",
+          "isDangerousEnv": "NO",
+          "signalWords": [
+            {
+              "id": "DANGER_SIGNAL",
+              "value": "Danger"
+            }
+          ],
+          "pictogramList": [
+            {
+              "id": "GHS02",
+              "value": "Flame pictogram"
+            }
+          ],
+          "addStatement": [
+            {
+              "id": "P102",
+              "value": "Keep out of reach of children. (P102)"
+            }
+          ],
+          "precautionStatement": [
+            {
+              "id": "P103",
+              "value": "Read label before use. (P103)"
+            }
+          ],
+          "hazardStatement": [
+            {
+              "id": "EUH006",
+              "value": "Explosive with or without contact with air. (EUH006)"
+            }
+          ]
+        }
+      },
+      "History": [
+        {
+          "id": 1,
+          "date": "15-Feb-2023 08:20:18:591",
+          "description": "Raw Material created by ITEST240",
+          "user": "ITEST240",
+          "comments": "PR-Test-02-resolved",
+          "username": "IRIS TEST240"
+        },
+        {
+          "id": 2,
+          "date": "20-Feb-2023 07:22:12:611",
+          "description": "Development qualification was requested by ITEST240 on 20/Feb/2023",
+          "user": "ITEST240",
+          "username": "IRIS TEST240"
+        },
+        {
+          "id": 3,
+          "date": "20-Feb-2023 07:22:12:868",
+          "description": "RMC Status set to Development Assessment Requested",
+          "user": "ITEST240",
+          "comments": "",
+          "username": "IRIS TEST240"
+        },
+        {
+          "id": 4,
+          "date": "20-Feb-2023 07:31:35:251",
+          "description": "Development Governance Approved by ITEST240 on 20/Feb/2023",
+          "user": "ITEST240",
+          "comments": "PR-Test-01-approved",
+          "username": "IRIS TEST240"
+        },
+        {
+          "id": 5,
+          "date": "20-Feb-2023 07:31:35:548",
+          "description": "RMC Status changed from Development Assessment Requested to Under Evaluation",
+          "user": "ITEST240",
+          "comments": "PR-Test-01-approved",
+          "username": "IRIS TEST240"
+        }
+      ],
+      "Comment": [
+        {
+          "commentId": "ITEST240-1678166243830",
+          "timeStamp": "1678166243830",
+          "timeZone": "EST",
+          "type": "OTHER",
+          "comment": "test123",
+          "user": "ITEST240",
+          "userName": "Iris TEST240"
+        }
+      ]
+    }
+  }
+}

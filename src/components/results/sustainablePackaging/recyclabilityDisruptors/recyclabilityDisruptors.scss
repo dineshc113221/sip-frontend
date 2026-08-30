@@ -1,0 +1,179 @@
+$heading-font: "kenvue-sans-regular", sans-serif;
+.main-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  .top-heading {
+    font-family: "kenvue-sans", sans-serif;
+    font-size: 33.18px;
+    font-weight: 700;
+    line-height: 39.82px;
+    text-align: left;
+    color: #000000;
+  }
+
+  .top-content-section {
+    align-self: stretch;
+    .inner-content {
+      color: #000;
+      /* Desktop/Body Large/Regular */
+      font-family: $heading-font;
+      font-size: 19.2px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; 
+      display: inline;
+    }
+    .heading {
+      font-weight: 700;
+            font-family: "kenvue-sans", sans-serif;
+          }
+  }
+
+  .bottom-layout {
+    width: 100%;
+    gap: 36px;
+    display: flex;
+
+    .left-section,
+    .right-section {
+      width:100%;
+      padding: 48px 24px;
+      border: 1px solid #edf2f6;
+      box-shadow: 0px 4px 20px 0px #eeeeee80;
+      border-radius: 26px;
+
+      .section-content {
+        font-family: "kenvue-sans", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #000000;
+      }
+    }
+
+    .left-section {
+      height: fit-content;
+
+      .nested-layout {
+     
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+        opacity: 1;
+
+        .first-line-layout {
+         
+          height: 38px;
+          padding: 0 24px;
+          gap: 12px;
+          display: flex;
+          opacity: 1;
+          
+          .ellipse-baseline-container {
+           
+            height: 38px;
+            gap: 20px;
+            display: flex;
+            align-items: center;
+
+            .ellipse {
+              width: 30px;
+              height: 30px;
+              background: #d4d4d4;
+              border: 0.5px solid #b5b5b5;
+              border-radius: 50%;
+              display: inline-block;
+            }
+         
+            
+            .baseline-product {
+              color: #000;
+              font-family: "kenvue-sans", sans-serif;
+              font-size: 24px;
+              font-weight: 600;
+              line-height: 38.4px;
+              text-align: center;
+              display: inline-block;
+             
+            }
+          }
+        }
+        .inner-content-baseline {
+          padding-top: 4px; /* Adjust spacing if needed */
+          font-size: 12px;
+          font-weight: 400;
+          color: #000;
+          margin-left: 77px;
+          line-height: 18px;
+          font-family: "kenvue-sans-regular", sans-serif;
+        }
+      }
+    }
+
+    .right-section {
+      height: fit-content;
+
+      .nested-layout {
+       
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+        opacity: 1;
+
+        .first-line-layout {
+        
+          height: 38px;
+          padding: 0 24px;
+          gap: 12px;
+          display: flex;
+          opacity: 1;
+
+          .ellipse-my-product-container {
+          
+            height: 38px;
+            gap: 20px;
+            display: flex;
+            align-items: center;
+
+            .ellipse {
+              width: 30px;
+              height: 30px;
+              background: #d3bdf2; /* Updated color for My Product */
+              border: 0.5px solid #b5b5b5;
+              border-radius: 50%;
+              display: inline-block;
+            }
+
+            .my-product {
+              color: #000;
+              font-family: "kenvue-sans", sans-serif;
+              font-size: 24px;
+              font-weight: 600;
+              line-height: 38.4px;
+              text-align: center;
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+   
+  }
+}
+@media(min-width:880px) and (max-width:1150px){
+  .bottom-layout{
+    flex-direction: column;
+  }
+}
+@media(min-width:1151px) and (max-width:1439px){
+  .bottom-layout{
+    flex-direction: column;
+  }
+}
+
+

@@ -1,0 +1,44 @@
+{"TablePackagingMock" : [
+   
+    {
+        "_id": 1,
+        "name": "Bottle",
+        "opacity": "Clear",
+        "color": "Green",
+        "finishing_process": "No Process",
+        "material": [
+            {
+                "_id": 1,
+                "material_name": "Glass",
+                "material_type": "PCR",
+                "converting_process": "Blown Glass",
+                "material_pct": "2.3",
+                "productEnvironmentalFootPrint": "",
+                "carbonFootPrint": "",
+                "virginPlasticValue": "",
+                "layer": "Layer 1"
+            }
+        ]
+    },
+ {
+        "_id": 2,
+        "name": "Cap",
+        "opacity": "Clear",
+        "color": "Green",
+        "finishing_process": "No Process",
+        "material": [
+            {
+                "_id": 1,
+                "material_name": "Glass",
+                "material_type": "PCR",
+                "converting_process": "Blown Glass",
+                "material_pct": "2.3",
+                "productEnvironmentalFootPrint": "",
+                "carbonFootPrint": "",
+                "virginPlasticValue": "",
+                "layer": "Layer 1"
+            }
+        ]
+    }
+
+]}

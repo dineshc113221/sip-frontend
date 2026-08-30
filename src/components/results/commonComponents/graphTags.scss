@@ -1,0 +1,42 @@
+.graphtags-top-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  height: 22px;
+}
+
+.baseline-holder {
+  width: 83px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 9999px;
+  border: 1px solid #000;
+  background: #fff;
+  padding: 2px 8px;
+}
+
+.myproduct-holder {
+  width: 102px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 9999px;
+  border: 1px solid #000;
+  background: #fff;
+}
+
+.graph-tags-text {
+  color: #000;
+  font-family: "kenvue-sans-regular", sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}

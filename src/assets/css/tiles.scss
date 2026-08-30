@@ -1,0 +1,22 @@
+.component-accordionSummary-label {
+  font-family: "kenvue-sans", sans-serif;
+  background: white;
+  font-weight: 700;
+  font-size: 23.4px;
+  height: 28px;
+  width: 211px;
+  line-height: 27.65px;
+  color: '#000000 !important';
+}
+.component-accordionSummary-label2 {
+  font-family: "kenvue-sans-regular", sans-serif;
+  background: white;
+  font-size: 16px;
+  color: #000000 !important;
+}
+.truncated-text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

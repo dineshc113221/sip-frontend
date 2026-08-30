@@ -1,0 +1,91 @@
+$heading-font: "kenvue-sans-regular", sans-serif;
+$heading-font-bold: "kenvue-sans", sans-serif;
+
+.chart-container {
+  width: 413px;
+  height:210px;
+}
+
+.chart {
+  width: 413px;
+  height:210px;
+}
+
+.bar {
+  margin-bottom: 20px;
+
+  &-container {
+    position: relative;
+    height: 57px;
+    width: 100%;
+    background-color: #f8f8f8;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+
+  &-filled {
+    height: 57px;
+    transition: width 0.5s ease-in-out;
+  }
+
+  .label {
+    color: #000;
+    font-family: $heading-font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
+
+.x-axis {
+  position: relative;
+  margin-top: 10px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  &-label {
+    width: calc(413px / 10);
+    text-align: center;
+
+    .line {
+      height: 2px;
+      background-color: #000;
+    }
+
+    .value {
+      margin-top: 2px;
+      text-align: center;
+      margin-left: 33px;
+      font-family: $heading-font;
+      color: #000;
+    }
+  }
+}
+
+.vertical-lines {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  height: 10px;
+  pointer-events: none;
+
+  .vertical-line {
+    position: absolute;
+    height: 12px;
+    border-left: 2px solid black;
+    pointer-events: none;
+  }
+}
+
+.left-end-line {
+  position: absolute;
+  left: 0;
+  height: 186px;
+  border-left: 2px solid black;
+  top: -186px;
+  pointer-events: none;
+}

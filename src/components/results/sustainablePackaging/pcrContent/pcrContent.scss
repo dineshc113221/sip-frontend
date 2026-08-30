@@ -1,0 +1,273 @@
+$main-height: 829px;
+$gap-large:36px;
+$gap-medium:24px;
+$gap-small:16px;
+$heading-font:"kenvue-sans-regular",sans-serif;
+$heading-font-sans:"kenvue-sans",sans-serif;
+$heading-color:#000;
+$holding-containers-width:100%;
+$typography-font:"kenvue-sans-regular";
+
+.pcr-main-container{
+    height: 100%;
+    gap: $gap-large;
+    width: $holding-containers-width;
+
+    .top-container {
+        display: flex;
+        flex-direction: column;
+        gap: $gap-small;
+        width: $holding-containers-width;
+
+        .top-heading{
+            color: $heading-color;
+            font-family:$heading-font-sans;
+            font-size: 33.18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%; 
+        }
+        .top-main-container {
+            display: flex;
+            width: 100%;
+            height: auto;
+            padding: 36px 24px;
+            align-items: center;
+            gap: 96px;
+            align-self: stretch;
+
+            .top-main-left-container{
+                display: flex;
+                width: 635px;
+                padding: 0px 24px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: var(--Spacing-12, 12px);
+            }
+            .top-main-right-container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 24px;
+            }
+        }
+
+    }
+    .bottom-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        align-self: stretch;
+        width: $holding-containers-width;
+
+        bottom-container-heading {
+            color: var(--Typography-Body-Large, #2B2B2B);
+            font-family:$heading-font;
+            font-size: 23.04px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%; 
+        }
+        bottom-table-container{
+            flex-grow: 1;
+            width: $holding-containers-width;
+        }
+    }
+
+    .main_sub_container2{
+        width: 100%;
+        height: 566px;
+        flex-direction: row;
+        display: flex;
+        padding: 24px;
+        align-items: center;
+        gap: 24px;
+        align-self: stretch;
+        border-radius: 26px;
+        border: 1px solid #EDF2F6;
+        background: #FFF;
+        box-shadow: 0px 4px 20px 0px rgba(238, 238, 238, 0.50);
+    }
+
+    .sub_container2_1{
+        width:100%;
+        height: auto;
+        display: flex;
+        padding: 0px 24px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        flex: 1 0 0;
+        
+    }
+
+    .sub_container2_1_typography1{
+        color: #000;
+        font-family: $heading-font-sans;
+        font-size: 19.2px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; 
+        text-align: left; 
+        align-self: stretch;
+    }
+
+    .sub_container2_1_typography2{
+        color: #000;
+        font-family: $typography-font;
+        font-size: 19.2px;
+        font-weight: 400;
+        line-height: 28.8px;
+        text-align: left;
+        align-self: stretch;
+    }
+
+    .sub_container2_2{
+        width:100%;
+        height: auto;
+        padding: 0px 24px 0px 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1 0 0;
+    }  
+    
+    .sub_container2_2_typography1{
+        color: #000;
+        text-align: center;
+        font-family: $heading-font-sans;
+        font-size: 22.04px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; 
+        width: 329px;
+        height: 56px;
+    }
+
+    .sub_container2_2_donut_chart{
+        width: 521px;
+        height: 392px !important;
+    }
+
+    .main_sub_container1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px 24px 24px 24px;
+    }
+
+    .main_sub_container1_divider{
+        margin-top: 24px;
+        margin-bottom: 24px;
+        margin-left:0px !important;
+    }
+
+    .main_sub_container1_typography1{
+        font-family: $heading-font-sans;
+        font-size: 33.18px;
+        font-weight: 700;
+        line-height: 39.82px;
+        text-align: left;
+    }
+
+    @media (min-width: 880px) and (max-width: 1150px) {
+        .main_sub_container2 {
+          flex-direction: column; /* Stack content vertically */
+          height: auto; /* Adjust height dynamically */
+      
+          .sub_container2_1 {
+            width: 100%; /* Occupy full width */
+          }
+      
+          .sub_container2_2 {
+            width: 100%; /* Graph takes full width */
+            align-items: center; /* Center content */
+          }
+        }
+      }
+
+    .bottom-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        width: $holding-containers-width;
+        margin: 24px 0 0 0;
+    
+        .table-heading {
+          font-family: $heading-font-sans;
+          font-size: 23.04px;
+          font-weight: 700;
+          line-height: 27.65px;
+          color: #2b2b2b;
+        }
+    
+        .bottom-table-section {
+          flex-grow: 1;
+          width: $holding-containers-width;
+        }
+    }
+
+    .donutchart-bottom-section {
+        width: 197px;
+        padding-top: 24px;
+        font-family: $typography-font;
+        font-weight: 400;
+
+        .donutchart-div1 {
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .donutchart-div2 {
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid;
+            height: 30px;
+            padding-right: 5px;
+            padding-left: 5px;
+            margin-right: 3px;
+        }
+
+        .donutchart-div3 {
+            height: 15px;
+            width: 15px;
+            border-radius: 10px;
+            background-color: #D2D2D2;
+        }
+
+        .donutchart-div4 { 
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid;
+            height: 30px;
+            padding-right: 5px;
+            padding-left: 5px;
+            margin-left: 3px;
+        }
+
+        .donutchart-div5 { 
+            height: 15px;
+            width: 15px;
+            border-radius: 10px;
+            background-color: #D3BDF2;
+        }
+
+        .donutchart-p1 { 
+            font-size: 12px;
+            margin-left: 5px;
+        }
+    }
+
+}

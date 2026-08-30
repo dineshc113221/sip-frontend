@@ -1,0 +1,182 @@
+.edit-assessment-title {
+  width: auto;
+  height: auto;
+  display: flex;
+  padding: 24px;
+  align-items: center;
+  padding-left: 0px;
+  max-width: 883px;
+
+  .new-product-name {
+    margin-right: 10px; // Adjust spacing here
+  }
+}
+.assessment-add--confirm-text{
+font-size: 13.33px;
+font-weight: 700;
+width: 80%;
+font-family: "kenvue-sans",sans-serif !important;
+}
+.assessment-add--confirm-subtext{
+font-size: 13.33px;
+font-weight: 400;
+width: 80%;
+font-family: "kenvue-sans-regular",sans-serif !important;
+}
+.assessment-add-confirm-btn{
+  float: right;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  top: 20px;
+  left: 20px;
+  font-family: "kenvue-sans-regular",sans-serif !important;
+  background-color: black;
+  color: white;
+  border-radius: 9999px;
+  border: 1px;
+  padding: 16px 24px;
+}
+@media(min-width:1440px) {
+  .edit-assessment-title {
+    max-width: 883px;
+  }
+}
+
+@media(min-width:880px) and (max-width: 1150px) {
+  .edit-assessment-title {
+    max-width: 758px;
+
+  }
+}
+
+.pie_chart_main_div {
+  border-radius: 32px;
+  width: 100%;
+  background: #fbfafa;
+  padding: 16px 24px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .pie_chart_main_div_view_result {
+    width: 100%;
+    text-align: right;
+    padding-right: 10px;
+    font-family: "kenvue-sans-regular", sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+  }
+
+  .pie_chart_lock_out_div,
+  .pie_chart_great_jon_div {
+    border-radius: 32px;
+    background: #ececec;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 198px;
+    height: 280px;
+    gap: 8px;
+  }
+
+  .pie_chart_lock_out_label1,
+  .pie_chart_great_jon_div .pie_chart_lock_out_label1 {
+    font-family: "kenvue-sans",sans-serif !important;
+    font-size: 23.04px !important;
+    font-weight: 700 !important;
+
+  }
+
+  .pie_chart_lock_out_label2 {
+    font-family: "kenvue-sans-regular", sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+  }
+
+
+  @media (min-width: 1440px) {
+    width: 100%;
+    .assessmentLabel {
+      gap: 8px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .pie_chart_great_jon_div {
+        width: 198px;
+        height: 280px;
+      }
+
+      .pie_chart_dial {
+        width: 267px;
+        height: 280px;
+        padding-top: 36px;
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+    }
+  }
+
+  @media (min-width: 1151px) and (max-width: 1439px) {
+    width: 100%;
+    gap: 0px;
+
+    .assessmentLabel {
+      gap: 8px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .pie_chart_great_jon_div {
+        width: 198px;
+        height: 280px;
+      }
+
+      .pie_chart_dial {
+        width: 267px;
+        height: 280px;
+        padding-top: 36px;
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+    }
+  }
+
+  @media (min-width: 880px) and (max-width: 1150px) {
+    width: 100%;
+    gap: 8px;
+
+    .assessmentLabel {
+      gap: 8px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .pie_chart_great_jon_div {
+        width: 198px;
+        height: 280px;
+      }
+
+      .pie_chart_dial {
+        width: 267px;
+        height: 280px;
+        padding-top: 36px;
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+    }
+  }
+
+}
+
+.loaderCss{
+  @media (min-width: 1440px) {
+      height: 340px;
+    }
+  @media (min-width: 880px) and (max-width: 1150px) {
+    height: 600px;
+  }
+  @media (min-width: 1151px) and (max-width: 1439px) {
+      height: 600px;
+    }
+
+}

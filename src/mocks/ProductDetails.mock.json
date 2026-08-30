@@ -1,0 +1,798 @@
+{
+    "ProductDetailsMock": [
+        {
+            "_id": "669109b168c2e4986c95d550",
+            "productSipId": "SIP_ACV_0000010",
+            "productName": "TEST PRODUCT BHA",
+            "brandName": "ACV - Acuvue",
+            "projectId": "",
+            "projectName": "",
+            "description": "TEST PRODUCT DESCRIPTION",
+            "shortBrandCode": "ACV",
+            "isDeleted": false,
+            "users": [
+                {
+                    "name": "",
+                    "role": "Owner",
+                    "mail": ""
+                },
+                {
+                    "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                    "role": "Owner",
+                    "mail": "KChand02@kenvue.com"
+                },
+                {
+                    "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                    "role": "Member",
+                    "mail": "KChand02@kenvue.com"
+                },
+                {
+                    "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                    "role": "Owner",
+                    "mail": "KChand02@kenvue.com"
+                },
+                {
+                    "name": "YALAMANCHI, PRATIK",
+                    "role": "Member",
+                    "mail": "PYalama1@kenvue.com"
+                },
+                {
+                    "name": "Smith, Catherine",
+                    "role": "Member",
+                    "mail": "csmit213@kenvue.com"
+                },
+                {
+                    "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                    "role": "Owner",
+                    "mail": "KChand02@kenvue.com"
+                }
+            ],
+            "createdAt": "2024-07-12T10:47:13.258Z",
+            "updatedAt": "2024-07-25T09:24:07.959Z",
+            "__v": 0,
+            "assessments": {
+                "baseline": {},
+                "experimental": [
+                    {
+                        "assessmentId": "SIP_OLY_0000004_003_EXP",
+                        "type" : "experimental",
+                        "name": "Experimental Assessment1",
+                        "isFormulationDataCompleted": false,
+                        "isPackagingDataCompleted": false,
+                        "brandName": "ACV - Acuvue",
+                        "fg_spec": "TV-SPEC-09995-4",
+                        "formula_number": "FML2058123A-001",
+                        "lab_notebook_code": "2-30012-V027&V028-02",
+                        "pc_spec": "TV-SPEC-08583, TV-SPEC-54397",
+                        "sku_erp_code": "TV-SPEC-08583, TV-SPEC-54397",
+                        "zone": "North America",
+                        "net_content": "",
+                        "createdBy": "Rupali",
+                        "modifiedBy": "",
+                        "_id": "66cc0f1a743dfecacafc9d29",
+                        "createdAt": "2024-08-26T05:14:02.250Z",
+                        "updatedAt": "2024-08-28T03:39:14.298Z",
+                        "formulation": {
+                            "fmlCode": "FML2057961A-001",
+                            "description": "OGX Coconut Milk Anti-Breakage Serum",
+                            "netContent": "11",
+                            "netContentUnit": "gm",
+                            "productionZone": "EMEA",
+                            "salesZone": "LATAM",
+                            "productSegment": "2.5 Face Care - Eye",
+                            "productSubSegment": "2.5.1 Eye treatement",
+                            "useDose": "12",
+                            "useDoseUnit": "gm",
+                            "consumablesUsed": "0",
+                            "rawMaterials": [
+                                {
+                                    "tradeName": "Purified Water (RMT138)",
+                                    "rawMaterialId": "RAW90023341",
+                                    "percentage": 100,
+                                    "envFootprint": 30,
+                                    "carbonFootprint": 20,
+                                    "greenChemistry": 40
+                                }
+                            ]
+                        },
+                        "packaging": {
+                            "primary": {
+                                "component": [
+    {
+        "pc_nm": "",
+        "description": "VOGUE - PC Specification for Maui Moisture Bottle 13 fl oz 400 ml Kasbah PET 38 mm Locking Finish",
+        "component_type": "Bottle",
+        "weight": "45",
+        "opacifier": "Calcium Carbonate",
+        "recyclability_status": "Recycle Ready",
+        "stage": "Commercial",
+        "state": "Effective",
+        "template": "Bottles/ Jars",
+        "sub_components": [
+            {
+                "name": "Bottle",
+                "opacity": "Transluscent",
+                "color": "Grey",
+                "finishing_process": "No Process",
+                "material": [
+                    {
+                        "material_name": "Plastic - ABS",
+                        "material_type": "PIR",
+                        "layer": "Layer 1",
+                        "converting_process": "Extrusion Blown Film",
+                        "material_pct": "45",
+                        "productEnvironmentalFootPrint": "",
+                        "carbonFootPrint": "",
+                        "virginPlasticValue": "",
+                        "_id": "68ce66d888171166ed9a4421"
+                    }
+                ],
+                "_id": "68ce66d888171166ed9a4420"
+            }
+        ],
+        "isDataComplete": true,
+        "isEdited": false,
+        "isCalculated": true,
+        "fieldsExist": {
+            "pc_nm": true,
+            "description": true,
+            "recyclability_status": false,
+            "component_type": true,
+            "weight": false,
+            "opacifier": false,
+            "stage": true,
+            "state": true,
+            "template": true,
+            "sub_components": []
+        },
+        "_id": "688754b6fc535b62360a81d9"
+    },
+    {
+        "pc_nm": "",
+        "description": "SHOULDER LABEL - Listerine - 1000mL - 93 x 30 mm - PP - White - MCC",
+        "component_type": "Label",
+        "weight": "38",
+        "opacifier": "Calcium Carbonate",
+        "recyclability_status": "Recycle Ready",
+        "stage": "Commercial",
+        "state": "Effective",
+        "template": "Labels / Leaflets / Booklets",
+        "sub_components": [
+            {
+                "name": "Label",
+                "opacity": "Transluscent",
+                "color": "Green",
+                "finishing_process": "Offset printing",
+                "material": [
+                    {
+                        "material_name": "Plastic - ABS",
+                        "material_type": "PIR",
+                        "layer": "Layer 1",
+                        "converting_process": "Extrusion Blown Film",
+                        "material_pct": "38",
+                        "productEnvironmentalFootPrint": "",
+                        "carbonFootPrint": "",
+                        "virginPlasticValue": "",
+                        "_id": "68ce66d888171166ed9a4424"
+                    }
+                ],
+                "_id": "68ce66d888171166ed9a4423"
+            }
+        ],
+        "isDataComplete": true,
+        "isEdited": false,
+        "isCalculated": true,
+        "fieldsExist": {
+            "pc_nm": true,
+            "description": true,
+            "recyclability_status": false,
+            "component_type": true,
+            "weight": false,
+            "opacifier": false,
+            "stage": true,
+            "state": true,
+            "template": true,
+            "sub_components": []
+        },
+        "_id": "688754b6fc535b62360a81dc"
+    }
+],
+                                "isRecyclable": "Recycle Ready",
+                                "productEvaluation": 0
+                            },
+                            "secondary": {
+                                "component": [],
+                                "isRecyclable": "N/A",
+                                "productEvaluation": 0
+                            }
+                        },
+                        "users": [
+                            {
+                                "name": "",
+                                "role": "Owner",
+                                "mail": ""
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Member",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "YALAMANCHI, PRATIK",
+                                "role": "Member",
+                                "mail": "PYalama1@kenvue.com"
+                            },
+                            {
+                                "name": "Smith, Catherine",
+                                "role": "Member",
+                                "mail": "csmit213@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            }
+                        ]
+                    },
+                    {
+                        "assessmentId": "SIP_OLY_0000004_004_EXP",
+                        "name": "exp12345",
+                        "brandName": "JNJ - Johnsons",
+                        "isFormulationDataCompleted": false,
+                        "isPackagingDataCompleted": false,
+                        "fg_spec": "TV-SPEC-09995-4",
+                        "formula_number": "FML2058123A-001",
+                        "lab_notebook_code": "2-30012-V027&V028-02",
+                        "pc_spec": "TV-SPEC-08583, TV-SPEC-54397",
+                        "sku_erp_code": "TV-SPEC-08583, TV-SPEC-54397",
+                        "zone": "North America",
+                        "net_content": "",
+                        "createdBy": "Rupali",
+                        "modifiedBy": "",
+                        "_id": "66cc10d1743dfecacafc9d65",
+                        "createdAt": "2024-08-26T05:21:21.109Z",
+                        "updatedAt": "2024-08-26T05:25:25.749Z",
+                        "packaging": {
+                            "primary": {
+                                "component": [
+    {
+        "pc_nm": "",
+        "description": "VOGUE - PC Specification for Maui Moisture Bottle 13 fl oz 400 ml Kasbah PET 38 mm Locking Finish",
+        "component_type": "Bottle",
+        "weight": "45",
+        "opacifier": "Calcium Carbonate",
+        "recyclability_status": "Recycle Ready",
+        "stage": "Commercial",
+        "state": "Effective",
+        "template": "Bottles/ Jars",
+        "sub_components": [
+            {
+                "name": "Bottle",
+                "opacity": "Transluscent",
+                "color": "Grey",
+                "finishing_process": "No Process",
+                "material": [
+                    {
+                        "material_name": "Plastic - ABS",
+                        "material_type": "PIR",
+                        "layer": "Layer 1",
+                        "converting_process": "Extrusion Blown Film",
+                        "material_pct": "45",
+                        "productEnvironmentalFootPrint": "",
+                        "carbonFootPrint": "",
+                        "virginPlasticValue": "",
+                        "_id": "68ce66d888171166ed9a4421"
+                    }
+                ],
+                "_id": "68ce66d888171166ed9a4420"
+            }
+        ],
+        "isDataComplete": true,
+        "isEdited": false,
+        "isCalculated": true,
+        "fieldsExist": {
+            "pc_nm": true,
+            "description": true,
+            "recyclability_status": false,
+            "component_type": true,
+            "weight": false,
+            "opacifier": false,
+            "stage": true,
+            "state": true,
+            "template": true,
+            "sub_components": []
+        },
+        "_id": "688754b6fc535b62360a81d9"
+    },
+    {
+        "pc_nm": "",
+        "description": "SHOULDER LABEL - Listerine - 1000mL - 93 x 30 mm - PP - White - MCC",
+        "component_type": "Label",
+        "weight": "38",
+        "opacifier": "Calcium Carbonate",
+        "recyclability_status": "Recycle Ready",
+        "stage": "Commercial",
+        "state": "Effective",
+        "template": "Labels / Leaflets / Booklets",
+        "sub_components": [
+            {
+                "name": "Label",
+                "opacity": "Transluscent",
+                "color": "Green",
+                "finishing_process": "Offset printing",
+                "material": [
+                    {
+                        "material_name": "Plastic - ABS",
+                        "material_type": "PIR",
+                        "layer": "Layer 1",
+                        "converting_process": "Extrusion Blown Film",
+                        "material_pct": "38",
+                        "productEnvironmentalFootPrint": "",
+                        "carbonFootPrint": "",
+                        "virginPlasticValue": "",
+                        "_id": "68ce66d888171166ed9a4424"
+                    }
+                ],
+                "_id": "68ce66d888171166ed9a4423"
+            }
+        ],
+        "isDataComplete": true,
+        "isEdited": false,
+        "isCalculated": true,
+        "fieldsExist": {
+            "pc_nm": true,
+            "description": true,
+            "recyclability_status": false,
+            "component_type": true,
+            "weight": false,
+            "opacifier": false,
+            "stage": true,
+            "state": true,
+            "template": true,
+            "sub_components": []
+        },
+        "_id": "688754b6fc535b62360a81dc"
+    }
+],
+                                "isRecyclable": "Recycle Ready",
+                                "productEvaluation": 0
+                            }
+                        },
+                        "users": [
+                            {
+                                "name": "",
+                                "role": "Owner",
+                                "mail": ""
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Member",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "YALAMANCHI, PRATIK",
+                                "role": "Member",
+                                "mail": "PYalama1@kenvue.com"
+                            },
+                            {
+                                "name": "Smith, Catherine",
+                                "role": "Member",
+                                "mail": "csmit213@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            }
+                        ]
+                    },
+                    {
+                        "assessmentId": "SIP_OLY_0000004_005_EXP",
+                        "name": "Exp testing 29 Aug",
+                        "isFormulationDataCompleted": false,
+                        "isPackagingDataCompleted": false,
+                        "fg_spec": "",
+                        "formula_number": "",
+                        "lab_notebook_code": "",
+                        "pc_spec": "",
+                        "sku_erp_code": "",
+                        "zone": "",
+                        "net_content": "",
+                        "createdBy": "Rupali",
+                        "modifiedBy": "",
+                        "_id": "66d05964355f63b43e569b1f",
+                        "createdAt": "2024-08-29T11:20:04.515Z",
+                        "updatedAt": "2024-08-29T11:20:04.515Z",
+                        "users": [
+                            {
+                                "name": "",
+                                "role": "Owner",
+                                "mail": ""
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Member",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "YALAMANCHI, PRATIK",
+                                "role": "Member",
+                                "mail": "PYalama1@kenvue.com"
+                            },
+                            {
+                                "name": "Smith, Catherine",
+                                "role": "Member",
+                                "mail": "csmit213@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            }
+                        ]
+                    },
+                    {
+                        "assessmentId": "SIP_OLY_0000004_006_EXP",
+                        "name": "Exp Ass 2 29 Aug",
+                        "isFormulationDataCompleted": false,
+                        "isPackagingDataCompleted": false,
+                        "fg_spec": "TV-SPEC-09852-2",
+                        "formula_number": null,
+                        "lab_notebook_code": null,
+                        "pc_spec": "TV-SPEC-11755, TV-SPEC-11756",
+                        "sku_erp_code": "TV-SPEC-11755, TV-SPEC-11756",
+                        "zone": "North America",
+                        "net_content": "",
+                        "createdBy": "Rupali",
+                        "modifiedBy": "",
+                        "_id": "66d059fd355f63b43e569b2e",
+                        "createdAt": "2024-08-29T11:22:37.777Z",
+                        "updatedAt": "2024-08-29T11:22:37.777Z",
+                        "users": [
+                            {
+                                "name": "",
+                                "role": "Owner",
+                                "mail": ""
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Member",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "YALAMANCHI, PRATIK",
+                                "role": "Member",
+                                "mail": "PYalama1@kenvue.com"
+                            },
+                            {
+                                "name": "Smith, Catherine",
+                                "role": "Member",
+                                "mail": "csmit213@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            }
+                        ]
+                    },
+                    {
+                        "assessmentId": "SIP_OLY_0000004_007_EXP",
+                        "name": "test ass1",
+                        "isFormulationDataCompleted": false,
+                        "isPackagingDataCompleted": false,
+                        "fg_spec": "TV-SPEC-09997-5",
+                        "formula_number": "FML2057467A-001",
+                        "lab_notebook_code": "1-30023-V027&V028-01",
+                        "pc_spec": "TV-SPEC-07501, TV-SPEC-54397",
+                        "sku_erp_code": "TV-SPEC-07501, TV-SPEC-54397",
+                        "zone": "North America",
+                        "net_content": "",
+                        "createdBy": "Rupali",
+                        "modifiedBy": "",
+                        "_id": "66d113ab355f63b43e569ed9",
+                        "createdAt": "2024-08-30T00:34:51.461Z",
+                        "updatedAt": "2024-08-30T00:34:51.461Z",
+                        "users": [
+                            {
+                                "name": "",
+                                "role": "Owner",
+                                "mail": ""
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Member",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "YALAMANCHI, PRATIK",
+                                "role": "Member",
+                                "mail": "PYalama1@kenvue.com"
+                            },
+                            {
+                                "name": "Smith, Catherine",
+                                "role": "Member",
+                                "mail": "csmit213@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            }
+                        ]
+                    },
+                    {
+                        "assessmentId": "SIP_OLY_0000004_008_EXP",
+                        "name": "Test2",
+                        "isFormulationDataCompleted": false,
+                        "isPackagingDataCompleted": false,
+                        "fg_spec": "TV-SPEC-07925-2",
+                        "formula_number": "FML2057855A-001",
+                        "lab_notebook_code": "1-18091-K044-01",
+                        "pc_spec": "TV-SPEC-11755, TV-SPEC-11756",
+                        "sku_erp_code": "TV-SPEC-11755, TV-SPEC-11756",
+                        "zone": "North America",
+                        "net_content": "",
+                        "createdBy": "Rupali",
+                        "modifiedBy": "",
+                        "_id": "66d115bc355f63b43e569ef0",
+                        "createdAt": "2024-08-30T00:43:40.454Z",
+                        "updatedAt": "2024-08-30T00:43:40.454Z",
+                        "users": [
+                            {
+                                "name": "",
+                                "role": "Owner",
+                                "mail": ""
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Member",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "YALAMANCHI, PRATIK",
+                                "role": "Member",
+                                "mail": "PYalama1@kenvue.com"
+                            },
+                            {
+                                "name": "Smith, Catherine",
+                                "role": "Member",
+                                "mail": "csmit213@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            }
+                        ]
+                    },
+                    {
+                        "assessmentId": "SIP_OLY_0000004_009_EXP",
+                        "name": "test6",
+                        "isFormulationDataCompleted": false,
+                        "isPackagingDataCompleted": false,
+                        "fg_spec": "",
+                        "formula_number": "",
+                        "lab_notebook_code": "",
+                        "pc_spec": "",
+                        "sku_erp_code": "",
+                        "zone": "",
+                        "net_content": "",
+                        "createdBy": "Rupali",
+                        "modifiedBy": "",
+                        "_id": "66d1162f355f63b43e569f0b",
+                        "createdAt": "2024-08-30T00:45:35.276Z",
+                        "updatedAt": "2024-08-30T00:45:35.276Z",
+                        "users": [
+                            {
+                                "name": "",
+                                "role": "Owner",
+                                "mail": ""
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Member",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "YALAMANCHI, PRATIK",
+                                "role": "Member",
+                                "mail": "PYalama1@kenvue.com"
+                            },
+                            {
+                                "name": "Smith, Catherine",
+                                "role": "Member",
+                                "mail": "csmit213@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            }
+                        ]
+                    },
+                    {
+                        "assessmentId": "SIP_OLY_0000004_010_EXP",
+                        "name": "test89",
+                        "isFormulationDataCompleted": false,
+                        "isPackagingDataCompleted": false,
+                        "fg_spec": "TV-SPEC-09999-3",
+                        "formula_number": "FML2057663A-001",
+                        "lab_notebook_code": "1-30041-V027&V028-01",
+                        "pc_spec": "TV-SPEC-07501, TV-SPEC-54397",
+                        "sku_erp_code": "TV-SPEC-07501, TV-SPEC-54397",
+                        "zone": "North America",
+                        "net_content": "",
+                        "createdBy": "Rupali",
+                        "modifiedBy": "",
+                        "_id": "66d16576355f63b43e56a15a",
+                        "createdAt": "2024-08-30T06:23:50.634Z",
+                        "updatedAt": "2024-08-30T06:23:50.634Z",
+                        "users": [
+                            {
+                                "name": "",
+                                "role": "Owner",
+                                "mail": ""
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Member",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "YALAMANCHI, PRATIK",
+                                "role": "Member",
+                                "mail": "PYalama1@kenvue.com"
+                            },
+                            {
+                                "name": "Smith, Catherine",
+                                "role": "Member",
+                                "mail": "csmit213@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            }
+                        ]
+                    },
+                    {
+                        "assessmentId": "SIP_OLY_0000004_011_EXP",
+                        "name": "test66",
+                        "isFormulationDataCompleted": false,
+                        "isPackagingDataCompleted": false,
+                        "fg_spec": "TV-SPEC-10000-3",
+                        "formula_number": "FML2058829A-001",
+                        "lab_notebook_code": "2-30052-V027&V028-01",
+                        "pc_spec": "TV-SPEC-08583, TV-SPEC-54397",
+                        "sku_erp_code": "TV-SPEC-08583, TV-SPEC-54397",
+                        "zone": "North America",
+                        "net_content": "",
+                        "createdBy": "Rupali",
+                        "modifiedBy": "",
+                        "_id": "66d16828355f63b43e56a1bf",
+                        "createdAt": "2024-08-30T06:35:20.541Z",
+                        "updatedAt": "2024-08-30T06:35:20.541Z",
+                        "users": [
+                            {
+                                "name": "",
+                                "role": "Owner",
+                                "mail": ""
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Member",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            },
+                            {
+                                "name": "YALAMANCHI, PRATIK",
+                                "role": "Member",
+                                "mail": "PYalama1@kenvue.com"
+                            },
+                            {
+                                "name": "Smith, Catherine",
+                                "role": "Member",
+                                "mail": "csmit213@kenvue.com"
+                            },
+                            {
+                                "name": "Chandra Raju, Kavyashree [Non-Kenvue]",
+                                "role": "Owner",
+                                "mail": "KChand02@kenvue.com"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

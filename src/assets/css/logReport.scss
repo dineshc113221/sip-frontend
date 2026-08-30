@@ -1,0 +1,52 @@
+.CommonText{
+    font-family: "kenvue-sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+
+}
+.CommonTextType{
+    font-family: "kenvue-sans-regular", sans-serif;
+        font-weight: 400;
+        font-size: 13.99px;
+}
+.viewButton{
+    font-family: "kenvue-sans-regular", sans-serif !important;
+    font-size: 13px;
+        padding: 5px !important;
+        background-color: black !important;
+        color: white !important;
+        border-radius: 20px !important;
+        border: 1px solid black !important;
+        cursor: pointer !important;
+        text-transform: none !important;
+}
+
+.column1{
+    width: 20%;
+}
+.column2 {
+    width: 10%;
+}
+.column3 {
+    width: 20%;
+}
+.column4 {
+    width: 20%;
+}
+.column5 {
+    width: 10%;
+    text-align: center;
+    align-items: center;
+}
+.column6 {
+    width: 20%;
+}
+.evenRow{
+    background-color: #ffffff;
+}
+.oddRow{
+    background-color: #f2f2f2;
+}
+.backgroundTable{
+    background-color: #E4E7EC;
+}

@@ -1,0 +1,70 @@
+.header-container {
+  width: 100%;
+  background: white;
+  left: 101px;
+  top: 0px;
+  padding-top: 20px;
+}
+
+.change-log-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.message-container {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.doc-viewer-container {
+    width: 100%;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.docx-wrapper {
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.docx-wrapper > section.docx_viewer {
+    width: 100% !important;
+    min-height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+.docx_viewer, 
+.docx_viewer p, 
+.docx_viewer span, 
+.docx_viewer td,
+.docx_viewer li { 
+    color: black !important; 
+    padding: 0 !important;
+    box-shadow: none !important;
+    padding-top: 10px !important;
+}
+
+.docx_viewer table {
+    width: 100% !important;
+}
+.docx_viewer img {
+    max-width: 100%;
+    height: auto;
+}
+
+.docx_viewer-wrapper{
+  background: none !important;
+  padding: 0 !important;
+  display: block !important;
+  position: relative !important;
+}

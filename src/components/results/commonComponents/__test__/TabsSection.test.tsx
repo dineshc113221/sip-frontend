@@ -1,0 +1,663 @@
+import { render, act } from "@testing-library/react";
+import { QueryClient, QueryClientProvider } from "react-query";
+import "@testing-library/jest-dom";
+import {
+  useGlobaldata,
+} from "../../../../contexts/masterData/DataContext";
+import { GlobalDataMock } from "../../../../mocks/GlobalData.mock.json";
+import UserDetailsMock from "../../../../mocks/UserDetails.mock.json";
+import { ProductDetailsMock } from "../../../../mocks/ProductDetails.mock";
+import axios from "axios";
+import { useGetProductDetailByID } from "../../../../hooks/UseGetProductDetails";
+import { ReactInfiniteProps } from "../../../../mocks/CoreLogin.mock";
+import { ResultDataContext } from "../../../../contexts/resultData/ResultDataContext";
+import { ResultDataMock, SustainablePackagingSectionDataMock } from "../../../../mocks/ResultData.mock";
+import TabsSection from "../TabsSection";
+import { CURRENT_SECTION, CURRENT_TAB, GREEN_CHEMISTRY_SECTIONS, SUSTAINABLE_SECTIONS } from "../../../../constants/String.constants";
+
+jest.mock("@consumer/core-login-ui-mf", () => ({
+  getLoggedInUserDetails: () =>
+    jest.fn(() => ({ givenName: "blaw", mail: "badckak" })),
+}));
+
+jest.mock("react-ga4", () => ({
+  ReactGA4: {
+    initialize: () => {
+      return <div></div>;
+    },
+    event: () => {
+      return <div></div>;
+    },
+  },
+}));
+
+jest.mock("axios");
+const mockedAxios = axios as jest.Mocked<typeof axios>;
+
+const queryClient = new QueryClient({});
+
+jest.useFakeTimers();
+const mockeduseGlobaldata = useGlobaldata as jest.Mock;
+const mockedUseGetProductDetailsByID = useGetProductDetailByID as jest.Mock;
+
+jest.mock("../../../../contexts/masterData/DataContext");
+jest.mock("../../../../hooks/UseGetProductDetails");
+
+const mockedUseNavigate = jest.fn();
+const mockedUseLocation = jest.fn();
+const mockedUseParams = jest.fn();
+jest.mock("react-router-dom", () => ({
+  ...jest.requireActual("react-router-dom"),
+  useNavigate: () => mockedUseNavigate,
+  useLocation: () => mockedUseLocation,
+  params: () => mockedUseParams,
+  useParams: () => mockedUseParams,
+  Link: jest.fn(),
+}));
+
+jest.mock("react-toastify", () => ({
+  toast: {
+    success: jest.fn(),
+    warning: jest.fn(),
+  },
+  ToastContainer: jest.fn().mockImplementation(({ children }) => children),
+}));
+
+jest.mock("react-toastify/dist/ReactToastify.css", () => ({}));
+
+jest.mock("react-infinite-scroll-component", () => {
+  return ({
+    children,
+    next,
+    hasMore,
+    loader,
+    endMessage,
+  }: ReactInfiniteProps) => {
+    return (
+      <div>
+        {children}
+        {hasMore ? <button onClick={next}>Load More</button> : endMessage}
+        {loader}
+      </div>
+    );
+  };
+});
+
+jest.mock("@amcharts/amcharts5", () => ({
+  Root: {
+    new:
+      () => {
+        return ({
+          setThemes: jest.fn(),
+          container: {
+            children: {
+              push: () => {
+                return ({
+                  children: {
+                    unshift: () => { return (<div></div>) }
+                  },
+                  yAxes: {
+                    push: () => {
+                      return ({
+                        get: () => {
+                          return ({
+                            labels: {
+                              template: {
+                                setAll: () => { return (<div></div>) }
+                              }
+                            },
+                            setAll: () => { return (<div></div>) },
+                            grid: {
+                              template: {
+                                setAll: () => { return (<div></div>) }
+                              }
+                            },
+                          })
+                        },
+                        data: {
+                          setAll: () => { return (<div></div>) }
+                        },
+                      })
+                    },
+                    data: {
+                      setAll: () => { return (<div></div>) }
+                    },
+                  },
+                  xAxes: {
+                    push: () => {
+                      return ({
+                        get: {
+                          labels: {
+                            template: {
+                              setAll: () => { return (<div></div>) }
+                            }
+                          },
+                          setAll: () => { return (<div></div>) },
+                          grid: {
+                            template: {
+                              setAll: () => { return (<div></div>) }
+                            }
+                          },
+                        },
+                        data: {
+                          setAll: () => { return (<div></div>) }
+                        },
+                      })
+                    }
+                  },
+                  series: {
+                    push: () => {
+                      return ({
+                        set: () => { return (<div></div>) },
+                        ticks: {
+                          template: {
+                            set: () => { return (<div></div>) }
+                          }
+                        },
+                        labels: {
+                          template: {
+                            set: () => { return (<div></div>) },
+                            setAll: () => { return (<div></div>) },
+                          }
+                        },
+                        slices: {
+                          template: {
+                            set: () => { return (<div></div>) }
+                          }
+                        },
+                        data: {
+                          setAll: () => { return (<div></div>) }
+                        },
+                        columns: {
+                          template: {
+                            setAll: () => { return (<div></div>) },
+                            adapters: {
+                              add: () => { return (<div></div>) },
+                            }
+                          }
+                        },
+                        bullets: {
+                          push: () => { return (<div></div>) },
+                        },
+                        appear: () => { return (<div></div>) }
+                      })
+                    },
+                    data: {
+                      setAll: () => { return (<div></div>) }
+                    },
+                    appear: () => { return (<div></div>) }
+                  },
+                  seriesContainer: {
+                    children: {
+                      push: () => { return (<div></div>) }
+                    }
+                  },
+                  appear: () => { return (<div></div>) }
+                })
+              }
+            }
+          },
+          dispose: () => { return (<div></div>) }
+        })
+      }
+  },
+  Label: {
+    new: () => {
+      return ({
+        ticks: {
+          template: {
+            setAll: () => { return (<div></div>) }
+          }
+        },
+        labels: {
+          template: {
+            setAll: () => { return (<div></div>) }
+          }
+        },
+        setAll: () => { return (<div></div>) },
+        grid: {
+          template: {
+            setAll: () => { return (<div></div>) }
+          }
+        },
+      })
+    }
+  },
+  Picture: {
+    new: () => { return (<div></div>) }
+  },
+  Tooltip: {
+    new: () => { return (<div></div>) }
+  },
+  ColorSet: {
+    new: () => { return (<div></div>) }
+  },
+  percent: jest.fn(),
+  color: jest.fn()
+}));
+jest.mock("@amcharts/amcharts5/percent", () => ({
+  PieChart: {
+    new: () => { return (<div></div>) }
+  },
+  PieSeries: {
+    new: () => { return (<div></div>) }
+  },
+}));
+jest.mock("@amcharts/amcharts5/themes/Animated", () => ({
+  new: () => { return (<div></div>) }
+}));
+
+jest.mock("@amcharts/amcharts5/xy", () => ({
+  XYChart: {
+    new: () => { return (<div></div>) }
+  },
+  AxisRendererX: {
+    new: () => {
+      return ({
+        ticks: {
+          template: {
+            setAll: () => { return (<div></div>) }
+          }
+        },
+        setAll: () => { return (<div></div>) },
+        grid: {
+          template: {
+            setAll: () => { return (<div></div>) }
+          }
+        },
+        labels: {
+          template: {
+            setAll: () => { return (<div></div>) }
+          }
+        },
+      })
+    }
+  },
+  CategoryAxis: {
+    new: () => { return (<div></div>) }
+  },
+  ValueAxis: {
+    new: () => { return (<div></div>) }
+  },
+  AxisRendererY: {
+    new: () => { return (<div></div>) }
+  },
+  ColumnSeries: {
+    new: () => { return (<div></div>) }
+  },
+}));
+
+describe("TabsSection", () => {
+  const resultDataValue = ResultDataMock;
+  const refetchMock = jest.fn();
+  mockedAxios.delete.mockResolvedValue({
+    status: 204,
+  });
+  mockedAxios.put.mockResolvedValue({
+    status: 204,
+  });
+
+  mockedAxios.delete.mockResolvedValue({
+    status: 200,
+  });
+
+  mockedAxios.post.mockResolvedValue(UserDetailsMock);
+
+  const mockPathname = jest.fn();
+  Object.defineProperty(window, "location", {
+    value: {
+      get pathname() {
+        return mockPathname();
+      },
+      replace: jest.fn(),
+    },
+  });
+  let originalFetch: jest.Mock;
+  mockPathname.mockReturnValue("/my-product-detail/669109b168c2e4986c95d550");
+
+  beforeEach(() => {
+    jest.clearAllMocks();
+    mockeduseGlobaldata.mockImplementation(() => ({
+      isLoading: true,
+      loaded: true,
+      globaldata: GlobalDataMock,
+    }));
+
+    global.fetch = jest.fn(() =>
+      Promise.resolve({
+        json: () => Promise.resolve(ProductDetailsMock),
+      })
+    ) as jest.Mock;
+  });
+
+  afterEach(() => {
+    global.fetch = originalFetch;
+  });
+
+  it("should render the component for default", async () => {
+    mockedUseGetProductDetailsByID.mockImplementation(() => ({
+      isLoading: true,
+      data: ProductDetailsMock,
+      refetch: refetchMock,
+    }));
+    await act(async () => {
+      const { baseElement } = render(
+        <QueryClientProvider contextSharing={true} client={queryClient}>
+          <ResultDataContext.Provider value={resultDataValue}>
+            <TabsSection
+              currentTab={CURRENT_TAB.TOP_LINE_RESULTS}
+              setCurrentSection={jest.fn()}
+              handleSectionChange={jest.fn()}
+              currentSection={SUSTAINABLE_SECTIONS.RECYCLE_READY}
+              currentDefaultSection={CURRENT_SECTION.TOTAL_PRODUCT}
+              tabsData={SustainablePackagingSectionDataMock} data={ResultDataMock.sustainablePackagingData}
+            />
+          </ResultDataContext.Provider>
+        </QueryClientProvider>
+      );
+      expect(baseElement).not.toBeNull();
+    });
+  }, 8000);
+
+  it("should render the component for default FORMULATION", async () => {
+    mockedUseGetProductDetailsByID.mockImplementation(() => ({
+      isLoading: true,
+      data: ProductDetailsMock,
+      refetch: refetchMock,
+    }));
+    await act(async () => {
+      const { baseElement } = render(
+        <QueryClientProvider contextSharing={true} client={queryClient}>
+          <ResultDataContext.Provider value={resultDataValue}>
+            <TabsSection
+              currentTab={CURRENT_TAB.TOP_LINE_RESULTS}
+              setCurrentSection={jest.fn()}
+              handleSectionChange={jest.fn()}
+              currentSection={SUSTAINABLE_SECTIONS.RECYCLE_READY}
+              currentDefaultSection={CURRENT_SECTION.FORMULATION}
+              tabsData={SustainablePackagingSectionDataMock} data={ResultDataMock.sustainablePackagingData}
+            />
+          </ResultDataContext.Provider>
+        </QueryClientProvider>
+      );
+      expect(baseElement).not.toBeNull();
+    });
+  }, 8000);
+
+  it("should render the component for default CONSUMER_PACKAGING", async () => {
+    mockedUseGetProductDetailsByID.mockImplementation(() => ({
+      isLoading: true,
+      data: ProductDetailsMock,
+      refetch: refetchMock,
+    }));
+    await act(async () => {
+      const { baseElement } = render(
+        <QueryClientProvider contextSharing={true} client={queryClient}>
+          <ResultDataContext.Provider value={resultDataValue}>
+            <TabsSection
+              currentTab={CURRENT_TAB.TOP_LINE_RESULTS}
+              setCurrentSection={jest.fn()}
+              handleSectionChange={jest.fn()}
+              currentSection={SUSTAINABLE_SECTIONS.RECYCLE_READY}
+              currentDefaultSection={CURRENT_SECTION.CONSUMER_PACKAGING}
+              tabsData={SustainablePackagingSectionDataMock} data={ResultDataMock.sustainablePackagingData}
+            />
+          </ResultDataContext.Provider>
+        </QueryClientProvider>
+      );
+      expect(baseElement).not.toBeNull();
+    });
+  }, 8000);
+
+
+  it("should render the component for SUSTAINABLE_PACKAGING for RECYCLE_READY", async () => {
+    mockedUseGetProductDetailsByID.mockImplementation(() => ({
+      isLoading: true,
+      data: ProductDetailsMock,
+      refetch: refetchMock,
+    }));
+    await act(async () => {
+      const { baseElement } = render(
+        <QueryClientProvider contextSharing={true} client={queryClient}>
+          <ResultDataContext.Provider value={resultDataValue}>
+            <TabsSection
+              currentTab={CURRENT_TAB.SUSTAINABLE_PACKAGING}
+              setCurrentSection={jest.fn()}
+              handleSectionChange={jest.fn()}
+              currentSection={SUSTAINABLE_SECTIONS.RECYCLE_READY}
+              currentDefaultSection={CURRENT_SECTION.TOTAL_PRODUCT}
+              tabsData={SustainablePackagingSectionDataMock} data={ResultDataMock.sustainablePackagingData}
+            />
+          </ResultDataContext.Provider>
+        </QueryClientProvider>
+      );
+      expect(baseElement).not.toBeNull();
+    });
+  }, 8000);
+
+  it("should render the component for SUSTAINABLE_PACKAGING for PCR_CONTENT", async () => {
+    mockedUseGetProductDetailsByID.mockImplementation(() => ({
+      isLoading: true,
+      data: ProductDetailsMock,
+      refetch: refetchMock,
+    }));
+    await act(async () => {
+      const { baseElement } = render(
+        <QueryClientProvider contextSharing={true} client={queryClient}>
+          <ResultDataContext.Provider value={resultDataValue}>
+            <TabsSection
+              currentTab={CURRENT_TAB.SUSTAINABLE_PACKAGING}
+              setCurrentSection={jest.fn()}
+              handleSectionChange={jest.fn()}
+              currentSection={SUSTAINABLE_SECTIONS.PCR_CONTENT}
+              currentDefaultSection={CURRENT_SECTION.TOTAL_PRODUCT}
+              tabsData={SustainablePackagingSectionDataMock} data={ResultDataMock.sustainablePackagingData}
+            />
+          </ResultDataContext.Provider>
+        </QueryClientProvider>
+      );
+      expect(baseElement).not.toBeNull();
+    });
+  }, 8000);
+
+  it("should render the component for SUSTAINABLE_PACKAGING for RECYCLABILITY_DISRUPTORS", async () => {
+    mockedUseGetProductDetailsByID.mockImplementation(() => ({
+      isLoading: true,
+      data: ProductDetailsMock,
+      refetch: refetchMock,
+    }));
+    await act(async () => {
+      const { baseElement } = render(
+        <QueryClientProvider contextSharing={true} client={queryClient}>
+          <ResultDataContext.Provider value={resultDataValue}>
+            <TabsSection
+              currentTab={CURRENT_TAB.SUSTAINABLE_PACKAGING}
+              setCurrentSection={jest.fn()}
+              handleSectionChange={jest.fn()}
+              currentSection={SUSTAINABLE_SECTIONS.RECYCLABILITY_DISRUPTORS}
+              currentDefaultSection={CURRENT_SECTION.TOTAL_PRODUCT}
+              tabsData={SustainablePackagingSectionDataMock} data={ResultDataMock.sustainablePackagingData}
+            />
+          </ResultDataContext.Provider>
+        </QueryClientProvider>
+      );
+      expect(baseElement).not.toBeNull();
+    });
+  }, 8000);
+
+  it("should render the component for SUSTAINABLE_PACKAGING for MATERIAL_EFFICIENCY", async () => {
+    mockedUseGetProductDetailsByID.mockImplementation(() => ({
+      isLoading: true,
+      data: ProductDetailsMock,
+      refetch: refetchMock,
+    }));
+    await act(async () => {
+      const { baseElement } = render(
+        <QueryClientProvider contextSharing={true} client={queryClient}>
+          <ResultDataContext.Provider value={resultDataValue}>
+            <TabsSection
+              currentTab={CURRENT_TAB.SUSTAINABLE_PACKAGING}
+              setCurrentSection={jest.fn()}
+              handleSectionChange={jest.fn()}
+              currentSection={SUSTAINABLE_SECTIONS.MATERIAL_EFFICIENCY}
+              currentDefaultSection={CURRENT_SECTION.TOTAL_PRODUCT}
+              tabsData={SustainablePackagingSectionDataMock} data={ResultDataMock.sustainablePackagingData}
+            />
+          </ResultDataContext.Provider>
+        </QueryClientProvider>
+      );
+      expect(baseElement).not.toBeNull();
+    });
+  }, 8000);
+
+  it("should render the component for SUSTAINABLE_PACKAGING for TOTAL_SCORE", async () => {
+    mockedUseGetProductDetailsByID.mockImplementation(() => ({
+      isLoading: true,
+      data: ProductDetailsMock,
+      refetch: refetchMock,
+    }));
+    await act(async () => {
+      const { baseElement } = render(
+        <QueryClientProvider contextSharing={true} client={queryClient}>
+          <ResultDataContext.Provider value={resultDataValue}>
+            <TabsSection
+              currentTab={CURRENT_TAB.SUSTAINABLE_PACKAGING}
+              setCurrentSection={jest.fn()}
+              handleSectionChange={jest.fn()}
+              currentSection={SUSTAINABLE_SECTIONS.TOTAL_SCORE}
+              currentDefaultSection={CURRENT_SECTION.TOTAL_PRODUCT}
+              tabsData={SustainablePackagingSectionDataMock} data={ResultDataMock.sustainablePackagingData}
+            />
+          </ResultDataContext.Provider>
+        </QueryClientProvider>
+      );
+      expect(baseElement).not.toBeNull();
+    });
+  }, 8000);
+
+  it("should render the component for GREEN_CHEMISTRY", async () => {
+    mockedUseGetProductDetailsByID.mockImplementation(() => ({
+      isLoading: true,
+      data: ProductDetailsMock,
+      refetch: refetchMock,
+    }));
+    await act(async () => {
+      const { baseElement } = render(
+        <QueryClientProvider contextSharing={true} client={queryClient}>
+          <ResultDataContext.Provider value={resultDataValue}>
+            <TabsSection
+              currentTab={CURRENT_TAB.GREEN_CHEMISTRY}
+              setCurrentSection={jest.fn()}
+              handleSectionChange={jest.fn()}
+              currentSection={GREEN_CHEMISTRY_SECTIONS.TOTAL_SCORE}
+              currentDefaultSection={CURRENT_SECTION.TOTAL_PRODUCT}
+              tabsData={SustainablePackagingSectionDataMock} data={ResultDataMock.sustainablePackagingData}
+            />
+          </ResultDataContext.Provider>
+        </QueryClientProvider>
+      );
+      expect(baseElement).not.toBeNull();
+    });
+  }, 8000);
+
+  it("should render the component for GREEN_CHEMISTRY", async () => {
+    mockedUseGetProductDetailsByID.mockImplementation(() => ({
+      isLoading: true,
+      data: ProductDetailsMock,
+      refetch: refetchMock,
+    }));
+    await act(async () => {
+      const { baseElement } = render(
+        <QueryClientProvider contextSharing={true} client={queryClient}>
+          <ResultDataContext.Provider value={resultDataValue}>
+            <TabsSection
+              currentTab={CURRENT_TAB.GREEN_CHEMISTRY}
+              setCurrentSection={jest.fn()}
+              handleSectionChange={jest.fn()}
+              currentSection={GREEN_CHEMISTRY_SECTIONS.TOTAL_SCORE}
+              currentDefaultSection={CURRENT_SECTION.TOTAL_PRODUCT}
+              tabsData={SustainablePackagingSectionDataMock} data={ResultDataMock.sustainablePackagingData}
+            />
+          </ResultDataContext.Provider>
+        </QueryClientProvider>
+      );
+      expect(baseElement).not.toBeNull();
+    });
+  }, 8000);
+
+  it("should render the component for GREEN_CHEMISTRY for GAIA_SCORE", async () => {
+    mockedUseGetProductDetailsByID.mockImplementation(() => ({
+      isLoading: true,
+      data: ProductDetailsMock,
+      refetch: refetchMock,
+    }));
+    await act(async () => {
+      const { baseElement } = render(
+        <QueryClientProvider contextSharing={true} client={queryClient}>
+          <ResultDataContext.Provider value={resultDataValue}>
+            <TabsSection
+              currentTab={CURRENT_TAB.GREEN_CHEMISTRY}
+              setCurrentSection={jest.fn()}
+              handleSectionChange={jest.fn()}
+              currentSection={GREEN_CHEMISTRY_SECTIONS.GAIA_SCORE}
+              currentDefaultSection={CURRENT_SECTION.TOTAL_PRODUCT}
+              tabsData={SustainablePackagingSectionDataMock} data={ResultDataMock.sustainablePackagingData}
+            />
+          </ResultDataContext.Provider>
+        </QueryClientProvider>
+      );
+      expect(baseElement).not.toBeNull();
+    });
+  }, 8000);
+
+  it("should render the component for GREEN_CHEMISTRY for WATCH_LIST_SCORE", async () => {
+    mockedUseGetProductDetailsByID.mockImplementation(() => ({
+      isLoading: true,
+      data: ProductDetailsMock,
+      refetch: refetchMock,
+    }));
+    await act(async () => {
+      const { baseElement } = render(
+        <QueryClientProvider contextSharing={true} client={queryClient}>
+          <ResultDataContext.Provider value={resultDataValue}>
+            <TabsSection
+              currentTab={CURRENT_TAB.GREEN_CHEMISTRY}
+              setCurrentSection={jest.fn()}
+              handleSectionChange={jest.fn()}
+              currentSection={GREEN_CHEMISTRY_SECTIONS.WATCH_LIST_SCORE}
+              currentDefaultSection={CURRENT_SECTION.TOTAL_PRODUCT}
+              tabsData={SustainablePackagingSectionDataMock} data={ResultDataMock.sustainablePackagingData}
+            />
+          </ResultDataContext.Provider>
+        </QueryClientProvider>
+      );
+      expect(baseElement).not.toBeNull();
+    });
+  }, 8000);
+
+  it("should render the component for GREEN_CHEMISTRY for RENEWABLE_ORIGIN_BONUS", async () => {
+    mockedUseGetProductDetailsByID.mockImplementation(() => ({
+      isLoading: true,
+      data: ProductDetailsMock,
+      refetch: refetchMock,
+    }));
+    await act(async () => {
+      const { baseElement } = render(
+        <QueryClientProvider contextSharing={true} client={queryClient}>
+          <ResultDataContext.Provider value={resultDataValue}>
+            <TabsSection
+              currentTab={CURRENT_TAB.GREEN_CHEMISTRY}
+              setCurrentSection={jest.fn()}
+              handleSectionChange={jest.fn()}
+              currentSection={GREEN_CHEMISTRY_SECTIONS.RENEWABLE_ORIGIN_BONUS}
+              currentDefaultSection={CURRENT_SECTION.TOTAL_PRODUCT}
+              tabsData={SustainablePackagingSectionDataMock} data={ResultDataMock.sustainablePackagingData}
+            />
+          </ResultDataContext.Provider>
+        </QueryClientProvider>
+      );
+      expect(baseElement).not.toBeNull();
+    });
+  }, 8000);
+
+});

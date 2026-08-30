@@ -1,0 +1,126 @@
+{"FormulaionTableMock" :{
+    "isLoading": true,
+    "loaded": true,
+    "rows": [
+        {
+            "tradeName": "Purified Water (RMT138)",
+            "rawMaterialId": "RAW90023341",
+            "percentage": 51.27,
+            "envFootprint": 30,
+            "carbonFootprint": 20,
+            "greenChemistry": 40
+        },
+        {
+            "tradeName": "Purified Water (RMT138)",
+            "rawMaterialId": "2",
+            "percentage": null,
+            "envFootprint": 30,
+            "carbonFootprint": 20,
+            "greenChemistry": 40
+        },
+        {
+            "tradeName": "Purified Water (RMT138)",
+            "rawMaterialId": "3",
+            "percentage": -10,
+            "envFootprint": 30,
+            "carbonFootprint": 20,
+            "greenChemistry": 40
+        },
+        {
+            "tradeName": "TEGO Betain F50",
+            "rawMaterialId": "RAW90013097",
+            "percentage": 18.00,
+            "envFootprint": 50,
+            "carbonFootprint": 40,
+            "greenChemistry": 60
+        },
+        {
+            "tradeName": "Structure PS-111",
+            "rawMaterialId": "RAW90025757",
+            "percentage": 0.50,
+            "envFootprint": 10,
+            "carbonFootprint": 5,
+            "greenChemistry": 15
+        },
+        {
+            "tradeName": "Structure Test",
+            "rawMaterialId": "RAW90025757",
+            "percentage": 0.50,
+            "envFootprint": 10,
+            "carbonFootprint": 5,
+            "greenChemistry": 15
+        },
+        {
+            "tradeName": "TEGO test",
+            "rawMaterialId": "RAW90013097",
+            "percentage": 18.00,
+            "envFootprint": 50,
+            "carbonFootprint": 40,
+            "greenChemistry": 60
+        },
+        {
+            "tradeName": "Purified test",
+            "rawMaterialId": "RAW90023341",
+            "percentage": 51.27,
+            "envFootprint": 30,
+            "carbonFootprint": 20,
+            "greenChemistry": 40
+        }
+    ],
+    "isSaveEnabled": false,
+    "searchValue": "",
+    "searchResults": [
+        {
+            "tradeName": "Purified Water (RMT138)",
+            "rawMaterialId": "RAW90023341",
+            "percentage": 51.27,
+            "envFootprint": 30,
+            "carbonFootprint": 20,
+            "greenChemistry": 40
+        },
+        {
+            "tradeName": "TEGO Betain F50",
+            "rawMaterialId": "RAW90013097",
+            "percentage": 18.00,
+            "envFootprint": 50,
+            "carbonFootprint": 40,
+            "greenChemistry": 60
+        },
+        {
+            "tradeName": "Structure PS-111",
+            "rawMaterialId": "RAW90025757",
+            "percentage": 0.50,
+            "envFootprint": 10,
+            "carbonFootprint": 5,
+            "greenChemistry": 15
+        },
+        {
+            "tradeName": "Structure Test",
+            "rawMaterialId": "RAW90025757",
+            "percentage": 0.50,
+            "envFootprint": 10,
+            "carbonFootprint": 5,
+            "greenChemistry": 15
+        },
+        {
+            "tradeName": "TEGO test",
+            "rawMaterialId": "RAW90013097",
+            "percentage": 18.00,
+            "envFootprint": 50,
+            "carbonFootprint": 40,
+            "greenChemistry": 60
+        },
+        {
+            "tradeName": "Purified test",
+            "rawMaterialId": "RAW90023341",
+            "percentage": 51.27,
+            "envFootprint": 30,
+            "carbonFootprint": 20,
+            "greenChemistry": 40
+        }
+    ],
+    "order": "asc",
+    "orderBy": null,
+    "isHoveredtotal": false,
+    "isFormulaCompositionEditable" : true
+}}

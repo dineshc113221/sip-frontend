@@ -1,0 +1,847 @@
+.product-detail-main {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+  .Baseline-24 {
+    width: 100%;
+    float: right;
+    padding-right: 24px;
+    height: 56px;
+    margin-bottom: 16px;
+  }
+
+}
+
+.Product-detail-name-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+
+  .Product-detail-name-icon {
+    /* Product Name */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+
+    width: 100%;
+    height: 100%;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    .productEditIcon1 {
+
+      order: 1;
+    }
+
+    @media (min-width:1440px) {
+      width: 1164.06px;
+
+      .Product-detail-Image {
+        height: 25px;
+        width: 25px;
+      }
+
+    }
+
+    @media (min-width: 986px) and (max-width:1439px) {
+      width: 773.06px;
+
+      .Product-detail-Image {
+        height: 23.19px;
+        width: 23.22px;
+      }
+
+    }
+  }
+
+}
+
+.Baseline-Final-Section {
+  width: 100%;
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  height: 80px;
+
+  .Baseline-starts {
+    width: 50%;
+    align-items: center;
+    display: flex;
+  }
+
+  .Baseline-span-tag {
+
+    font-family: "kenvue-sans";
+    font-size: 23.04px;
+    font-weight: 700;
+    line-height: 27.65px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+  }
+
+  .Final-starts {
+    width: 50%;
+    align-items: center;
+    display: flex;
+  }
+}
+
+.baselineContainer{
+  height: 100%;
+  width:100%;
+}
+.Baseline-assessment {
+  width: 100%;
+  margin-left: 0px;
+  margin-top: 0px;
+  display: flex;
+  padding-right: 24px;
+  gap: 24px;
+
+  .Baseline-data {
+    margin-top: 0px;
+    display: flex;
+    width: 50%;
+    max-width: 645.5px;
+  }
+
+  .Baseline-data-style {
+    border: 1px solid #000000;
+    border-radius: 32px;
+    height: auto;
+    margin-left: 0px;
+    width: 100%;
+  }
+
+
+
+}
+
+.Baseline-1 {
+  display: flex;
+  height: 25px;
+  width: 100%;
+  position: relative;
+  align-items: center;
+}
+
+.Baseline-2 {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+}
+
+.Baseline-3 {
+  background-color: #D2D2D2;
+  align-items: center;
+  height: 25px !important;
+  font-size: 14px;
+  font-family: "kenvue-sans-regular", sans-serif !important;
+}
+
+.Baseline-4 {
+  background-color: #FFFFFF;
+  align-items: center;
+  height: 25px !important;
+  font-size: 14px;
+  font-family: "kenvue-sans-regular", sans-serif !important;
+}
+
+.Baseline-5 {
+  height: 25px !important;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  margin-bottom: 20px;
+}
+
+.Baseline-6 {
+  color: #000000;
+  width: 35px;
+  height: 35px !important;
+}
+
+.Baseline-7 {
+  display: block;
+  padding: 0px;
+}
+
+.Baseline-8 {
+  margin-left: 21px;
+  float: right;
+  width: 24px;
+  height: 23.98px;
+}
+
+.menu_item_label_list {
+  width: 100%;
+  padding: 16px !important;
+  height: 56px;
+  align-items: center !important;
+  display: grid !important;
+  font-family: "kenvue-sans-regular" !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+.menu_list_img {
+  margin: 0px !important;
+  width: 24px;
+  height: 23.98px;
+}
+
+.menu_edit_delete_label1 {
+  display: block;
+  width: 100px;
+  padding: 4px;
+  padding-left: 10px !important;
+  font-family: "kenvue-sans-regular" !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+.Baseline-9 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  word-wrap: break-word;
+}
+
+.Baseline-10 {
+  font-size: 19.2px;
+  font-weight: 400;
+  font-family: "kenvue-sans-regular";
+  word-break: break-word;
+}
+
+.Baseline-11 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.Baseline-12 {
+  font-size: 13.33px;
+  font-weight: 700;
+  font-family: "kenvue-sans-regular", sans-serif !important;
+}
+
+.Baseline-13 {
+  font-size: 13.33px;
+  font-weight: 400;
+  font-family: "kenvue-sans-regular";
+  padding-left: 5px;
+}
+
+.Baseline-14 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.Baseline-15 {
+  display: flex;
+  width: 100%;
+  gap: 36px;
+}
+
+.Baseline-16 {
+  display: flex;
+  width: 20%;
+}
+
+.Baseline-17 {
+  font-size: 13.33px;
+  font-family: "kenvue-sans-regular";
+}
+
+.Baseline-18 {
+  display: flex;
+  width: 20%;
+  float: left;
+}
+
+.Baseline-19 {
+  width: 100%;
+  font-family: "kenvue-sans-regular";
+}
+
+.Baseline-20 {
+  font-size: 13.33px;
+  font-family: "kenvue-sans-regular";
+}
+
+.Baseline-21 {
+  margin-top: 0px;
+  display: flex;
+  width: 50%;
+  max-width: 645.5px;
+}
+
+.Baseline-22 {
+  background-color: #ffb000;
+  align-items: center;
+  margin-left: 15px;
+  margin-top: 15px;
+  height: 20px !important;
+  font-size: 14px;
+  font-family: "kenvue-sans-regular", sans-serif !important;
+
+}
+
+.Baseline-23 {
+  display: flex;
+  float: right;
+  margin-top: 15px;
+  height: 20px !important;
+  align-items: center;
+
+}
+
+.Baseline-button {
+  display: flex;
+  width: 100%;
+  float: right;
+  height: 56px !important;
+}
+
+.Baseline-25 {
+  display: flex;
+  height: 16px !important;
+  width: 100px;
+}
+
+.div-product {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  gap: 72px;
+  width: 100%;
+
+  .div-product-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px 16px;
+    gap: 8px;
+  }
+
+  .div-product-detail1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px 16px;
+    gap: 8px;
+
+
+  }
+}
+
+@media (min-width: 880px) and (max-width: 1150px) {
+  .div-product-detail1 {
+    width: 160px;
+  }
+}
+
+@media (min-width: 1151px) and (max-width: 1439px) {
+  .div-product-detail1 {
+    width: 300px;
+    max-width: 300px;
+  }
+}
+
+////////////////////----------------Experimental Assessment------------//////////////////
+.Experimental-starts {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 24px;
+}
+
+.Experimental-1 {
+  display: inline-flex;
+  align-items: center;
+  height: 45px;
+}
+
+.Experimental-2 {
+  font-size: 23.04px;
+  font-weight: 700;
+  font-family: "kenvue-sans", sans-serif;
+}
+
+.Experimental-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.Experimental-4 {
+  display: flex;
+  align-items: center;
+}
+
+.Experimental-5 {
+  display: flex;
+  margin-left: 0px;
+}
+
+.responsive-grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  /* Gap between cards */
+  padding-right: 24px;
+  /* Optional: Padding around the grid */
+  justify-content: space-between;
+}
+
+.responsive-card {
+  flex: 1 1 calc(50% - 12px);
+  /* Two cards per row with equal width */
+  max-width: 645.5px;
+  /* Limit card width */
+  border: 1px solid #000000;
+  /* Add border */
+  border-radius: 32px;
+  /* Rounded corners */
+  overflow: hidden;
+  /* Prevent content overflow */
+  max-height: 334px;
+}
+
+.no-data-placeholder {
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 144px;
+  font-size: 19px;
+  font-family: "kenvue-sans-regular";
+  font-weight: 400;
+}
+
+@media (min-width: 986px) and (max-width: 1439px) {
+  .responsive-card {
+    flex: 0 1 calc(50% - 12px);
+    /* Maintain proportional width for smaller screens */
+  }
+}
+
+/* For smaller screens (below 768px) */
+@media (max-width: 768px) {
+  .responsive-card {
+    flex: 1 1 100%;
+    /* Stack cards vertically with full width */
+  }
+}
+
+.List-view-starts {
+  border: solid 1px;
+  border-radius: 32px;
+  max-height: 314px;
+  background: none;
+  width: 100%;
+  padding: 20px 24px;
+  gap: 24px;
+}
+
+.list-1 {
+  cursor: pointer;
+  align-content: center;
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+  align-items: center;
+}
+
+.lpp-icon-list {
+  right: 60px;
+}
+
+.list-2 {
+  display: flex;
+  align-items: center;
+  height: 25px;
+}
+
+.list-3 {
+  background-color: #D3BDF2;
+  align-items: center;
+  height: 25px !important;
+  font-size: 14px;
+  font-family: "kenvue-sans-regular";
+}
+
+.list-4 {
+  align-items: center;
+  margin-left: 10px;
+  display: inline;
+}
+
+.list-5 {
+  cursor: pointer;
+  display: flex;
+  gap: 24px;
+  align-content: center;
+  align-items: center;
+}
+
+.list-6 {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  min-width: 310px;
+}
+
+.list-7 {
+  font-size: 19.2px;
+  font-weight: 400;
+  font-family: "kenvue-sans-regular";
+}
+
+.list-8 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.list-81 {
+  padding-left: 0px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.list-9 {
+  font-size: 13.33px;
+  font-family: "kenvue-sans";
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.list-10 {
+  font-size: 13.33px;
+  font-weight: 400;
+  font-family: "kenvue-sans-regular";
+  white-space: nowrap;
+}
+
+.list-11 {
+  display: flex;
+  margin: 0px 0px 0px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.list-12 {
+  height: max-content;
+  margin-top: 4px;
+  align-items: center;
+  padding-left: 3px;
+}
+
+.list-13 {
+  flex: 0 0 1px;
+  background-color: #ccc;
+  height: 81px;
+}
+
+.list-14 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 30%;
+  align-items: center;
+  height: 81px;
+}
+
+.list-15 {
+  display: flex;
+  align-self: center;
+  gap: 8px;
+}
+
+.list-16 {
+  background-color: #FFFFFF;
+  align-items: center;
+  margin-left: 15px;
+  font-size: 14px;
+  font-family: "kenvue-sans-regular";
+  height: "20px";
+}
+
+.list-17 {
+  flex: 0 0 1px;
+  /* Add spacing around the separator */
+  background-color: #ccc;
+  height: 81px;
+}
+
+.list-18 {
+  display: flex;
+  flex: 0 1 auto;
+  width: 20%;
+  align-items: center;
+  height: 81px;
+}
+
+.list-19 {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-20 {
+  display: flex;
+  align-items: center;
+  height: 51px;
+}
+
+.list-21 {
+  height: 1px;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: "kenvue-sans-regular";
+  margin-top: 5px;
+}
+
+.list-22 {
+  height: -11px;
+  font-weight: 400;
+  font-size: 13.33px;
+  font-family: "kenvue-sans-regular";
+  margin-top: -5px;
+}
+
+.list-23 {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  float: right;
+  height: 81px;
+}
+
+.list-24 {
+  display: block;
+  width: 100px;
+  padding: 4px;
+}
+
+
+.baseline-assessment-footer {
+    height: 46px;
+    background: #ECECEC;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 32px 32px;
+    letter-spacing: 0;
+    position: relative;
+    .footerText{
+      font-size:13.33px;
+      font-weight: 400;
+      font-family: "kenvue-sans-regular";
+      position: relative;
+      cursor: pointer;
+      color:#000000;
+    }
+}
+
+.linkTag{
+  text-decoration: none;
+}
+.continue-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--black);
+    font-family: "kenvue-sans-regular";
+    font-size: 13.33px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.arrow {
+    font-size: 22px;
+    line-height: 1;
+    position: relative;
+    left: 10px;
+    top: 1px;
+}
+
+.guideline-container {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 13.33px;
+    color: #000000;
+    cursor: pointer;
+    background: transparent;
+    font-family: "kenvue-sans" , sans-serif;;
+    border: 0;
+    display:flex;
+}
+
+.guideline-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    text-decoration: none;
+    color: var(--black);
+
+    font-family: "kenvue-sans";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.external-icon {
+    position: relative;
+    left: 5px;
+    top: 2px;
+}
+
+.status-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+
+  padding: 4px 12px;
+  border-radius: 9999px;
+
+  background: #ff8c8c;
+  color: var(--black);
+
+  font-family: "kenvue-sans", sans-serif;
+  font-size: 13.33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.status-icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.justification-container {
+  padding: 0.5rem 0.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.justification-container::before,
+.justification-container::after {
+  content: "";
+  position: relative;
+  left: 40%;
+  transform: translateX(-50%);
+  width: 80%;
+  /* adjust length */
+  border-top: 1px solid #bfbfbf;
+  ;
+}
+
+.justification-container::before {
+  bottom: 7px;
+}
+
+.justification-container::after {
+  top: 8px;
+}
+
+.justification-title {
+  margin: 0;
+
+  color: #000000;
+  text-align: center;
+
+  font-family: "kenvue-sans";
+  font-size: 13.33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.justification-text {
+  margin: 4px 0 8px;
+
+  color: #000000;
+  text-align: center;
+
+  font-family: "kenvue-sans-regular", sans-serif;
+  font-size: 13.33px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.justification-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  background: transparent;
+  padding: 0;
+
+  color: #000000;
+  cursor: pointer;
+
+  font-family: "kenvue-sans-regular", sans-serif;
+  font-size: 13.33px;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration: underline;
+  text-underline-offset: 4px; /* increases gap */
+text-decoration-thickness: 1px;
+}
+
+.external-icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}

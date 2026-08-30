@@ -1,0 +1,94 @@
+{
+    "ProductIdMock" : [
+        {
+            "fg_nm_vers_concat": "TV-SPEC-10001-3"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-10000-3"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-09999-3"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-09998-3"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-09997-5"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-09996-3"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-09995-4"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-09994-3"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-09993-3"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-09992-3"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-09991-3"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-09990-3"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-09858-3"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-09852-2"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-08796-3"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-08264-3"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-08262-3"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-08257-3"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-08255-3"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-08253-3"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-08251-3"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-08141-3"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-08138-3"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-08137-3"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-08134-4"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-08132-3"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-08130-3"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-07926-2"
+        },
+        {
+            "fg_nm_vers_concat": "TV-SPEC-07925-2"
+        },
+        {
+            "fg_nm_vers_concat": "TV-BOM-04906-2"
+        }
+    ]
+}

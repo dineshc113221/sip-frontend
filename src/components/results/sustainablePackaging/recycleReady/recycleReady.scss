@@ -1,0 +1,173 @@
+$main-height: 829px;
+$top-container-height: 490px;
+$gap-large: 36px;
+$gap-medium: 24px;
+$gap-small: 16px;
+$heading-font: "kenvue-sans-regular", sans-serif;
+$heading-font-bold: "kenvue-sans", sans-serif;
+$heading-color: #000;
+$holding-containers-width: 100%;
+
+.main-container {
+  height: $main-height;
+  display: flex;
+  flex-direction: column;
+  gap: $gap-large;
+  width: $holding-containers-width;
+
+  .top-container {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-small;
+    width: $holding-containers-width;
+
+    height: 100%;
+
+    .top-heading {
+      color: $heading-color;
+      font-family: $heading-font-bold;
+      font-size: 33.18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%;
+    }
+
+    .top-main-container {
+      display: flex;
+      padding: 36px 24px;
+      align-items: center;
+      gap: 96px;
+      align-self: stretch;
+      width: $holding-containers-width;
+      border-radius: 26px;
+      border: 1px solid #edf2f6;
+      background: #fff;
+      box-shadow: 0px 4px 20px 0px rgba(238, 238, 238, 0.5);
+
+      .top-content-container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--Spacing-12, 12px);
+
+        .inner-content {
+          color: #000;
+          font-family: $heading-font;
+          font-size: 19.2px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+          align-self: stretch;
+
+          .inner-span {
+            font-weight: 700;
+            font-family: "kenvue-sans", sans-serif;
+          }
+
+          .inner-span-underlined {
+            color: #000;
+            font-family: "kenvue-sans", sans-serif;
+            font-size: 19.2px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%;
+            text-decoration-line: underline;
+            text-decoration-style: solid;
+            text-decoration-skip-ink: none;
+            text-decoration-thickness: auto;
+            text-underline-offset: auto;
+            text-underline-position: from-font;
+            align-self: stretch;
+          }
+        }
+
+        .heading {
+          font-weight: 700;
+          font-family: "kenvue-sans", sans-serif;
+        }
+      }
+
+      .top-graph-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        flex-grow: 1;
+        width: 100%;
+        height: auto;
+
+        h1 {
+          color: #000;
+          text-align: center;
+          font-family: "Kenvue-sans", sans-serif;
+          font-size: 23.04px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 120%;
+        }
+      }
+    }
+  }
+
+
+  .bottom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    width: $holding-containers-width;
+
+    .table-heading {
+      color: #2b2b2b;
+      font-family: $heading-font-bold;
+      font-size: 23px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px;
+    }
+
+    .bottom-table-container {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      width: $holding-containers-width;
+      gap: 16px;
+    }
+  }
+}
+
+.graph-tags {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+@media (min-width: 1151px) and (max-width: 1439px) {
+  .top-main-container{
+    gap: 65px !important;
+  }
+  .top-content-container {
+       max-width: 42%;
+       /* Occupy full width */
+       padding: 0px;
+     }
+}
+@media (min-width: 880px) and (max-width: 1150px) {
+  .top-main-container {
+    flex-direction: column; /* Stack content vertically */
+    height: auto; /* Adjust height dynamically */
+
+    .top-content-container {
+      max-width: 100%; /* Occupy full width */
+      padding: 0px;
+    }
+
+    .top-graph-container {
+      width: 100%; /* Graph takes full width */
+      align-items: center; /* Center content */
+    }
+  }
+}

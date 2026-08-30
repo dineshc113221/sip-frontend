@@ -1,0 +1,18 @@
+.cell-wrap-text {
+    white-space: normal !important;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center;
+}
+.ag-row  {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center;
+}
+
+.cell-wrap-text-width{
+  border:1px solid grey;
+  width: "0px";
+background-color: "#ccc";
+height: '100%',
+}

@@ -1,0 +1,278 @@
+/* Custom properties */
+
+:root {
+  --tooltip-text-color: "";
+  --tooltip-background-color: white;
+  --tooltip-margin: 30px;
+}
+
+.Tooltip-Wrapper {
+  position: relative;
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+}
+
+.Tooltip-Tip {
+  position: absolute;
+  z-index: 1000; /* Ensure high z-index */
+  border-radius: 32px 32px 32px 0px;
+  padding: 15px;
+  border: 1px solid black;
+  width: 437px;
+  height: auto;
+  left: 100%;
+  color: var(--tooltip-text-color);
+  background: var(--tooltip-background-color);
+  font-size: 12px;
+  font-family: "kenvue-sans-regular", sans-serif;
+  line-height: 1.5;
+}
+.Tooltip-Tip-Finishing-Process {
+  border-radius: 32px 32px 0px 32px;
+  width: 220px;
+  left: -790% !important;
+}
+/* CSS border triangles */
+.Tooltip-Tip::before {
+  content: " ";
+  left: 50%;
+  border: solid transparent;
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-width: var(--tooltip-arrow-size);
+  margin-left: calc(var(--tooltip-arrow-size) * -1);
+}
+
+/* Absolute positioning */
+.Tooltip-Tip.net-opacifiers-top {
+  top: calc(var(--tooltip-margin) * -3);
+}
+.Tooltip-Tip.net-content-top {
+  top: calc(var(--tooltip-margin) * -2.5);
+}
+.Tooltip-Tip.packaging-filed-top {
+  top: calc(var(--tooltip-margin) * -1.8);
+}
+.Tooltip-Tip.packaging-filed-opacity-top {
+  top: calc(var(--tooltip-margin) * -2.5);
+}
+.Tooltip-Tip.product-evacuation {
+  top: calc(var(--tooltip-margin) * -4);
+}
+.Tooltip-Tip.packaging-componenets {
+  top: calc(var(--tooltip-margin) * -3);
+  width: 293px;
+}
+.Tooltip-Tip.fml-top {
+  top: calc(var(--tooltip-margin) * -2.4);
+}
+
+.Tooltip-Tip.product-zone-top {
+  top: calc(var(--tooltip-margin) * -3);
+  width: 436px;
+  left: 68%;
+}
+.Tooltip-Tip.sales-zone-top {
+  top: calc(var(--tooltip-margin) * -3);
+}
+.Tooltip-Tip.use-dose-top {
+  top: calc(var(--tooltip-margin) * -6);
+}
+
+.Tooltip-Tip.cons-used-top {
+  top: calc(var(--tooltip-margin) * -7.3);
+  width: 153px;
+  left: 82%;
+}
+.Tooltip-Tip.cons-used-top-opacity {
+  top: calc(var(--tooltip-margin) * -4.3);
+  width: 287px;
+}
+
+.Tooltip-Tip.cons-used-top-formula {
+  top: calc(var(--tooltip-margin) * -4.8);
+  width: 183px;
+}
+.Tooltip-Tip.recyclability-isruptors {
+  top: calc(var(--tooltip-margin) * -3.6);
+  width: 265px;
+}
+/* CSS border triangles */
+.Tooltip-Tip.top::before {
+  border-top-color: var(--tooltip-background-color);
+}
+
+/* Absolute positioning */
+.Tooltip-Tip.right {
+  left: calc(100% + var(--tooltip-margin));
+  top: 50%;
+  transform: translateX(0) translateY(-50%);
+}
+/* CSS border triangles */
+.Tooltip-Tip.right::before {
+  left: calc(var(--tooltip-arrow-size) * -1);
+  top: 50%;
+  transform: translateX(0) translateY(-50%);
+  border-right-color: var(--tooltip-background-color);
+}
+
+/* Absolute positioning */
+.Tooltip-Tip.bottom {
+  bottom: calc(var(--tooltip-margin) * -1);
+}
+/* CSS border triangles */
+.Tooltip-Tip.bottom::before {
+  bottom: 100%;
+  border-bottom-color: var(--tooltip-background-color);
+}
+
+/* Absolute positioning */
+.Tooltip-Tip.left {
+  left: auto;
+  right: calc(100% + var(--tooltip-margin));
+  top: 50%;
+  transform: translateX(0) translateY(-50%);
+}
+/* CSS border triangles */
+.Tooltip-Tip.left::before {
+  left: auto;
+  right: calc(var(--tooltip-arrow-size) * -2);
+  top: 50%;
+  transform: translateX(0) translateY(-50%);
+  border-left-color: var(--tooltip-background-color);
+}
+.toast {
+  position: fixed;
+  top: 216px;
+   width: 708px;
+    height: 215px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff !important;
+  color: black;
+  padding: 16px;
+  border-radius:32px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  z-index: 9999;
+}
+.toast-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 9998;
+  backdrop-filter: blur(2px);
+}
+.toastDiv{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 16px;
+  margin-bottom: 24px;
+  .toasttitleIcon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+  }
+ 
+  .toastTitle{
+    margin-right: auto;
+    font-family: "kenvue-sans", sans-serif;
+      font-weight: 700;
+      font-size: 33.18px;
+      line-height: 120%;
+      letter-spacing: 0%;
+  }
+  .toastSubTitle{
+    font-family: "kenvue-sans-regular", sans-serif;
+font-weight: 400;
+font-size: 13.33px;
+line-height: 150%;
+letter-spacing: 0%;
+
+  }
+}
+
+.toast-buttons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.buttonCancel{
+  width: 105px;
+  height: 56px;
+  border-radius: 36px;
+  background-color: #FFFFFF;
+  font-family: "kenvue-sans-regular", sans-serif;
+  cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.buttonContinue {
+  width: 123px;
+  height: 56px;
+  border-radius: 36px;
+  cursor: pointer;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: "kenvue-sans-regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+ .toasttitleIcon1 {
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   margin-left: 35%;
+
+   align-items: center !important;
+ }
+ .bodyToast{
+    height: 40px;
+    display : flex;
+    flex-direction: column;
+    align-content: center;
+    font-family: "kenvue-sans-regular",  sans-serif;
+      font-weight: 400;
+      font-size: 13.33px;
+      line-height: 150%;
+      letter-spacing: 0%;
+      text-align: center;
+ }
+
+ .current-version-indicator{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #6CC24A;
+  margin: 0 8px;
+  }
+
+ .current-version {
+  background: #F8F8F8;
+  border-radius: 32px;
+  width: 124px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: 'kenvue-sans-regular';
+ }

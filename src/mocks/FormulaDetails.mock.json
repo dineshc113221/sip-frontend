@@ -1,0 +1,32 @@
+{
+  "FormulaDetailsMock": {
+    "fgSpec": "TV-SPEC-10550-3",
+    "SKU_ERP_Code": "100034983",
+    "brandName": "null",
+    "fmlCode": "FML2057872A-001",
+    "description": "OGX Pink Sea Salt & Rose Water Scrub and Wash",
+    "labCode": "8-XSSR68-V027&V028-01",
+    "netContent": null,
+    "netContentUnit": "gm",
+    "productionZone": "North America",
+    "salesZone": "North America",
+    "productSegment": "",
+    "productSubSegment": "",
+    "useDose": "",
+    "useDoseUnit": "g",
+    "rawMaterials": [],
+    "fieldsExist": {
+      "description": false,
+      "netContent": false,
+      "netContentUnit": false,
+      "productionZone": false,
+      "salesZone": false,
+      "productSegment": false,
+      "productSubSegment": false,
+      "useDose": false,
+      "useDoseUnit": false,
+      "rawMaterials": false,
+      "consumablesUsed": false
+    }
+  }
+}

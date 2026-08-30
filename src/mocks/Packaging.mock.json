@@ -1,0 +1,42 @@
+{"PackagingMock" :{
+    "staticRecycleStatus" : "",
+    "ImportComponentDialogOpen" : false,
+    "dialogKey" : 0,
+    "popupPage" : "",
+    "recordStatus" : "",
+    "anchorEl" : null,
+    "deletePopupOpen" : false,
+    "opacity" : "",
+    "color" : "",
+    "opacifiers" : "",
+    "componentType" : "",
+    "componentWeight" : null,
+    "componentUnits" : "g",
+    "isParentComponentData" :{
+        "vpc_spec": "",
+        "vcomponent_description": "",
+        "composition": []
+      },
+    "isSaveEnabled" :"NA",
+    "isSaved" : true,
+    "openDailog" :false,
+    "expanded" : false,
+    "RecyclabilityStatusDialogOpen" : false,
+    "recyclabilityStatusDialogKey" : 0,
+    "error" : "",
+    "isFieldChanged" : false,
+    "changedFieldsPopupOpen" :false,
+    "hasChanges" :false,
+    "rowsChanged" :false,
+    "imageSrc": "../../assets/images/recycle_ready.svg",
+    "imageClassName": "packaging-recyclable-ready-not",
+    "isButtonEnabled": false,
+    "packagingData": {
+        "loaded": false,
+        "globaldata": [],
+        "formulationData":{},
+        "packagingData":{}
+      },
+    "mode": "add",
+    "validateDropdownvalues": false
+}}

@@ -1,0 +1,185 @@
+$product-card-width: 430.33px;
+$product-card-height: 474px;
+$card-border-radius: 32px;
+
+.product-grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 100%;
+  max-width: 1339px; 
+}
+
+@media(max-width:980px){
+  .product-grid-container {
+    max-width: 454px;
+  }
+}  
+.css-46bh2p-MuiCardContent-root{
+  padding: 0px;
+}
+// .menu {
+//   min-width: 200px; // Sets a minimum width for the menu
+//   padding: 8px 0; // Adds padding inside the menu for better spacing
+//   border-radius: 8px; // Adds rounded corners for a softer look
+//   .MuiMenuItem-root {
+//     width: 100px;
+//     padding: 8px; // Adds padding to each menu item for better spacing
+//     display: flex;
+//     justify-content: space-between; // Aligns text to the left and icon to the right
+//     align-items: center;
+    
+//   }
+  // .css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+  //     border: 1px solid #BFBFBF;
+  //     background-color: #fff;
+  //     color: rgba(0, 0, 0, 0.87);
+  //     transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  //     border-radius: 4px;
+  //     // box-shadow: none;
+  //     /* Removed box-shadow */
+  //     position: absolute;
+  //     overflow-y: auto;
+  //     overflow-x: hidden;
+  //     min-width: 16px;
+  //     min-height: 16px;
+  //     max-width: calc(100% - 32px);
+  //     max-height: calc(100% - 96px);
+  //     outline: 0;
+  //     -webkit-overflow-scrolling: touch;
+  // }
+  
+  
+
+  // .MuiDivider-root {
+  //   margin: 4px 0; // Adds spacing above and below the divider
+  // }
+
+
+.card-container {
+  border: 1px solid #000;
+  border-radius: $card-border-radius;
+  gap: 24px;
+  flex:0 0 430.33px;
+  padding: 24px;
+  max-width: 430.31px;
+}
+.MuiChip-root{
+  background-color: #D3BDF2 !important;
+}
+.MuiChip-label{
+ 
+  height: 20px;
+  font-family: "kenvue-sans-regular",  sans-serif;
+  font-size: 14px;
+}
+.date-label {    
+  font-family: "kenvue-sans-regular",  sans-serif;
+  font-size: 13.33px !important;
+
+}
+
+.card-content {
+  cursor: pointer;
+  padding: 0px !important;
+  
+}
+.headers-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px; // Adjust spacing between elements as needed
+  margin-bottom: 16px;
+
+ 
+
+ 
+  .more-icon {
+    margin-left: auto;
+  }
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.brand-name {
+  font-family: "kenvue-sans",  sans-serif;
+  font-weight: 700;
+  font-size: 23.04px;
+  line-height: '120%';
+  gap: 8px;
+}
+
+
+.product-name {
+    font-family: "kenvue-sans-regular",  sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: '150%';
+    text-align: left;
+}
+
+.id-label {
+  font-weight: 700;
+  font-size: 19.2px;
+  line-height: '150%';
+  font-family: "kenvue-sans",  sans-serif;
+}
+
+.id-value {
+  font-family: "kenvue-sans-regular",  sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: '150%';
+  text-align: left;
+  word-break: break-all;
+}
+.avatar-group-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .custom-avatar-group {
+    justify-content: flex-start;
+    gap: 8px; // Aligns all avatars to the left
+  
+    // Style for each user avatar (with initials)
+    .user-avatar {
+      background-color: #673ab7; // Purple background for individual user avatars
+      color: white; // White text color for initials
+      margin-right: 8px; // 8px gap between each avatar
+    }
+  
+    // Style specifically for the +N overflow avatar
+    .MuiAvatarGroup-avatar {
+      background-color: #673ab7; // Grey background for +N overflow avatar
+      color: rgb(255, 255, 255); // Black text color for +N
+      font-family: "kenvue-sans", sans-serif;
+      font-size: 13.33px;
+      font-weight: 700;
+      line-height: 19.99px;
+      text-align: center; // Center text for +N display
+      width: 36px; // Ensuring fixed width for overflow avatar if needed
+      height: 36px; 
+      gap: 8px;// Ensuring fixed height for overflow avatar if needed
+    }
+  }
+  
+.description-title {
+  font-weight: 700;
+  font-size: 19.2px;
+  font-family: "kenvue-sans", sans-serif;
+  line-height: '150%';
+}
+
+.description-text {
+  font-family: "kenvue-sans-regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: '150%';
+  margin-top: 8px;
+  word-break: break-all;
+}

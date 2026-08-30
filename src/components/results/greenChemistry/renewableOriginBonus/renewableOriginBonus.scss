@@ -1,0 +1,351 @@
+$primary-color: #000000;
+$secondary-color: #f8f8f8;
+$border-color: #e4e7ec;
+$hover-color: #90a4ae;
+$text-dark: #333;
+$text-light: #151515;
+$header-bg: #f5f5f5;
+
+.renewable-origin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 36px;
+  width: 100%;
+  height: auto;
+
+  .heading-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 24px;
+
+    width: 100%;
+    height: 80px;
+
+    .heading-title1 {
+      font-family: "kenvue-sans", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 33.18px;
+      line-height: 120%; // 40px
+      color: #000;
+      width: 100%;
+    }
+    @media (min-width: 880px) and (max-width: 1150px){
+      width: 98.5%;
+      }
+    }
+
+  .origin-bonus-table{
+    max-height: 500px !important;
+    &::-webkit-scrollbar {
+      width: 12px;
+      height: 12px;
+    }
+
+   &::-webkit-scrollbar-thumb {
+      background-color: $primary-color;
+      border-radius: 10px;
+      border: 3px solid $border-color;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: #ccc;
+    }
+
+    th {
+      white-space: no-wrap !important;
+    }
+
+    thead .header-first-row {
+
+      th {
+        height: 36px;
+        padding: 0px 20px;
+      }
+
+      th:nth-child(1) {
+        min-width: 295px;
+        max-width: 295px;
+      }
+
+      th:nth-child(2) {
+        min-width: 161px;
+        max-width: 161px;
+      }
+
+      th:nth-child(3),
+      th:nth-child(4) {
+        min-width: 495px;
+        max-width: 495px;
+      }
+
+    }
+
+    thead .header-second-row {
+
+      th {
+        height: 42px;
+        padding: 0px 20px;
+      }
+
+      th:nth-child(1),
+      th:nth-child(4) {
+        min-width: 110px;
+        max-width: 110px;
+      }
+
+      th:nth-child(2),
+      th:nth-child(5) {
+        min-width: 160px;
+        max-width: 160px;
+      }
+
+      th:nth-child(3),
+      th:nth-child(6) {
+        min-width: 225px;
+        max-width: 225px;
+      }
+    }
+
+    tbody td {
+      height: 72px;
+    }
+
+    .table-cell-0 {
+      width: 295px;
+    }
+
+    .table-cell-1 {
+      width: 161px;
+    }
+
+    .table-cell-2 {
+      width: 110px;
+    }
+
+    .table-cell-3 {
+      width: 160px;
+    }
+
+    .table-cell-4 {
+      width: 225px;
+    }
+
+    .table-cell-5 {
+      width: 110px;
+    }
+
+    .table-cell-6 {
+      width: 160px;
+    }
+
+    .table-cell-7 {
+      width: 225px;
+    }
+
+    tfoot td {
+      text-align: center;
+      color: #000
+    }
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px;
+    gap: 24px;
+    align-self: stretch;
+    width: 100%;
+    height: 563px;
+    background: #ffffff;
+    border: 1px solid #edf2f6;
+    box-shadow: 0px 4px 20px rgba(238, 238, 238, 0.5);
+    border-radius: 26px;
+
+    .left-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 24px;
+      gap: 10px;
+
+      width: 559px;
+
+      .inner-section {
+        font-family: "kenvue-sans-regular", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19.2px;
+        line-height: 28.8px;
+        color: #000;
+        align-self: stretch;
+      }
+
+      .heading {
+        font-family: "kenvue-sans", sans-serif;
+        font-weight: 700;
+      }
+    }
+
+    .right-section {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+      padding: 0;
+      flex-grow: 1;
+      gap: 24px;
+      width: 728px;
+      height: 450px;
+
+      .chart-container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 24px;
+
+        position: absolute;
+        width: 521px;
+        height: 469px;
+
+        .chart-heading {
+          width: 435px;
+          height: 56px;
+
+          font-family: "kenvue-sans", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 23.04px;
+          line-height: 120%; // 28px
+          text-align: center;
+          color: #000;
+        }
+      }
+    }
+
+    @media(min-width: 880px) and (max-width: 1150px) {
+      flex-direction: column;
+      height: auto;
+      margin-bottom: 20px;
+      padding: 0px 0px;
+      border: none;
+      box-shadow: none;
+
+      .left-section {
+        width: 100%;
+        display: inline;
+        padding: 0px;
+
+        .heading {
+          margin-right: 5px;
+        }
+
+        .inner-section {
+          display: inline;
+          font-size: 13.33px;
+          line-height: 19.99px;
+        }
+      }
+
+      .right-section {
+        height: 520px;
+        width: 100%;
+        padding: 24px;
+        border: 1px solid #edf2f6;
+        box-shadow: 0px 4px 20px rgba(238, 238, 238, .5);
+        border-radius: 26px;
+      }
+    }
+
+    @media(min-width: 1151px) and (max-width: 1439px) {
+      .left-section {
+        width: 368px;
+      }
+    }
+  }
+
+  .bottom-section-table {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+
+
+    .table-heading {
+      font-family: 'kenvue-sans', sans-serif;
+      font-size: 23.04px;
+      font-weight: 700;
+      line-height: 27.65px;
+      color: #2b2b2b;
+    }
+
+    .bottom-table-section {
+      flex-grow: 1;
+      width: 100%;
+    }
+  }
+}
+
+
+.info-alert {
+  display: block;
+  justify-content: space-between;
+  width: 100%;
+  background: #ecf3fe;
+  border-left: 4px solid #428bf1;
+
+  padding: 16px;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+.info-alert__content {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1;
+}
+
+.info-alert__icon {
+  color: #428bf1;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.info-alert__text {
+  font-family: "Kenvue Sans", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #000000;
+}
+
+.info-alert__close {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #000000;
+}
+
+.info-text{
+  font-size: 15.2px;
+    font-family: "kenvue-sans", sans-serif;
+    font-weight: 700;
+    line-height: 120%;
+    margin-left: 2rem;
+    padding-bottom: 0.5rem;
+}

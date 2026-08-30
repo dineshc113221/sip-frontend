@@ -1,0 +1,690 @@
+// Variables for consistent styling
+$table-widths: (
+  "1920px": 1462.09px,
+  "1440px": 1324px,
+  "1151px": 1043px,
+  "880px": 771px
+);
+$table-heights: (
+  "1920px": 635px,
+  "1440px": 655px,
+  "1151px": 635px,
+  "880px": 635px
+);
+
+$table-cell-widths: (
+  "table-cell0": 296px,
+  "table-cell-row": 296px,
+  "table-cell1": 155px,
+  "table-cell5": 155px,
+  "table-cell2": 155px,
+  "table-cell9": 155px,
+  "table-cell3": 269px,
+  "table-cell6": 269px,
+  "table-cell4": 227px,
+  "table-cell7": 227px,
+  "green-chemistry": 316px,
+  "table-cell8": 316px
+);
+$table-cell-heights: (
+  "table-cell0": 80px,
+  "table-cell-row": 72px,
+  "table-cell1": 80px,
+  "table-cell5": 72px,
+  "table-cell2": 80px,
+  "table-cell9": 72px,
+  "table-cell3": 80px,
+  "table-cell6": 72px,
+  "table-cell4": 80px,
+  "table-cell7": 72px,
+  "green-chemistry": 80px,
+  "table-cell8": 72px,
+);
+
+$primary-color: #000000;
+$secondary-color: #f8f8f8;
+$border-color: #e4e7ec;
+$hover-color: #90a4ae;
+$text-dark: #333;
+$text-light: #151515;
+$header-bg: #f5f5f5;
+
+// General table wrapper
+.table-wrapper {
+  overflow: hidden;
+  height: auto;
+
+
+  .table-container {
+    margin: 0;
+    padding: 0;
+    border-radius: 0 !important;
+    overflow-x: auto; // Prevent X-scrollbar
+    overflow-y: auto; // Ensure Y-scrollbar when needed
+   // Default height for vertical scroll
+   max-height: 635px;
+   height: auto;
+
+    @each $breakpoint, $height in $table-heights {
+      @media (max-width: $breakpoint) {        
+        max-height: $height; // Ensure it doesn't shrink
+      }
+    }
+    .table-head{
+      background-color: #f8f8f8;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th {
+      background-color: $secondary-color;
+      height: 80px !important; // Ensure correct header height
+      line-height: 80px; // Center-align text vertically
+      text-align: left;
+      padding-top: 5px;       
+    }
+    td {
+      height: 72px !important;
+      border: none;
+      text-align: left;
+      padding-top: 0px; 
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+
+    &::-webkit-scrollbar {
+      width: 12px;
+      height: 12px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #d2d1d2;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $primary-color;
+      border-radius: 10px;
+      border: 3px solid $border-color;
+
+      &:hover {
+        background: $hover-color;
+      }
+    }
+
+    &::-webkit-scrollbar-button {
+      display: none;
+      visibility: collapse !important;
+    }
+
+    .score-title{
+      font-family: "kenvue-sans", sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 21px;
+      text-align: left;
+    }
+    
+    .env-weight , .carbon-weight, .greenChem-weight{
+      display:flex;
+      align-items: right;      
+    }
+    
+    .sticky-footer {
+      position: sticky;
+    height: 30px;   
+    bottom: 0;
+    display: flex;
+    align-items: flex-start;    
+    background-color: #fff;
+    padding: 10px 15px;    
+    z-index: 2;
+  
+      div {
+        
+        display: flex;
+        align-items: center;
+      }
+  
+      .disabledfield-wrapper {
+        display: flex;
+        align-items: center;
+        width: 203px;
+        height: 24px;
+        gap: 8px;
+        margin-left: 50px;
+  
+        .disabledfield {
+          input {
+            width: 280px;
+            padding: 8px 14px;
+          }
+        }
+  
+        .search-results {
+          margin-top: 8px;
+          overflow-y: auto;
+          background-color: white;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          max-height: 250px;
+  
+          table {
+            width: 100%;
+            border-collapse: collapse;
+  
+            tbody {
+              tr:hover {
+                background-color: #f0f0f0;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+  
+      .total-mass {
+        display: flex;
+        align-items: center;
+        width: 203px;
+    height: 24px;
+    
+  
+        .success-icon {
+          color: green;
+          width: 18px;
+    height: 18px;
+          font-size: 20px;
+          margin-left: 10px;
+        }
+  
+        .error-icon {
+          color: red;
+          width: 18px;
+    height: 18px;
+          font-size: 20px;
+          margin-left: 10px;
+        }
+      }
+  
+      .env-weight,
+      .carbon-weight,
+      .greenChem-weight {
+        margin-right: 10px;
+        text-align: center;
+      }
+    }
+
+  }
+  // Adjust height and scrolling based on row count
+  &.with-7-rows-or-more {
+    .table-container {
+      height: 635px; // Fixed height for 7+ rows
+      max-height: 635px;
+    }
+  }
+
+  &.less-than-7-rows {
+    .table-container {
+      height: auto; // Adjust height to fit content
+      max-height: none; // No scroll needed
+    }
+
+    table {
+      height: auto; // Table adjusts to fit content
+    }
+  }
+
+  // Responsive breakpoints for widths
+  @each $breakpoint, $width in $table-widths {
+    @media (max-width: $breakpoint) {
+      .table-container {
+        width: $width;
+        max-width: $width;
+      }
+    }
+  }
+
+  @media (min-width: 1920px) {
+    width: 1465px;
+    max-width: 1465px;
+    overflow-x: hidden;
+    .table-container {
+      overflow-x: hidden !important;
+    }
+    .total-mass {
+      margin-left: 195px;
+    }
+    .env-weight {
+      margin-left: 185px;
+    }
+    .carbon-weight {
+      margin-left: 180px;
+    }
+    .greenChem-weight {
+      margin-left: 255px;
+    }
+  }
+  
+  @media (max-width: 1920px) and (min-width: 1441px) {
+    .total-mass {
+      margin-left: 200px;
+    }
+    .env-weight {
+      margin-left: 175px;
+    }
+    .carbon-weight {
+      margin-left: 185px;
+    }
+    .greenChem-weight {
+      margin-left: 250px;
+    }
+  }
+
+  @media (max-width: 1440px) and (min-width: 1152px) {
+    .sticky-footer{
+      width: 110%;
+    }
+    .total-mass {
+      margin-left: 200px;
+    }
+    .env-weight {
+      margin-left: 185px;
+    }
+    .carbon-weight {
+      margin-left: 172px;
+    }
+    .greenChem-weight {
+      margin-left: 262px;
+    }
+  }
+
+  @media (max-width: 1151px) and (min-width: 881px) {
+    .total-mass {
+      margin-left: 200px;
+    }
+    .env-weight {
+      margin-left: 245px;
+    }
+    .carbon-weight {
+      margin-left: 180px;
+    }
+    .greenChem-weight {
+      margin-left: 255px;
+    }
+  }
+
+  @media (max-width: 880px) {
+    
+    .sticky-footer{
+      width: 191%;
+    }
+    .total-mass {
+      margin-left: 210px;
+    }
+    .env-weight {
+      margin-left: 240px;
+    }
+    .carbon-weight {
+      margin-left: 175px;
+    }
+    .greenChem-weight {
+      margin-left: 265px;
+    }
+  }
+  // Responsive breakpoints for table container width
+  @each $breakpoint, $width in $table-widths {
+    @media (max-width: $breakpoint) {
+      .table-container {
+        width: $width;
+        max-width: $width;
+        
+      }
+    }
+  }
+  // Fixed widths for all table cells
+  @each $cell-class, $cell-width in $table-cell-widths {
+    .#{$cell-class} {
+      width: $cell-width;
+      max-width: $cell-width;
+      min-width: $cell-width;
+      
+      overflow: hidden; // Ensure cells do not expand or shrink
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+
+
+  .table-row{
+    &.td {
+          font-family: "kenvue-sans-regular", sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 18px;
+          text-align: left;
+          border-bottom: 1px solid #E4E7EC;
+          border-top: 1px solid #E4E7EC;
+        
+    }
+   
+    .table-cell-row {
+      width: 296px;
+      white-space: normal; // Allow text to wrap to the next line
+      word-wrap: break-word !important; // Break words if necessary
+      overflow-wrap: break-word; // Ensure text wraps to fit container width
+      text-align: left;
+      padding: 1px;
+    }
+    .table-box {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      padding: 16px 24px;
+    }
+  }
+  .green-chemistry{
+    width: 316px;
+    white-space: normal;
+    padding: 12px 16px 12px 16px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+ 
+}
+ .custom-table-container {
+
+    &::-webkit-scrollbar {
+      width: 12px;
+      height: 12px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $primary-color;
+      border-radius: 10px;
+      border: 3px solid $border-color;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #d2d1d2;
+    }
+  }
+// Table header styles
+.header-row {
+  background-color: $header-bg;
+
+  .header-cell {
+    font-size: 12px !important;
+    padding: 5px 20px 5px 10px !important;
+    font-weight: bold !important;
+    border: 1px solid $border-color;
+    font-family: "kenvue-sans", sans-serif !important;
+    color: $text-light !important;
+    border-bottom: none !important;
+    background-color: $header-bg !important;
+  }
+
+  .sub-header-cell {
+    font-family: "kenvue-sans", sans-serif !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    text-align: left !important;
+    color: #0b0b0b !important;
+    padding: 0 !important;
+    background-color: $header-bg !important;
+    border-bottom: none !important;
+  }
+
+  .header-divider {
+    height: 1.5px !important;
+    background-color: $border-color !important;
+    margin: 8px 0 !important;
+  }
+}
+
+// Table body styles
+.body-cell {
+  font-size: 12px;
+  padding: 20px 20px 20px 10px !important;
+  text-align: left !important;
+  color: $text-dark;
+}
+
+.odd-row {
+  background-color: white !important;
+
+  .css-iul604-MuiTableCell-root {
+    background-color: white !important;
+    border: 1px solid $border-color;
+  }
+}
+
+.even-row {
+  background-color: #f9f9f9 !important;
+
+  .css-iul604-MuiTableCell-root {
+    border: 1px solid $border-color;
+    background-color: $secondary-color !important;
+  }
+}
+
+
+// Icon styles
+.info-icon {
+  color: $primary-color !important; // Medium grey color for the info icon
+}
+
+.cell-content {
+  display: flex;
+  align-items: center;
+
+  .cell-text {
+    flex: 1; // This makes the text div grow to fill available space
+    white-space: pre-wrap; // Ensure text wraps properly
+    word-wrap: break-word; // For older browsers
+    overflow-wrap: break-word; // For modern browsers
+    line-height: 1.2;
+  }
+
+  .cell-icon {
+    margin-left: 10px; // Adjust the margin between the text and the icon as needed
+  }
+}
+
+// Icon button styles
+.icon-button {
+  color: defaultColor;
+  height: 24px;
+  width: 24px;
+  padding: 2px !important;
+  background-color: none;
+
+  &:hover {
+    color: red;
+    background: none !important;
+  }
+}
+/* Grid container styles */
+.grid-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .text-field-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 5px 0 10px;
+
+    input {
+      padding: 8px 14px;
+    }
+
+    fieldset {
+      border: none; /* Remove the border around the TextField */
+    }
+
+    .MuiOutlinedInput-root {
+      &:hover fieldset {
+        border: none; /* Ensure no border on hover */
+      }
+
+      &.Mui-focused {
+        fieldset {
+          border: 2px solid #00b097;
+        }
+      }
+    }
+  }
+
+  .table-results {
+    height: 0px;
+    overflow-y: auto;
+
+    &.has-results {
+      height: 250px;
+    }
+  }
+}
+
+/* TableCell styles */
+.table-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 12px;
+  width: 10%;
+  border: none;
+
+  .table-cell-content {
+    display: flex;
+    align-items: center;
+    border: none;
+
+    .total-text {
+      margin-right: 5px;
+      font-family: "kenvue-sans-regular", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      text-align: left;
+    }
+
+    .total-weight {
+      font-family: "kenvue-sans-regular", sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 21px;
+      text-align: left;
+    }
+
+    .icon {
+      margin-left: 10px;
+      font-size: 20px;
+
+      &.success {
+        color: green;
+      }
+
+      &.error {
+        color: red;
+      }
+    }
+  }
+}
+
+.additional-metrics {
+  display: flex;
+  flex-direction: column;
+
+  .metric-cell {
+    width: 30%;
+    white-space: normal;
+    padding-left: 115px;
+    border: none;
+
+    &.wide {
+      width: 40%;
+      padding-left: 150px;
+    }
+
+    .metric-content {
+      display: flex;
+      align-items: flex-end;
+
+      .metric-text {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+// Progress bar styles
+.linear-progress-bar {
+  height: 12px !important;
+  border-radius: 100px;
+  margin-left: 0;
+}
+
+.progress-bar {
+  height: 8px;
+  border-radius: 4px; // Rounded corners for the progress bar
+}
+
+.progress-value {
+  margin-left: 5px !important; // Adjust the margin as needed
+  font-family: "kenvue-sans-regular", sans-serif !important;
+  font-size: 13.33px !important;
+  font-weight: 400;
+  line-height: 19.99px;
+  text-align: center;
+}
+
+// Footer styles
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+
+  .MuiTableCell-root {
+    padding: 8px; // Adjust padding as needed
+    margin: 0; // Remove margin
+  }
+}
+
+// Divider styles
+.divider {
+  position: relative;
+  border: none; // Remove border from the table cell
+  width: 0;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #bfbfbf;
+    width: 2px;
+    height: 100%;
+    border-top: none; // Hide the top border
+    border-bottom: none; // Hide the bottom border
+    border-left: 9px solid white;
+    border-right: 9px solid white;
+  }
+}

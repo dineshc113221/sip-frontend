@@ -1,0 +1,23 @@
+{
+    "status": {
+        "message": "records fetched",
+        "statusCode": "200"
+    },
+    "formula": {
+        "requestUris": {},
+        "uiLabels": {
+            "HOME_STATUS_BAR": "Sustainable Innovation Profiler",
+            "HOME_SUB_STATUS_BAR": "by",
+            "HOME_MAIN_HEADER_MENU": "Welcome back,",
+            "HOME_MAIN_HEADER_MENU_SEARCH": "Search",
+            "HOME_MAIN_HEADER_MENU_BUTTON": "Add Product",
+            "HOME_MAIN_MY_PRODUCTS": "My Products",
+            "MY_ALL_PRODUCT": "All Products",
+            "ADD_EXPERIMENTAL_ASSESSMENT": "Add Experimental Assessment",
+            "EXPERIMENTAL_ASSESSMENTS": "Experimental Assessments"
+        },
+        "genericData": {
+            "ROLE_ACCESS_MATRIX": {}
+        }
+    }
+}
